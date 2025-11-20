@@ -1844,3 +1844,39 @@ function getStoreInfo($filter, $fields = '*')
     $info = $storeModel->where($filter)->field($fields)->find();
     return $info ? $info : false;
 }
+
+
+/**
+ * 记录日志
+ *
+ * @param string $filename  日志文件名
+ * @param string $data      记录数据
+ * @return void
+ * @Author Fdw
+ * @DateTime 2020-10-29
+ */
+function recordLogs($filename = '', $data='')
+{
+    $file_dir = ROOT_PATH . '/runtime/logs/';
+    if(!is_dir($file_dir)){
+        mkdir($file_dir, 0777, true);
+    }
+
+    $file = $file_dir . date('Y-m-d') . '_' .$filename .'.txt';
+    if(file_exists($file)) {
+        chmod($file, 0777);
+    }
+    $debug = debug_backtrace();
+    $html_start = PHP_EOL . '----------------Start-------------------' . PHP_EOL . PHP_EOL;
+    $html_start .= date('Y-m-d H:i:s') . PHP_EOL;
+    $str = '';
+    $row = $debug[0];
+    $str = $row['file'] . '：' . $row['line'] . '行,调用方法：' . $debug[1]['function'] . PHP_EOL . 'Error：' . $str;
+    $html_end = PHP_EOL . '----------------End---------------------' . PHP_EOL . PHP_EOL;
+    file_put_contents($file, $html_start . $str, FILE_APPEND);
+
+    if (!is_string($data) && !is_array($data) && !is_object($data)) {
+        $data = serialize($data);
+    }
+    file_put_contents($file, var_export($data, true) . PHP_EOL  . $html_end, FILE_APPEND);
+}
