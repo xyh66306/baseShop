@@ -6,6 +6,7 @@ namespace org;
 use think\facade\Cache;
 use think\facade\Log;
 use think\facade\Request;
+use app\common\model\Payments;
 
 class Wx
 {
@@ -653,4 +654,106 @@ class Wx
         }
         return false;
     }
+
+    /***
+     * 
+     * {
+            "order_key": {
+                "order_number_type": 2,
+                "transaction_id": "fake-transid-20221214190427-1"
+            },
+            "delivery_mode": 1,
+            "logistics_type": 1,
+            "shipping_list": [
+                {
+                    "tracking_no": "fake-trackingno-2022121419042711",
+                    "express_company": "STO",
+                    "item_desc": "微信气泡狗集线器*1",
+                    "contact": {
+                        "consignor_contact": "+86-177****1234"
+                    }
+                }
+            ],
+            "upload_time": "2022-12-15T13:29:35.120+08:00",
+            "payer": {
+                "openid": "ogqztkPsejM9MQAFfwCQSCi4oNg3"
+            }
+        }
+    */
+    public function send($transaction_id,$shipping_list,$openid,$type=2){
+        $wx_appid = getSetting('wx_appid');
+        $wx_app_secret = getSetting('wx_app_secret');
+        $access_token = $this->getAccessToken($wx_appid, $wx_app_secret);
+        $curl = new Curl();
+        $url = 'https://api.weixin.qq.com/wxa/sec/order/upload_shipping_info?access_token='.$access_token;
+
+        $payer = [
+            'openid' =>$openid
+        ];
+
+        $microtime = microtime(true);
+        $milliseconds = sprintf('%03d', floor(($microtime - floor($microtime)) * 1000));
+        $upload_time = date('Y-m-d\TH:i:s.'.$milliseconds.'\+08:00', (int)$microtime);        
+        $logistics_type = (int)$type;
+        $data = [
+            'order_key'     => [
+                "order_number_type" => 2,  
+                'transaction_id'    => (string)$transaction_id  // 确保类型为字符串
+            ],
+            'delivery_mode' => 1,
+            'logistics_type'=> $type,
+            'upload_time'   => $upload_time,
+            'payer'         => $payer,
+        ];
+
+        if ($logistics_type != 3) {
+            $data['shipping_list'] = $shipping_list;
+        } else {
+            $data['shipping_list'] = [
+                [
+                    "tracking_no" => "",
+                    "express_company" => "",
+                    "item_desc" => "会员升级",
+                ]
+            ];
+        }        
+        $json_data = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+        
+        // 添加 JSON 编码检查
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            recordLogs("send", "JSON encode error: " . json_last_error_msg());
+            return "JSON编码错误: " . json_last_error_msg();
+        }
+
+        $res = $curl->post($url, $json_data);
+        $flag = json_decode($res, true);
+
+
+        if ($flag && isset($flag['errcode']) && $flag['errcode'] == 0) {
+            return true;
+        } else if ($flag && isset($flag['errmsg'])) {
+            return $flag['errmsg'];
+        } else {
+            return "未知错误";
+        }
+    }
+
+    public function getPhoneNums($code){
+
+        $wx_appid = getSetting('wx_appid');
+        $wx_app_secret = getSetting('wx_app_secret');
+        $access_token = $this->getAccessToken($wx_appid, $wx_app_secret);
+        $curl = new Curl();
+        $url = 'https://api.weixin.qq.com/wxa/business/getuserphonenumber?access_token='.$access_token;
+        $data['code'] = $code;
+        $data = json_encode($data);
+        $res = $curl->post($url, $data);
+        $flag = json_decode($res, true);
+
+        if ($flag['errcode'] == 0) {
+            return $flag['phone_info']['purePhoneNumber'];
+        }
+        return $flag['errmsg'];
+    }
+
 }
