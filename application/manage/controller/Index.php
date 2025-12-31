@@ -42,6 +42,9 @@ class Index extends Manage
         $billAfterSalesModel = new BillAftersales();
         $afterSales_count    = $billAfterSalesModel->getCount();
 
+        $shop_name = getSetting('shop_name');
+        $this->assign('shop_name',$shop_name);
+
         $this->assign('unpaid_count', $unpaid_count);
         $this->assign('unship_count', $unship_count);
         $this->assign('after_sales_count', $afterSales_count);
