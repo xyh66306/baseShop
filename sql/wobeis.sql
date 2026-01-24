@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 九蕴天香
+Source Server         : 灵境集
 Source Server Version : 50740
 Source Host           : 8.155.55.236:3306
-Source Database       : jytx_wansenjiank
+Source Database       : ljmaoyi
 
 Target Server Type    : MYSQL
 Target Server Version : 50740
 File Encoding         : 65001
 
-Date: 2025-11-14 18:12:39
+Date: 2026-01-24 18:27:48
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,11 +32,15 @@ CREATE TABLE `wb_addons` (
   `utime` int(10) NOT NULL DEFAULT '0' COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx` (`status`,`name`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='插件表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='插件表';
 
 -- ----------------------------
 -- Records of wb_addons
 -- ----------------------------
+INSERT INTO `wb_addons` VALUES ('1', 'Userupgrade', '用户自动升级等级插件', '用户购买金额达到XX元自动升级成指定用户等级', '1', '{\"menu\":[{\"id\":\"userupgrade_1\",\"parent_id\":\"2\",\"parent_menu_id\":\"2\",\"name\":\"\\u7528\\u6237\\u7b49\\u7ea7\\u5347\\u7ea7\\u63a7\\u5236\\u5668\",\"code\":\"Index\",\"type\":\"c\",\"perm_type\":3,\"sort\":140,\"addons\":\"Userupgrade\"},{\"id\":\"userupgrade_2\",\"parent_id\":\"demo_1\",\"parent_menu_id\":\"553\",\"name\":\"\\u7528\\u6237\\u5347\\u7ea7\\u914d\\u7f6e\",\"code\":\"index\",\"type\":\"a\",\"perm_type\":3,\"sort\":100,\"addons\":\"Userupgrade\"}],\"jshop\":\"www.jihainet.com\"}', 'sin', '1.0', '1769244991', '1769244991');
+INSERT INTO `wb_addons` VALUES ('2', 'Wxdelivery', '微信小程序发货信息管理服务', '根据《商家自营类小程序运营规范》,特定类型的小程序需要在平台完成发货信息录入及确认收货流程后方可进行资金结算。可以通过该接入服务，完成商品发货信息录入、提醒用户确认收货、在小程序内调起确认收货组件等功能，提升发货信息录入效率，优化用户体验。', '1', '{\"logis\":{\"shunfeng\":\"SF\",\"shentong\":\"STO\",\"yuantong\":\"YTO\",\"yunda\":\"YD\",\"zhongtong\":\"ZTO\"},\"api\":{\"api\":{\"code\":\"Api\",\"method\":{\"crontab\":{\"code\":\"crontab\",\"is_login\":false}}}}}', 'sin', '1.0', '1769245007', '1769250371');
+INSERT INTO `wb_addons` VALUES ('3', 'UserInvite', '用户邀请变动', '用户邀请变动插件', '1', '[]', 'dwF', '1.0', '1769245015', '1769250366');
+INSERT INTO `wb_addons` VALUES ('4', 'QueueCreate', '创建think-queue任务', '创建think-queue任务', '1', '[]', 'dwF', '1.0', '1769245022', '1769250361');
 
 -- ----------------------------
 -- Table structure for wb_advert_position
@@ -52,11 +56,12 @@ CREATE TABLE `wb_advert_position` (
   `sort` tinyint(3) unsigned DEFAULT '0' COMMENT '排序',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx` (`code`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='广告位置表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='广告位置表';
 
 -- ----------------------------
 -- Records of wb_advert_position
 -- ----------------------------
+INSERT INTO `wb_advert_position` VALUES ('1', '首页幻灯片', 'tpl1_slider', '1769068817', '1769068817', '1', '100');
 
 -- ----------------------------
 -- Table structure for wb_advertisement
@@ -76,11 +81,12 @@ CREATE TABLE `wb_advertisement` (
   PRIMARY KEY (`id`) USING BTREE,
   KEY `id` (`id`) USING BTREE,
   KEY `idx` (`position_id`,`code`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='广告表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='广告表';
 
 -- ----------------------------
 -- Records of wb_advertisement
 -- ----------------------------
+INSERT INTO `wb_advertisement` VALUES ('1', '1', 'banner1', '4a35bb6e7c678cbfec0bc1b8e0c8cb46', '', '100', '1769070324', '1769070324', 'tpl1_slider', '5');
 
 -- ----------------------------
 -- Table structure for wb_area
@@ -4367,6 +4373,7 @@ CREATE TABLE `wb_goods` (
   `price` decimal(10,2) DEFAULT NULL COMMENT '商品价格',
   `costprice` decimal(10,2) DEFAULT NULL COMMENT '成本价',
   `mktprice` decimal(10,2) DEFAULT NULL COMMENT '市场价',
+  `thumb` char(32) DEFAULT NULL COMMENT '首页宣传图',
   `image_id` char(32) DEFAULT NULL COMMENT '默认图片 图片id',
   `goods_cat_id` int(10) unsigned DEFAULT NULL COMMENT '商品分类ID 关联category.id',
   `goods_type_id` int(10) unsigned DEFAULT NULL COMMENT '商品类别ID 关联goods_type.id',
@@ -4403,11 +4410,12 @@ CREATE TABLE `wb_goods` (
   KEY `sort` (`sort`) USING BTREE,
   KEY `mktprice` (`mktprice`) USING BTREE,
   KEY `idx` (`bn`,`goods_cat_id`,`brand_id`,`marketable`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='商品表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='商品表';
 
 -- ----------------------------
 -- Records of wb_goods
 -- ----------------------------
+INSERT INTO `wb_goods` VALUES ('1', 'G7692449305562', '套餐一', '', '198.00', '0.00', '0.00', null, '03c7a4f333b2b1b347c7011df0f2adda', '1', '3', '0', '1', '1', '9999', '0', '0.00', '', '', '', 'a:0:{}', '0', '0', '0', null, null, '100', '2', '1', null, '', '3', '0', null, '1769245326', null, '2');
 
 -- ----------------------------
 -- Table structure for wb_goods_browsing
@@ -4447,11 +4455,14 @@ CREATE TABLE `wb_goods_cat` (
   KEY `id` (`id`) USING BTREE,
   KEY `seller_id` (`parent_id`) USING BTREE,
   KEY `idx` (`id`,`parent_id`,`type_id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='商品分类';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='商品分类';
 
 -- ----------------------------
 -- Records of wb_goods_cat
 -- ----------------------------
+INSERT INTO `wb_goods_cat` VALUES ('1', '0', '套餐', '0', '100', '', '1', '1769242865');
+INSERT INTO `wb_goods_cat` VALUES ('2', '0', '日化产品', '0', '100', '', '1', '1769242874');
+INSERT INTO `wb_goods_cat` VALUES ('3', '0', '化妆品', '0', '100', '', '1', '1769242880');
 
 -- ----------------------------
 -- Table structure for wb_goods_collection
@@ -4527,11 +4538,14 @@ CREATE TABLE `wb_goods_grade` (
   `grade_price` decimal(10,2) unsigned DEFAULT '0.00' COMMENT '会员价',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx` (`goods_id`,`grade_id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='商品会员价表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='商品会员价表';
 
 -- ----------------------------
 -- Records of wb_goods_grade
 -- ----------------------------
+INSERT INTO `wb_goods_grade` VALUES ('2', '1', '1', '0.00');
+INSERT INTO `wb_goods_grade` VALUES ('3', '1', '2', '0.00');
+INSERT INTO `wb_goods_grade` VALUES ('4', '1', '3', '0.00');
 
 -- ----------------------------
 -- Table structure for wb_goods_images
@@ -4547,6 +4561,7 @@ CREATE TABLE `wb_goods_images` (
 -- ----------------------------
 -- Records of wb_goods_images
 -- ----------------------------
+INSERT INTO `wb_goods_images` VALUES ('1', '3f273726fa51be309e2ee232cdcaa516', '0');
 
 -- ----------------------------
 -- Table structure for wb_goods_params
@@ -4719,7 +4734,7 @@ CREATE TABLE `wb_hooks` (
   `utime` int(11) DEFAULT '0' COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx` (`name`,`type`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=10017 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=10020 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of wb_hooks
@@ -4736,13 +4751,13 @@ INSERT INTO `wb_hooks` VALUES ('9', 'addgoodsview', '添加商品页面', '2', '
 INSERT INTO `wb_hooks` VALUES ('10', 'editgoodsview', '编辑商品页面', '2', '', '1541072464', '1541072464');
 INSERT INTO `wb_hooks` VALUES ('11', 'trustlogin', '信任登录', '1', '', '1541771962', '1541771962');
 INSERT INTO `wb_hooks` VALUES ('12', 'trustcallback', '信任登录返回', '1', '', '1541771974', '1541771974');
-INSERT INTO `wb_hooks` VALUES ('14', 'orderpayed', '订单支付', '1', '', '1542349293', '1542349507');
+INSERT INTO `wb_hooks` VALUES ('14', 'orderpayed', '订单支付', '1', 'Userupgrade,UserInvite', '1542349293', '1542349507');
 INSERT INTO `wb_hooks` VALUES ('10000', 'printOrder', '打印订单埋点', '1', '', '1552448691', '1552448691');
 INSERT INTO `wb_hooks` VALUES ('10001', 'getPrintExpressInfo', '获取打印信息', '1', '', '1552557472', '1552557472');
 INSERT INTO `wb_hooks` VALUES ('10002', 'orderExtJs', '订单扩展js', '2', '', '1552558689', '1552559645');
 INSERT INTO `wb_hooks` VALUES ('10003', 'orderExtBtn', '订单扩展按钮', '2', '', '1552558705', '1552559662');
 INSERT INTO `wb_hooks` VALUES ('10004', 'logisticsQuery', '快递查询', '1', '', '1552704811', '1552704811');
-INSERT INTO `wb_hooks` VALUES ('10005', 'menu', '后台菜单', '1', '', '1554199143', '1554199143');
+INSERT INTO `wb_hooks` VALUES ('10005', 'menu', '后台菜单', '1', 'Wxdelivery', '1554199143', '1554199143');
 INSERT INTO `wb_hooks` VALUES ('10006', 'appupdate', 'APP相关钩子', '1', null, '1564537798', '1564537798');
 INSERT INTO `wb_hooks` VALUES ('10007', 'aftersalesreview', '售后审核通过后', '1', null, '1564537798', '1564537798');
 INSERT INTO `wb_hooks` VALUES ('10008', 'addUserAfter', '创建会员后', '1', null, '1564537798', '1564537798');
@@ -4752,6 +4767,9 @@ INSERT INTO `wb_hooks` VALUES ('10013', 'apiAddonsConf', '接口访问插件的�
 INSERT INTO `wb_hooks` VALUES ('10014', 'deshare', '用户扫码后的事件', '1', null, '1586337762', '1586337762');
 INSERT INTO `wb_hooks` VALUES ('10015', 'form_submit_after', '智能表单提交后', '1', null, '1640241514', '1640241514');
 INSERT INTO `wb_hooks` VALUES ('10016', 'form_submit_after', '智能表单提交后', '1', null, '1640241514', '1640241514');
+INSERT INTO `wb_hooks` VALUES ('10017', 'addUserInviteLog', '用户注册后增加用户邀请记录表数据', '1', 'UserInvite', '1769250317', '1769250317');
+INSERT INTO `wb_hooks` VALUES ('10018', 'queue', '创建think-queue任务', '1', 'QueueCreate', '1769250328', '1769250328');
+INSERT INTO `wb_hooks` VALUES ('10019', 'deliveryOrder', '微信发货管理', '1', 'Wxdelivery', '1769250347', '1769250347');
 
 -- ----------------------------
 -- Table structure for wb_ietask
@@ -4801,8 +4819,12 @@ CREATE TABLE `wb_images` (
 -- ----------------------------
 -- Records of wb_images
 -- ----------------------------
+INSERT INTO `wb_images` VALUES ('03c7a4f333b2b1b347c7011df0f2adda', '0', '20.png', 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png', '/www/wwwroot/ljmaoyi.wobeis.com/public/static/uploads/images/2026/01/24/1769244869697488c54c928.png', 'Local', '1769244869', null);
+INSERT INTO `wb_images` VALUES ('3f273726fa51be309e2ee232cdcaa516', '0', '新净丽酵素.png', 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png', '/www/wwwroot/ljmaoyi.wobeis.com/public/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png', 'Local', '1769244878', null);
+INSERT INTO `wb_images` VALUES ('439f3439b1cb6e81c2c17d26619eb663', '0', 'logo.png', 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png', '/www/wwwroot/ljmaoyi.wobeis.com/public/static/uploads/images/2026/01/22/176905393169719eeb126ba.png', 'Local', '1769053931', null);
 INSERT INTO `wb_images` VALUES ('4602163f525b84fd0de4b080aa256d92', '0', 'cart_black.png', 'http://jytx.wansenjiankang.cn/static/images/front_menu/cart_black.png', '/public/static/images/front_menu/cart_black.png', 'Local', '1644920973', null);
 INSERT INTO `wb_images` VALUES ('483b8ee6429a680654c454d0fdd6fd5a', '0', 'index_black.png', 'http://jytx.wansenjiankang.cn/static/images/front_menu/index_black.png', '/public/static/images/front_menu/index_black.png', 'Local', '1644920941', null);
+INSERT INTO `wb_images` VALUES ('4a35bb6e7c678cbfec0bc1b8e0c8cb46', '0', 'banner.png', 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/17690703196971deefea7cc.png', '/www/wwwroot/ljmaoyi.wobeis.com/public/static/uploads/images/2026/01/22/17690703196971deefea7cc.png', 'Local', '1769070319', null);
 INSERT INTO `wb_images` VALUES ('70ff17564a360cb74159d82095492ca7', '0', 'classify_black.png', 'http://jytx.wansenjiankang.cn/static/images/front_menu/classify_black.png', '/public/static/images/front_menu/classify_black.png', 'Local', '1644920958', null);
 INSERT INTO `wb_images` VALUES ('8a2e37390ca73fdfa5af28b78735589f', '0', '216.png', 'http://jytx.wansenjiankang.cn/static/uploads/images/2025/11/14/17631056666916db82dd1c9.png', '/www/wwwroot/jiuyuntianxiang/public/static/uploads/images/2025/11/14/17631056666916db82dd1c9.png', 'Local', '1763105666', null);
 INSERT INTO `wb_images` VALUES ('98ebc1f521934da1d41b35178c0339ae', '0', 'index_gray.png', 'http://jytx.wansenjiankang.cn/static/images/front_menu/index_gray.png', '/public/static/images/front_menu/index_gray.png', 'Local', '1644920949', null);
@@ -6066,7 +6088,7 @@ CREATE TABLE `wb_manage` (
 -- ----------------------------
 -- Records of wb_manage
 -- ----------------------------
-INSERT INTO `wb_manage` VALUES ('13', 'wansentang', '680b442a3d53a0ebfb0ac3afa211320c', '', null, null, '1763104801', '1763104801', '1');
+INSERT INTO `wb_manage` VALUES ('13', 'ljmaoyi', '3cc07ed743881489cbca652b97fc1f44', '', null, null, '1763104801', '1763104801', '1');
 
 -- ----------------------------
 -- Table structure for wb_manage_role
@@ -6176,11 +6198,12 @@ CREATE TABLE `wb_notice` (
   PRIMARY KEY (`id`) USING BTREE,
   KEY `isdel` (`isdel`) USING BTREE,
   KEY `sort` (`sort`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='公告表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='公告表';
 
 -- ----------------------------
 -- Records of wb_notice
 -- ----------------------------
+INSERT INTO `wb_notice` VALUES ('1', '恭贺月亮姐姐-灵境集小程序上线', '恭贺月亮姐姐-灵境集小程序上线', '1', '1769242818', '100', null);
 
 -- ----------------------------
 -- Table structure for wb_operation
@@ -6551,7 +6574,7 @@ CREATE TABLE `wb_operation_log` (
   `ctime` bigint(12) unsigned DEFAULT NULL COMMENT '操作时间',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx` (`manage_id`,`controller`,`method`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='后台操作记录表';
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='后台操作记录表';
 
 -- ----------------------------
 -- Records of wb_operation_log
@@ -6565,6 +6588,32 @@ INSERT INTO `wb_operation_log` VALUES ('6', '13', 'payments', 'edit', '支付方
 INSERT INTO `wb_operation_log` VALUES ('7', '13', 'user', 'adduser', '添加会员', '{\"mobile\":\"18919660526\",\"username\":\"xyh66306\",\"password\":\"qq123456\",\"repassword\":\"qq123456\",\"sex\":\"1\",\"birthday\":\"2025-11-14\",\"grade\":\"1\",\"status\":\"1\",\"nickname\":\"xyh66306\",\"pid\":\"\",\"avatar\":\"\",\"remarks\":\"\",\"validate_form\":\"add_user\",\"__Jshop_Token__\":\"a11dd1cb7aaa0dcc2179feb762c12f6013cf99c9\"}', '117.67.130.40', '1763106543');
 INSERT INTO `wb_operation_log` VALUES ('8', '13', 'operation', 'add', '节点编辑：分佣', '{\"id\":\"\",\"parent_id\":\"2\",\"name\":\"\\u5206\\u4f63\",\"code\":\"Commission\",\"parent_menu_id\":\"2\",\"type\":\"c\",\"perm_type\":\"1\",\"sort\":\"100\",\"validate_form\":\"operation_add\",\"__Jshop_Token__\":\"a45a7dc3a596fa29f56c6eff40b7886cf909f737\"}', '117.67.130.40', '1763114754');
 INSERT INTO `wb_operation_log` VALUES ('9', '13', 'operation', 'add', '节点编辑：分佣列表', '{\"id\":\"\",\"parent_id\":\"611\",\"name\":\"\\u5206\\u4f63\\u5217\\u8868\",\"code\":\"index\",\"parent_menu_id\":\"611\",\"type\":\"a\",\"perm_type\":\"1\",\"sort\":\"100\",\"validate_form\":\"operation_add\",\"__Jshop_Token__\":\"128407c216ed4f97ab31f55cd95cd53453323c73\"}', '117.67.130.40', '1763114799');
+INSERT INTO `wb_operation_log` VALUES ('10', '13', 'carouselseat', 'add', '广告位添加：首页幻灯片', '{\"name\":\"\\u9996\\u9875\\u5e7b\\u706f\\u7247\",\"code\":\"tpl1_slider\",\"sort\":\"100\"}', '117.67.227.41', '1769068817');
+INSERT INTO `wb_operation_log` VALUES ('11', '13', 'carousel', 'add', '广告添加：banner1', '{\"position_id\":\"1\",\"name\":\"banner1\",\"img\":\"4a35bb6e7c678cbfec0bc1b8e0c8cb46\",\"type\":\"5\",\"url\":\"\",\"goods_id\":\"\",\"goods\":\"\",\"article_id\":\"\",\"article\":\"\",\"article_type_id\":\"\",\"article_type\":\"\",\"form_id\":\"\",\"form\":\"\",\"sort\":\"100\",\"validate_form\":\"carousel_add\",\"__Jshop_Token__\":\"861d6a7b9685556a9a0c231438d90a18e911649d\"}', '117.67.227.41', '1769070324');
+INSERT INTO `wb_operation_log` VALUES ('12', '13', 'notice', 'add', '公告添加', '{\"title\":\"\\u606d\\u8d3a\\u6708\\u4eae\\u59d0\\u59d0-\\u7075\\u5883\\u96c6\\u5c0f\\u7a0b\\u5e8f\\u4e0a\\u7ebf\",\"content\":\"\\u606d\\u8d3a\\u6708\\u4eae\\u59d0\\u59d0-\\u7075\\u5883\\u96c6\\u5c0f\\u7a0b\\u5e8f\\u4e0a\\u7ebf\",\"sort\":\"100\",\"validate_form\":\"notice_add\",\"__Jshop_Token__\":\"c8bfedb0c8e9148cfaa0520e9baa1e181b903a4a\"}', '117.67.227.41', '1769242818');
+INSERT INTO `wb_operation_log` VALUES ('13', '13', 'categories', 'edit', '编辑商品分类：套餐', '{\"id\":\"\",\"parent_id\":\"0\",\"type_id\":\"0\",\"name\":\"\\u5957\\u9910\",\"image_id\":\"\",\"sort\":\"100\",\"validate_form\":\"categories_add\",\"__Jshop_Token__\":\"5f425054b74247e587bad2c081d50a0d9abcfa02\"}', '117.67.227.41', '1769242865');
+INSERT INTO `wb_operation_log` VALUES ('14', '13', 'categories', 'edit', '编辑商品分类：日化产品', '{\"id\":\"\",\"parent_id\":\"0\",\"type_id\":\"0\",\"name\":\"\\u65e5\\u5316\\u4ea7\\u54c1\",\"image_id\":\"\",\"sort\":\"100\",\"validate_form\":\"categories_add\",\"__Jshop_Token__\":\"dd96a5875817b8997deb7bebad1a333e1cb30d99\"}', '117.67.227.41', '1769242874');
+INSERT INTO `wb_operation_log` VALUES ('15', '13', 'categories', 'edit', '编辑商品分类：化妆品', '{\"id\":\"\",\"parent_id\":\"0\",\"type_id\":\"0\",\"name\":\"\\u5316\\u5986\\u54c1\",\"image_id\":\"\",\"sort\":\"100\",\"validate_form\":\"categories_add\",\"__Jshop_Token__\":\"d4f78015d6897589e19238896d8a4b255bdae22a\"}', '117.67.227.41', '1769242880');
+INSERT INTO `wb_operation_log` VALUES ('16', '13', 'goods', 'getspec', '获取规格信息', '{\"type_id\":\"3\",\"__Jshop_Token__\":\"977057f78d048b1f542a691941557b6277d096bc\",\"validate_form\":\"goods_add\"}', '117.67.227.41', '1769242893');
+INSERT INTO `wb_operation_log` VALUES ('17', '13', 'goods', 'doadd', '保存商品', '{\"goods_cat_id\":\"1\",\"goods_type_id\":\"3\",\"goods\":{\"name\":\"\\u5957\\u9910\\u4e00\",\"bn\":\"\",\"brand_id\":\"\",\"brief\":\"\",\"img\":[\"03c7a4f333b2b1b347c7011df0f2adda\",\"3f273726fa51be309e2ee232cdcaa516\"],\"new_spec\":{\"32\":[\"\\u89c4\\u683c1\"],\"33\":[\"\\u89c4\\u683c2\"],\"34\":[\"\\u89c4\\u683c3\"],\"35\":[\"\\u89c4\\u683c4\"],\"36\":[\"\\u89c4\\u683c5\"],\"37\":[\"\\u89c4\\u683c6\"],\"38\":[\"\\u89c4\\u683c7\"],\"39\":[\"\\u89c4\\u683c8\"],\"40\":[\"\\u89c4\\u683c9\"],\"41\":[\"\\u89c4\\u683c10\"],\"42\":[\"\\u89c4\\u683c11\"],\"43\":[\"\\u89c4\\u683c12\"],\"44\":[\"\\u89c4\\u683c13\"],\"45\":[\"\\u89c4\\u683c14\"],\"46\":[\"\\u89c4\\u683c15\"],\"47\":[\"\\u89c4\\u683c16\"],\"48\":[\"\\u89c4\\u683c17\"],\"49\":[\"\\u89c4\\u683c18\"],\"50\":[\"\\u89c4\\u683c19\"],\"51\":[\"\\u89c4\\u683c20\"],\"52\":[\"\\u89c4\\u683c21\"],\"53\":[\"\\u89c4\\u683c22\"],\"54\":[\"\\u89c4\\u683c23\"],\"55\":[\"\\u89c4\\u683c24\"],\"56\":[\"\\u89c4\\u683c25\"],\"57\":[\"\\u89c4\\u683c26\"],\"58\":[\"\\u89c4\\u683c27\"],\"59\":[\"\\u89c4\\u683c28\"],\"60\":[\"\\u89c4\\u683c29\"],\"61\":[\"\\u89c4\\u683c30\"],\"62\":[\"\\u89c4\\u683c31\"],\"63\":[\"\\u89c4\\u683c32\"],\"64\":[\"\\u89c4\\u683c33\"],\"65\":[\"\\u89c4\\u683c34\"],\"66\":[\"\\u89c4\\u683c35\"],\"67\":[\"\\u89c4\\u683c36\"],\"68\":[\"\\u89c4\\u683c37\"],\"69\":[\"\\u89c4\\u683c38\"],\"70\":[\"\\u89c4\\u683c39\"],\"71\":[\"\\u89c4\\u683c40\"]},\"price\":\"198\",\"costprice\":\"\",\"mktprice\":\"\",\"sn\":\"\",\"stock\":\"9999\",\"params\":{\"\\u4ea7\\u5730\":\"\",\"\\u6750\\u8d28\":\"\",\"\\u578b\\u53f7\":\"\"},\"grade_price\":{\"1\":\"\"},\"open_point\":\"3\",\"point\":\"\",\"weight\":\"\",\"unit\":\"\",\"marketable\":\"1\"},\"type_id\":\"3\",\"open_spec\":\"0\",\"validate_form\":\"goods_add\",\"__Jshop_Token__\":\"9c85006da18e99d92403b977224e3ab8d335799b\"}', '117.67.227.41', '1769244930');
+INSERT INTO `wb_operation_log` VALUES ('18', '13', 'user', 'gradeadd', '添加&修改：VIP', '{\"id\":\"2\",\"name\":\"VIP\",\"validate_form\":\"grade_edit\",\"__Jshop_Token__\":\"9d4de245c67e5a727f2056b9a02f2ae7d2193ab6\"}', '117.67.227.41', '1769244950');
+INSERT INTO `wb_operation_log` VALUES ('19', '13', 'user', 'gradeadd', '添加&修改：合伙人', '{\"id\":\"3\",\"name\":\"\\u5408\\u4f19\\u4eba\",\"validate_form\":\"grade_edit\",\"__Jshop_Token__\":\"6774b777b75853c521b38b10d4d223bc9751f657\"}', '117.67.227.41', '1769244961');
+INSERT INTO `wb_operation_log` VALUES ('20', '13', 'addons', 'install', '安装插件：Userupgrade', '{\"name\":\"Userupgrade\"}', '117.67.227.41', '1769244990');
+INSERT INTO `wb_operation_log` VALUES ('21', '13', 'addons', 'setting', '插件配置：Userupgrade', '{\"name\":\"Userupgrade\"}', '117.67.227.41', '1769244994');
+INSERT INTO `wb_operation_log` VALUES ('22', '13', 'addons', 'dosetting', '保存配置：Userupgrade', '{\"setting\":{\"jshop\":\"www.jihainet.com\"},\"name\":\"Userupgrade\"}', '117.67.227.41', '1769245001');
+INSERT INTO `wb_operation_log` VALUES ('23', '13', 'addons', 'install', '安装插件：Wxdelivery', '{\"name\":\"Wxdelivery\"}', '117.67.227.41', '1769245007');
+INSERT INTO `wb_operation_log` VALUES ('24', '13', 'addons', 'install', '安装插件：UserInvite', '{\"name\":\"UserInvite\"}', '117.67.227.41', '1769245015');
+INSERT INTO `wb_operation_log` VALUES ('25', '13', 'addons', 'install', '安装插件：QueueCreate', '{\"name\":\"QueueCreate\"}', '117.67.227.41', '1769245022');
+INSERT INTO `wb_operation_log` VALUES ('26', '13', 'goods', 'doedit', '保存编辑商品信息', '{\"goods_cat_id\":\"1\",\"goods_type_id\":\"3\",\"goods\":{\"name\":\"\\u5957\\u9910\\u4e00\",\"id\":\"1\",\"bn\":\"G7692449305562\",\"brand_id\":\"\",\"brief\":\"\",\"img\":[\"03c7a4f333b2b1b347c7011df0f2adda\",\"3f273726fa51be309e2ee232cdcaa516\"],\"new_spec\":{\"32\":[\"\\u89c4\\u683c1\"],\"33\":[\"\\u89c4\\u683c2\"],\"34\":[\"\\u89c4\\u683c3\"],\"35\":[\"\\u89c4\\u683c4\"],\"36\":[\"\\u89c4\\u683c5\"],\"37\":[\"\\u89c4\\u683c6\"],\"38\":[\"\\u89c4\\u683c7\"],\"39\":[\"\\u89c4\\u683c8\"],\"40\":[\"\\u89c4\\u683c9\"],\"41\":[\"\\u89c4\\u683c10\"],\"42\":[\"\\u89c4\\u683c11\"],\"43\":[\"\\u89c4\\u683c12\"],\"44\":[\"\\u89c4\\u683c13\"],\"45\":[\"\\u89c4\\u683c14\"],\"46\":[\"\\u89c4\\u683c15\"],\"47\":[\"\\u89c4\\u683c16\"],\"48\":[\"\\u89c4\\u683c17\"],\"49\":[\"\\u89c4\\u683c18\"],\"50\":[\"\\u89c4\\u683c19\"],\"51\":[\"\\u89c4\\u683c20\"],\"52\":[\"\\u89c4\\u683c21\"],\"53\":[\"\\u89c4\\u683c22\"],\"54\":[\"\\u89c4\\u683c23\"],\"55\":[\"\\u89c4\\u683c24\"],\"56\":[\"\\u89c4\\u683c25\"],\"57\":[\"\\u89c4\\u683c26\"],\"58\":[\"\\u89c4\\u683c27\"],\"59\":[\"\\u89c4\\u683c28\"],\"60\":[\"\\u89c4\\u683c29\"],\"61\":[\"\\u89c4\\u683c30\"],\"62\":[\"\\u89c4\\u683c31\"],\"63\":[\"\\u89c4\\u683c32\"],\"64\":[\"\\u89c4\\u683c33\"],\"65\":[\"\\u89c4\\u683c34\"],\"66\":[\"\\u89c4\\u683c35\"],\"67\":[\"\\u89c4\\u683c36\"],\"68\":[\"\\u89c4\\u683c37\"],\"69\":[\"\\u89c4\\u683c38\"],\"70\":[\"\\u89c4\\u683c39\"],\"71\":[\"\\u89c4\\u683c40\"]},\"price\":\"198.00\",\"costprice\":\"0.00\",\"mktprice\":\"0.00\",\"sn\":\"P7692449305663\",\"stock\":\"0\",\"params\":{\"\\u4ea7\\u5730\":\"\",\"\\u6750\\u8d28\":\"\",\"\\u578b\\u53f7\":\"\"},\"grade_price\":{\"1\":\"0.00\",\"2\":\"\",\"3\":\"\"},\"open_point\":\"3\",\"point\":\"0\",\"weight\":\"0.00\",\"unit\":\"\",\"marketable\":\"1\",\"is_hot\":\"1\",\"intro\":\"\"},\"product\":{\"id\":\"1\"},\"open_spec\":\"0\",\"validate_form\":\"goods_edit\",\"__Jshop_Token__\":\"656025063df33b99f17742cc3838752d44dc3de5\"}', '117.67.227.41', '1769245326');
+INSERT INTO `wb_operation_log` VALUES ('27', '13', 'user', 'edituser', '会员编辑：1', '{\"id\":\"1\",\"password\":\"\",\"repassword\":\"\",\"sex\":\"1\",\"area_id\":\"0\",\"area_id_1\":\"\",\"grade\":\"1\",\"status\":\"1\",\"nickname\":\"xyh66306\",\"pid\":\"\",\"avatar\":\"https:\\/\\/ljmaoyi.wobeis.com\\/static\\/uploads\\/images\\/2026\\/01\\/22\\/176905393169719eeb126ba.png\",\"remarks\":\"\",\"validate_form\":\"edit_user\",\"__Jshop_Token__\":\"8e03523cf4bf91d29cbe0249dab61b59c071ff33\"}', '127.0.0.1', '1769250198');
+INSERT INTO `wb_operation_log` VALUES ('28', '13', 'hooks', 'add', '添加钩子：addUserInviteLog', '{\"name\":\"addUserInviteLog\",\"description\":\"\\u7528\\u6237\\u6ce8\\u518c\\u540e\\u589e\\u52a0\\u7528\\u6237\\u9080\\u8bf7\\u8bb0\\u5f55\\u8868\\u6570\\u636e\",\"type\":\"1\",\"validate_form\":\"hooks_add\",\"__Jshop_Token__\":\"32baf4e4f787316207984585bf1676b778c86cbb\"}', '117.67.227.41', '1769250317');
+INSERT INTO `wb_operation_log` VALUES ('29', '13', 'hooks', 'add', '添加钩子：queue', '{\"name\":\"queue\",\"description\":\"\\u521b\\u5efathink-queue\\u4efb\\u52a1\",\"type\":\"1\",\"validate_form\":\"hooks_add\",\"__Jshop_Token__\":\"682aeed06db92db4786bb66d353a51fd50059f11\"}', '117.67.227.41', '1769250328');
+INSERT INTO `wb_operation_log` VALUES ('30', '13', 'hooks', 'add', '添加钩子：deliveryOrder', '{\"name\":\"deliveryOrder\",\"description\":\"\\u5fae\\u4fe1\\u53d1\\u8d27\\u7ba1\\u7406\",\"type\":\"1\",\"validate_form\":\"hooks_add\",\"__Jshop_Token__\":\"460925991658378216d87289a6df5d620cbb86dd\"}', '117.67.227.41', '1769250347');
+INSERT INTO `wb_operation_log` VALUES ('31', '13', 'addons', 'refresh', '插件刷新：QueueCreate', '{\"name\":\"QueueCreate\"}', '117.67.227.41', '1769250361');
+INSERT INTO `wb_operation_log` VALUES ('32', '13', 'addons', 'refresh', '插件刷新：UserInvite', '{\"name\":\"UserInvite\"}', '117.67.227.41', '1769250366');
+INSERT INTO `wb_operation_log` VALUES ('33', '13', 'addons', 'refresh', '插件刷新：Wxdelivery', '{\"name\":\"Wxdelivery\"}', '117.67.227.41', '1769250371');
+INSERT INTO `wb_operation_log` VALUES ('34', '13', 'addons', 'setting', '插件配置：Wxdelivery', '{\"name\":\"Wxdelivery\"}', '117.67.227.41', '1769250374');
+INSERT INTO `wb_operation_log` VALUES ('35', '13', 'user', 'edituser', '会员编辑：1', '{\"id\":\"1\",\"password\":\"\",\"repassword\":\"\",\"sex\":\"1\",\"area_id\":\"340203\",\"area_id_1\":\"340000\",\"area_id_2\":\"340200\",\"area_id_3\":\"340203\",\"grade\":\"1\",\"status\":\"1\",\"nickname\":\"xyh66306\",\"pid\":\"\",\"avatar\":\"https:\\/\\/ljmaoyi.wobeis.com\\/static\\/uploads\\/images\\/2026\\/01\\/22\\/176905393169719eeb126ba.png\",\"remarks\":\"\",\"validate_form\":\"edit_user\",\"__Jshop_Token__\":\"654559e582b24349a95dde8eb6895d42441bd9f0\"}', '117.67.227.41', '1769250425');
 
 -- ----------------------------
 -- Table structure for wb_order
@@ -6862,11 +6911,12 @@ CREATE TABLE `wb_products` (
   KEY `isdel` (`isdel`) USING BTREE,
   KEY `goods_id` (`goods_id`) USING BTREE,
   KEY `id` (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='货品表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='货品表';
 
 -- ----------------------------
 -- Records of wb_products
 -- ----------------------------
+INSERT INTO `wb_products` VALUES ('1', '1', null, 'P7692449305663', '198.00', '0.00', '0.00', '1', '9999', '0', null, '1', '03c7a4f333b2b1b347c7011df0f2adda', null);
 
 -- ----------------------------
 -- Table structure for wb_promotion
@@ -6972,26 +7022,40 @@ CREATE TABLE `wb_setting` (
 INSERT INTO `wb_setting` VALUES ('about_article', '');
 INSERT INTO `wb_setting` VALUES ('about_article_id', '1');
 INSERT INTO `wb_setting` VALUES ('cate_style', '1');
+INSERT INTO `wb_setting` VALUES ('continuity_sign_additional', '1');
+INSERT INTO `wb_setting` VALUES ('first_sign_point', '1');
 INSERT INTO `wb_setting` VALUES ('goods_show_word1', '24小时内发货');
 INSERT INTO `wb_setting` VALUES ('goods_show_word2', '7天无理由退款');
 INSERT INTO `wb_setting` VALUES ('goods_stocks_warn', '10');
 INSERT INTO `wb_setting` VALUES ('invoice_switch', '2');
 INSERT INTO `wb_setting` VALUES ('is_bind_mobile', '2');
+INSERT INTO `wb_setting` VALUES ('open_point_exchange', '2');
+INSERT INTO `wb_setting` VALUES ('orders_point_proportion', '10');
+INSERT INTO `wb_setting` VALUES ('orders_reward_proportion', '1');
+INSERT INTO `wb_setting` VALUES ('point_discounted_proportion', '100');
 INSERT INTO `wb_setting` VALUES ('point_rule', '');
 INSERT INTO `wb_setting` VALUES ('point_rule_id', '3');
+INSERT INTO `wb_setting` VALUES ('point_switch', '2');
 INSERT INTO `wb_setting` VALUES ('privacy_policy', '');
 INSERT INTO `wb_setting` VALUES ('privacy_policy_id', '3');
-INSERT INTO `wb_setting` VALUES ('recommend_keys', '九蕴天香');
+INSERT INTO `wb_setting` VALUES ('recommend_keys', '洗洁精');
 INSERT INTO `wb_setting` VALUES ('share_desc', '');
 INSERT INTO `wb_setting` VALUES ('share_image', '');
 INSERT INTO `wb_setting` VALUES ('share_title', '优质好店邀您共享');
 INSERT INTO `wb_setting` VALUES ('shop_beian', '网站备案信息');
-INSERT INTO `wb_setting` VALUES ('shop_default_image', '8a2e37390ca73fdfa5af28b78735589f');
-INSERT INTO `wb_setting` VALUES ('shop_desc', '万森健康生活馆');
-INSERT INTO `wb_setting` VALUES ('shop_logo', '8a2e37390ca73fdfa5af28b78735589f');
+INSERT INTO `wb_setting` VALUES ('shop_default_image', '439f3439b1cb6e81c2c17d26619eb663');
+INSERT INTO `wb_setting` VALUES ('shop_desc', '月亮姐姐-灵境集');
+INSERT INTO `wb_setting` VALUES ('shop_logo', '439f3439b1cb6e81c2c17d26619eb663');
 INSERT INTO `wb_setting` VALUES ('shop_mobile', '');
-INSERT INTO `wb_setting` VALUES ('shop_name', '万森健康生活馆');
+INSERT INTO `wb_setting` VALUES ('shop_name', '月亮姐姐-灵境集');
+INSERT INTO `wb_setting` VALUES ('sign_most_point', '10');
+INSERT INTO `wb_setting` VALUES ('sign_point_type', '2');
+INSERT INTO `wb_setting` VALUES ('sign_random_max', '10');
+INSERT INTO `wb_setting` VALUES ('sign_random_min', '1');
 INSERT INTO `wb_setting` VALUES ('store_switch', '2');
+INSERT INTO `wb_setting` VALUES ('tocash_money_limit', '1000');
+INSERT INTO `wb_setting` VALUES ('tocash_money_low', '10');
+INSERT INTO `wb_setting` VALUES ('tocash_money_rate', '0');
 INSERT INTO `wb_setting` VALUES ('user_agreement', '');
 INSERT INTO `wb_setting` VALUES ('user_agreement_id', '2');
 
@@ -7165,6 +7229,8 @@ CREATE TABLE `wb_user` (
   `remarks` varchar(100) DEFAULT '' COMMENT '备注',
   `team_value` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '团队消费',
   `exp` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '消费券',
+  `area_id` int(10) DEFAULT '0' COMMENT '代理区域',
+  `sparent_id` varchar(255) DEFAULT NULL COMMENT '父亲ids',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx` (`username`,`mobile`,`status`,`pid`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='用户表';
@@ -7172,7 +7238,7 @@ CREATE TABLE `wb_user` (
 -- ----------------------------
 -- Records of wb_user
 -- ----------------------------
-INSERT INTO `wb_user` VALUES ('1', 'xyh66306', '6bcc1e483dd5756fa3e710792fd64bd9', '18919660526', '1', '2025-11-14', '', 'xyh66306', '0.00', '0', '1', '1763106543', '1763106543', '1', '0', null, '', '0.00', '0.00');
+INSERT INTO `wb_user` VALUES ('1', 'xyh66306', '6bcc1e483dd5756fa3e710792fd64bd9', '18919660526', '1', null, 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png', 'xyh66306', '0.00', '8', '1', '1763106543', '1769250425', '1', '0', null, '', '0.00', '0.00', '340203', 'A1A');
 
 -- ----------------------------
 -- Table structure for wb_user_bankcards
@@ -7247,6 +7313,7 @@ CREATE TABLE `wb_user_grade` (
   `id` tinyint(2) unsigned NOT NULL COMMENT 'id',
   `name` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '名称',
   `is_def` tinyint(1) NOT NULL DEFAULT '2' COMMENT '1默认，2不默认',
+  `money` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '订单升级金额',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户等级表';
@@ -7254,7 +7321,29 @@ CREATE TABLE `wb_user_grade` (
 -- ----------------------------
 -- Records of wb_user_grade
 -- ----------------------------
-INSERT INTO `wb_user_grade` VALUES ('1', '普通等级', '1');
+INSERT INTO `wb_user_grade` VALUES ('1', '普通等级', '1', '0.00');
+INSERT INTO `wb_user_grade` VALUES ('2', 'VIP', '2', '198.00');
+INSERT INTO `wb_user_grade` VALUES ('3', '合伙人', '2', '1980.00');
+
+-- ----------------------------
+-- Table structure for wb_user_grade_log
+-- ----------------------------
+DROP TABLE IF EXISTS `wb_user_grade_log`;
+CREATE TABLE `wb_user_grade_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `old_grade` tinyint(1) DEFAULT '0' COMMENT '用户升级之前的等级',
+  `current_grade` tinyint(1) DEFAULT '0' COMMENT '用户升级之后的等级（当前等级）',
+  `params` varchar(5000) DEFAULT NULL,
+  `ctime` int(11) DEFAULT NULL,
+  `endtime` int(11) DEFAULT NULL COMMENT '到期时间',
+  `type` tinyint(1) DEFAULT '0' COMMENT '升级的途径1累计消费 2直接购买VIP 3满足条件4 后台修改',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='用户等级变动记录表';
+
+-- ----------------------------
+-- Records of wb_user_grade_log
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for wb_user_log
@@ -7270,7 +7359,7 @@ CREATE TABLE `wb_user_log` (
   `type` tinyint(1) unsigned DEFAULT '1' COMMENT '类型，1会员，2管理员',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx` (`user_id`,`state`,`type`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of wb_user_log
@@ -7278,6 +7367,16 @@ CREATE TABLE `wb_user_log` (
 INSERT INTO `wb_user_log` VALUES ('1', '13', '1', '1763105170', '[]', '117.67.130.40', '2');
 INSERT INTO `wb_user_log` VALUES ('2', '13', '3', '1763106543', '[]', '117.67.130.40', '1');
 INSERT INTO `wb_user_log` VALUES ('3', '1', '1', '1763106646', '[]', '117.67.130.40', '1');
+INSERT INTO `wb_user_log` VALUES ('4', '13', '1', '1769053748', '[]', '117.67.227.41', '2');
+INSERT INTO `wb_user_log` VALUES ('5', '13', '2', '1769053802', '[]', '117.67.227.41', '2');
+INSERT INTO `wb_user_log` VALUES ('6', '13', '1', '1769053867', '[]', '117.67.227.41', '2');
+INSERT INTO `wb_user_log` VALUES ('7', '13', '2', '1769053890', '[]', '117.67.227.41', '2');
+INSERT INTO `wb_user_log` VALUES ('8', '13', '1', '1769053898', '[]', '117.67.227.41', '2');
+INSERT INTO `wb_user_log` VALUES ('9', '13', '1', '1769065203', '[]', '117.67.227.41', '2');
+INSERT INTO `wb_user_log` VALUES ('10', '1', '1', '1769065328', '[]', '117.67.227.41', '1');
+INSERT INTO `wb_user_log` VALUES ('11', '1', '1', '1769066857', '[]', '117.67.227.41', '1');
+INSERT INTO `wb_user_log` VALUES ('12', '13', '1', '1769226488', '[]', '117.67.227.41', '2');
+INSERT INTO `wb_user_log` VALUES ('13', '1', '1', '1769226642', '[]', '117.67.227.41', '1');
 
 -- ----------------------------
 -- Table structure for wb_user_point_log
@@ -7294,11 +7393,12 @@ CREATE TABLE `wb_user_point_log` (
   `ctime` bigint(12) unsigned DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `idx` (`user_id`,`type`,`ctime`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='用户积分记录表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='用户积分记录表';
 
 -- ----------------------------
 -- Records of wb_user_point_log
 -- ----------------------------
+INSERT INTO `wb_user_point_log` VALUES ('1', '1', '1', '8', '8', '8', '积分签到，获得8个积分', '1769066898');
 
 -- ----------------------------
 -- Table structure for wb_user_ship
@@ -7364,7 +7464,7 @@ CREATE TABLE `wb_user_token` (
 -- ----------------------------
 -- Records of wb_user_token
 -- ----------------------------
-INSERT INTO `wb_user_token` VALUES ('880ab1f0377ce8dbbf028e36b05a39ac', '1', '1', '1763106646');
+INSERT INTO `wb_user_token` VALUES ('c5215718f031dbf961d3c04060faac4c', '1', '1', '1769226642');
 
 -- ----------------------------
 -- Table structure for wb_user_wx
@@ -7552,4 +7652,24 @@ CREATE TABLE `wb_wsdetail` (
 
 -- ----------------------------
 -- Records of wb_wsdetail
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for wb_wxdelivery
+-- ----------------------------
+DROP TABLE IF EXISTS `wb_wxdelivery`;
+CREATE TABLE `wb_wxdelivery` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` varchar(20) NOT NULL,
+  `delivery_id` varchar(20) NOT NULL,
+  `status` tinyint(2) NOT NULL COMMENT '状态，1待提交，2提交成功，3提交失败',
+  `senddata` text NOT NULL,
+  `redata` text NOT NULL,
+  `ctime` bigint(20) NOT NULL,
+  `utime` bigint(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='微信发货单表';
+
+-- ----------------------------
+-- Records of wb_wxdelivery
 -- ----------------------------
