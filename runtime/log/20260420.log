@@ -1,0 +1,209 @@
+---------------------------------------------------------------
+[2026-04-20T16:38:15+08:00] 127.0.0.1 GET localhost/
+[运行时间：0.070451s] [吞吐率：14.19req/s] [内存消耗：2,937.13kb] [文件加载：89]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'admin_username=admin; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:38:18+08:00] 127.0.0.1 GET localhost/manage
+[运行时间：0.041753s] [吞吐率：23.95req/s] [内存消耗：3,001.62kb] [文件加载：97]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'admin_username=admin; _aihecong_chat_visibility=true',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-purpose' => 'prefetch;prerender',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:38:18+08:00] 127.0.0.1 GET localhost/manage/common/login.html
+[运行时间：0.068007s] [吞吐率：14.70req/s] [内存消耗：4,437.17kb] [文件加载：106]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'admin_username=admin; _aihecong_chat_visibility=true; PHPSESSID=12f56b9i97421r7rm03bbpqlto; jshop_redirect_url=%2Fmanage',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-purpose' => 'prefetch;prerender',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\common\login.html [ array (
+  0 => 'params',
+  1 => 'shop_name',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001830s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.006312s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.001730s ]
+---------------------------------------------------------------
+[2026-04-20T16:38:18+08:00] 127.0.0.1 GET localhost/captcha.html
+[运行时间：0.034460s] [吞吐率：29.02req/s] [内存消耗：2,492.53kb] [文件加载：77]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'admin_username=admin; _aihecong_chat_visibility=true; PHPSESSID=12f56b9i97421r7rm03bbpqlto; jshop_redirect_url=%2Fmanage',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost/manage/common/login.html',
+  'sec-fetch-dest' => 'image',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-purpose' => 'prefetch;prerender',
+  'sec-ch-ua' => '"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:38:20+08:00] 127.0.0.1 POST localhost/manage/common/login.html
+[运行时间：0.054373s] [吞吐率：18.39req/s] [内存消耗：4,261.62kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'admin_username=admin; PHPSESSID=12f56b9i97421r7rm03bbpqlto; jshop_redirect_url=%2Fmanage; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost/manage/common/login.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost',
+  'sec-ch-ua-mobile' => '?0',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'sec-ch-ua' => '"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-platform' => '"Windows"',
+  'content-length' => '116',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'yixin',
+  'password' => 'yixin520',
+  'captcha' => '',
+  'validate_form' => 'login',
+  '__Jshop_Token__' => '36d17fa8c65bf55ce402dce309dc6040af62e79d',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] {"status":false,"data":11088,"msg":"\u6ca1\u6709\u627e\u5230\u63a7\u5236\u5668\uff0c\u8bf7\u8054\u7cfb\u5e73\u53f0\u7ba1\u7406\u5458"}
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000876s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation` [ RunTime:0.004233s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` WHERE  `type` = 'c'  AND `code` = 'common'  AND `parent_id` = 2 LIMIT 1 [ RunTime:0.001130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001712s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.003963s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `username` = 'yixin' OR `mobile` = 'yixin' LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000113s ]
+---------------------------------------------------------------
+[2026-04-20T16:38:21+08:00] 127.0.0.1 GET localhost/captcha.html?1776674300974
+[运行时间：0.027458s] [吞吐率：36.42req/s] [内存消耗：2,491.84kb] [文件加载：77]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'admin_username=admin; PHPSESSID=12f56b9i97421r7rm03bbpqlto; jshop_redirect_url=%2Fmanage; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br, zstd',
+  'referer' => 'http://localhost/manage/common/login.html',
+  'sec-fetch-dest' => 'image',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'sec-ch-ua-platform' => '"Windows"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '',
+)

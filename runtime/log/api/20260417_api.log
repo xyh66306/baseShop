@@ -1,0 +1,4583 @@
+---------------------------------------------------------------
+[2026-04-17T11:33:06+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'client' => '2',
+  'url' => '/pages/share/jump',
+  'type' => '1',
+  'page' => '1',
+  'method' => 'user.share',
+)
+[ api ] array (
+  'status' => true,
+  'data' => '/pages/share/jump?scene=1--',
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:33:06+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'page' => '1',
+  'limit' => '5',
+  'method' => 'pages.gethomepageconfig',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  app\common\model\Pages::__set_state(array(
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'is_main',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'Pages',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+      'items' => 
+      array (
+        0 => 
+        array (
+          'id' => 5,
+          'widget_code' => 'search',
+          'page_code' => 'mobile_home',
+          'position_id' => 0,
+          'sort' => 1,
+          'params' => 
+          array (
+            'keywords' => '请输入关键字搜索',
+            'style' => 'round',
+          ),
+        ),
+        1 => 
+        array (
+          'id' => 6,
+          'widget_code' => 'imgSlide',
+          'page_code' => 'mobile_home',
+          'position_id' => 1,
+          'sort' => 2,
+          'params' => 
+          array (
+            'duration' => 2500,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        2 => 
+        array (
+          'id' => 7,
+          'widget_code' => 'notice',
+          'page_code' => 'mobile_home',
+          'position_id' => 2,
+          'sort' => 3,
+          'params' => 
+          array (
+            'type' => 'auto',
+            'list' => 
+            think\model\Collection::__set_state(array(
+               'items' => 
+              array (
+                0 => 
+                app\common\model\Notice::__set_state(array(
+                   'deleteTime' => 'isdel',
+                   'autoWriteTimestamp' => true,
+                   'createTime' => 'ctime',
+                   'rule' => 
+                  array (
+                    'title' => 'require',
+                    'content' => 'require',
+                    'sort' => 'number|max:5',
+                  ),
+                   'msg' => 
+                  array (
+                    'title.require' => '请输入标题名称',
+                    'content.require' => '请输入公告内容',
+                    'sort.number' => '排序只能是数字',
+                    'sort.max' => '排序长度超出限制',
+                  ),
+                   'exists' => true,
+                   'replace' => false,
+                   'force' => false,
+                   'updateWhere' => NULL,
+                   'connection' => 
+                  array (
+                  ),
+                   'query' => NULL,
+                   'name' => 'Notice',
+                   'table' => NULL,
+                   'auto' => 
+                  array (
+                  ),
+                   'insert' => 
+                  array (
+                  ),
+                   'update' => 
+                  array (
+                  ),
+                   'queryInstance' => NULL,
+                   'error' => NULL,
+                   'defaultSoftDelete' => NULL,
+                   'globalScope' => 
+                  array (
+                  ),
+                   'pk' => 'id',
+                   'field' => 
+                  array (
+                  ),
+                   'json' => 
+                  array (
+                  ),
+                   'jsonAssoc' => false,
+                   'jsonType' => 
+                  array (
+                  ),
+                   'disuse' => 
+                  array (
+                  ),
+                   'readonly' => 
+                  array (
+                  ),
+                   'type' => 
+                  array (
+                  ),
+                   'data' => 
+                  array (
+                    'id' => 1,
+                    'title' => '恭贺月亮姐姐-灵境集小程序上线',
+                    'ctime' => 1769242818,
+                  ),
+                   'set' => 
+                  array (
+                  ),
+                   'origin' => 
+                  array (
+                    'id' => 1,
+                    'title' => '恭贺月亮姐姐-灵境集小程序上线',
+                    'ctime' => 1769242818,
+                  ),
+                   'withAttr' => 
+                  array (
+                  ),
+                   'parent' => NULL,
+                   'relation' => 
+                  array (
+                  ),
+                   'together' => NULL,
+                   'relationWrite' => NULL,
+                   'observerClass' => NULL,
+                   'withEvent' => true,
+                   'updateTime' => 'update_time',
+                   'dateFormat' => false,
+                   'visible' => 
+                  array (
+                  ),
+                   'hidden' => 
+                  array (
+                  ),
+                   'append' => 
+                  array (
+                  ),
+                   'resultSetType' => 'collection',
+                   'withTrashed' => false,
+                )),
+              ),
+            )),
+          ),
+        ),
+        3 => 
+        array (
+          'id' => 8,
+          'widget_code' => 'navBar',
+          'page_code' => 'mobile_home',
+          'position_id' => 3,
+          'sort' => 4,
+          'params' => 
+          array (
+            'limit' => 4,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮1',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮2',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              2 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮3',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              3 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮4',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        4 => 
+        array (
+          'id' => 9,
+          'widget_code' => 'goods',
+          'page_code' => 'mobile_home',
+          'position_id' => 4,
+          'sort' => 5,
+          'params' => 
+          array (
+            'title' => '热门商品',
+            'lookMore' => 'true',
+            'type' => 'auto',
+            'classifyId' => '',
+            'brandId' => '',
+            'limit' => 10,
+            'display' => 'list',
+            'column' => 2,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'id' => 1,
+                'name' => '套餐一',
+                'bn' => 'G7692449305562',
+                'brief' => '',
+                'price' => '198.00',
+                'mktprice' => '0.00',
+                'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                'goods_cat_id' => 1,
+                'goods_type_id' => 3,
+                'brand_id' => 0,
+                'is_nomal_virtual' => 1,
+                'marketable' => 1,
+                'stock' => 9999,
+                'weight' => '0.00',
+                'unit' => '',
+                'spes_desc' => '',
+                'params' => 'a:0:{}',
+                'comments_count' => 0,
+                'view_count' => 0,
+                'buy_count' => 0,
+                'sort' => 100,
+                'is_recommend' => 2,
+                'is_hot' => 1,
+                'label_ids' => 
+                array (
+                ),
+                'cat_name' => '套餐',
+                'image_url' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                'product' => 
+                array (
+                  'id' => 1,
+                  'goods_id' => 1,
+                  'barcode' => NULL,
+                  'sn' => 'P7692449305663',
+                  'price' => '198.00',
+                  'mktprice' => '0.00',
+                  'marketable' => 1,
+                  'stock' => 9999,
+                  'spes_desc' => NULL,
+                  'is_defalut' => 1,
+                  'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                  'isdel' => NULL,
+                  'name' => '套餐一',
+                  'point' => 0,
+                  'open_point' => 3,
+                  'bn' => 'G7692449305562',
+                  'image_path' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  'total_stock' => 9999,
+                  'is_combo' => 2,
+                  'grade_price' => 
+                  array (
+                  ),
+                  'grade_info' => 
+                  array (
+                  ),
+                  'amount' => '198.00',
+                  'promotion_list' => 
+                  array (
+                  ),
+                  'promotion_amount' => 0,
+                ),
+                'album' => 
+                array (
+                  0 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  1 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png',
+                ),
+                'isfav' => 'false',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'total' => 8,
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'autoWriteTimestamp' => false,
+     'createTime' => 'create_time',
+     'updateTime' => 'update_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:33:07+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'page' => '2',
+  'limit' => '5',
+  'method' => 'pages.gethomepageconfig',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  app\common\model\Pages::__set_state(array(
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'is_main',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'Pages',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+      'items' => 
+      array (
+        0 => 
+        array (
+          'id' => 10,
+          'widget_code' => 'imgSlide',
+          'page_code' => 'mobile_home',
+          'position_id' => 5,
+          'sort' => 6,
+          'params' => 
+          array (
+            'duration' => 2500,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        1 => 
+        array (
+          'id' => 11,
+          'widget_code' => 'goods',
+          'page_code' => 'mobile_home',
+          'position_id' => 6,
+          'sort' => 7,
+          'params' => 
+          array (
+            'title' => '推荐商品',
+            'lookMore' => 'true',
+            'type' => 'auto',
+            'classifyId' => '',
+            'brandId' => '',
+            'limit' => 10,
+            'display' => 'list',
+            'column' => 2,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'id' => 1,
+                'name' => '套餐一',
+                'bn' => 'G7692449305562',
+                'brief' => '',
+                'price' => '198.00',
+                'mktprice' => '0.00',
+                'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                'goods_cat_id' => 1,
+                'goods_type_id' => 3,
+                'brand_id' => 0,
+                'is_nomal_virtual' => 1,
+                'marketable' => 1,
+                'stock' => 9999,
+                'weight' => '0.00',
+                'unit' => '',
+                'spes_desc' => '',
+                'params' => 'a:0:{}',
+                'comments_count' => 0,
+                'view_count' => 0,
+                'buy_count' => 0,
+                'sort' => 100,
+                'is_recommend' => 2,
+                'is_hot' => 1,
+                'label_ids' => 
+                array (
+                ),
+                'cat_name' => '套餐',
+                'image_url' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                'product' => 
+                array (
+                  'id' => 1,
+                  'goods_id' => 1,
+                  'barcode' => NULL,
+                  'sn' => 'P7692449305663',
+                  'price' => '198.00',
+                  'mktprice' => '0.00',
+                  'marketable' => 1,
+                  'stock' => 9999,
+                  'spes_desc' => NULL,
+                  'is_defalut' => 1,
+                  'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                  'isdel' => NULL,
+                  'name' => '套餐一',
+                  'point' => 0,
+                  'open_point' => 3,
+                  'bn' => 'G7692449305562',
+                  'image_path' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  'total_stock' => 9999,
+                  'is_combo' => 2,
+                  'grade_price' => 
+                  array (
+                  ),
+                  'grade_info' => 
+                  array (
+                  ),
+                  'amount' => '198.00',
+                  'promotion_list' => 
+                  array (
+                  ),
+                  'promotion_amount' => 0,
+                ),
+                'album' => 
+                array (
+                  0 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  1 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png',
+                ),
+                'isfav' => 'false',
+              ),
+            ),
+          ),
+        ),
+        2 => 
+        array (
+          'id' => 12,
+          'widget_code' => 'imgSingle',
+          'page_code' => 'mobile_home',
+          'position_id' => 7,
+          'sort' => 8,
+          'params' => 
+          array (
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'total' => 8,
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'autoWriteTimestamp' => false,
+     'createTime' => 'create_time',
+     'updateTime' => 'update_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:03+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'client' => '2',
+  'url' => '/pages/share/jump',
+  'type' => '1',
+  'page' => '1',
+  'token' => '2c1c5540b555a853d912a374f21f0b1d',
+  'method' => 'user.share',
+)
+[ api ] array (
+  'status' => true,
+  'data' => '/pages/share/jump?scene=1--',
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:03+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'page' => '1',
+  'limit' => '5',
+  'token' => '2c1c5540b555a853d912a374f21f0b1d',
+  'method' => 'pages.gethomepageconfig',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  app\common\model\Pages::__set_state(array(
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'is_main',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'Pages',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+      'items' => 
+      array (
+        0 => 
+        array (
+          'id' => 5,
+          'widget_code' => 'search',
+          'page_code' => 'mobile_home',
+          'position_id' => 0,
+          'sort' => 1,
+          'params' => 
+          array (
+            'keywords' => '请输入关键字搜索',
+            'style' => 'round',
+          ),
+        ),
+        1 => 
+        array (
+          'id' => 6,
+          'widget_code' => 'imgSlide',
+          'page_code' => 'mobile_home',
+          'position_id' => 1,
+          'sort' => 2,
+          'params' => 
+          array (
+            'duration' => 2500,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        2 => 
+        array (
+          'id' => 7,
+          'widget_code' => 'notice',
+          'page_code' => 'mobile_home',
+          'position_id' => 2,
+          'sort' => 3,
+          'params' => 
+          array (
+            'type' => 'auto',
+            'list' => 
+            think\model\Collection::__set_state(array(
+               'items' => 
+              array (
+                0 => 
+                app\common\model\Notice::__set_state(array(
+                   'deleteTime' => 'isdel',
+                   'autoWriteTimestamp' => true,
+                   'createTime' => 'ctime',
+                   'rule' => 
+                  array (
+                    'title' => 'require',
+                    'content' => 'require',
+                    'sort' => 'number|max:5',
+                  ),
+                   'msg' => 
+                  array (
+                    'title.require' => '请输入标题名称',
+                    'content.require' => '请输入公告内容',
+                    'sort.number' => '排序只能是数字',
+                    'sort.max' => '排序长度超出限制',
+                  ),
+                   'exists' => true,
+                   'replace' => false,
+                   'force' => false,
+                   'updateWhere' => NULL,
+                   'connection' => 
+                  array (
+                  ),
+                   'query' => NULL,
+                   'name' => 'Notice',
+                   'table' => NULL,
+                   'auto' => 
+                  array (
+                  ),
+                   'insert' => 
+                  array (
+                  ),
+                   'update' => 
+                  array (
+                  ),
+                   'queryInstance' => NULL,
+                   'error' => NULL,
+                   'defaultSoftDelete' => NULL,
+                   'globalScope' => 
+                  array (
+                  ),
+                   'pk' => 'id',
+                   'field' => 
+                  array (
+                  ),
+                   'json' => 
+                  array (
+                  ),
+                   'jsonAssoc' => false,
+                   'jsonType' => 
+                  array (
+                  ),
+                   'disuse' => 
+                  array (
+                  ),
+                   'readonly' => 
+                  array (
+                  ),
+                   'type' => 
+                  array (
+                  ),
+                   'data' => 
+                  array (
+                    'id' => 1,
+                    'title' => '恭贺月亮姐姐-灵境集小程序上线',
+                    'ctime' => 1769242818,
+                  ),
+                   'set' => 
+                  array (
+                  ),
+                   'origin' => 
+                  array (
+                    'id' => 1,
+                    'title' => '恭贺月亮姐姐-灵境集小程序上线',
+                    'ctime' => 1769242818,
+                  ),
+                   'withAttr' => 
+                  array (
+                  ),
+                   'parent' => NULL,
+                   'relation' => 
+                  array (
+                  ),
+                   'together' => NULL,
+                   'relationWrite' => NULL,
+                   'observerClass' => NULL,
+                   'withEvent' => true,
+                   'updateTime' => 'update_time',
+                   'dateFormat' => false,
+                   'visible' => 
+                  array (
+                  ),
+                   'hidden' => 
+                  array (
+                  ),
+                   'append' => 
+                  array (
+                  ),
+                   'resultSetType' => 'collection',
+                   'withTrashed' => false,
+                )),
+              ),
+            )),
+          ),
+        ),
+        3 => 
+        array (
+          'id' => 8,
+          'widget_code' => 'navBar',
+          'page_code' => 'mobile_home',
+          'position_id' => 3,
+          'sort' => 4,
+          'params' => 
+          array (
+            'limit' => 4,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮1',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮2',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              2 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮3',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              3 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮4',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        4 => 
+        array (
+          'id' => 9,
+          'widget_code' => 'goods',
+          'page_code' => 'mobile_home',
+          'position_id' => 4,
+          'sort' => 5,
+          'params' => 
+          array (
+            'title' => '热门商品',
+            'lookMore' => 'true',
+            'type' => 'auto',
+            'classifyId' => '',
+            'brandId' => '',
+            'limit' => 10,
+            'display' => 'list',
+            'column' => 2,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'id' => 1,
+                'name' => '套餐一',
+                'bn' => 'G7692449305562',
+                'brief' => '',
+                'price' => '198.00',
+                'mktprice' => '0.00',
+                'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                'goods_cat_id' => 1,
+                'goods_type_id' => 3,
+                'brand_id' => 0,
+                'is_nomal_virtual' => 1,
+                'marketable' => 1,
+                'stock' => 9999,
+                'weight' => '0.00',
+                'unit' => '',
+                'spes_desc' => '',
+                'params' => 'a:0:{}',
+                'comments_count' => 0,
+                'view_count' => 0,
+                'buy_count' => 0,
+                'sort' => 100,
+                'is_recommend' => 2,
+                'is_hot' => 1,
+                'label_ids' => 
+                array (
+                ),
+                'cat_name' => '套餐',
+                'image_url' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                'product' => 
+                array (
+                  'id' => 1,
+                  'goods_id' => 1,
+                  'barcode' => NULL,
+                  'sn' => 'P7692449305663',
+                  'price' => '198.00',
+                  'mktprice' => '0.00',
+                  'marketable' => 1,
+                  'stock' => 9999,
+                  'spes_desc' => NULL,
+                  'is_defalut' => 1,
+                  'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                  'isdel' => NULL,
+                  'name' => '套餐一',
+                  'point' => 0,
+                  'open_point' => 3,
+                  'bn' => 'G7692449305562',
+                  'image_path' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  'total_stock' => 9999,
+                  'is_combo' => 2,
+                  'grade_price' => 
+                  array (
+                  ),
+                  'grade_info' => 
+                  array (
+                  ),
+                  'amount' => '198.00',
+                  'promotion_list' => 
+                  array (
+                  ),
+                  'promotion_amount' => 0,
+                ),
+                'album' => 
+                array (
+                  0 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  1 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png',
+                ),
+                'isfav' => 'false',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'total' => 8,
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'autoWriteTimestamp' => false,
+     'createTime' => 'create_time',
+     'updateTime' => 'update_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:04+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'page' => '2',
+  'limit' => '5',
+  'method' => 'pages.gethomepageconfig',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  app\common\model\Pages::__set_state(array(
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'is_main',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'Pages',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+      'items' => 
+      array (
+        0 => 
+        array (
+          'id' => 10,
+          'widget_code' => 'imgSlide',
+          'page_code' => 'mobile_home',
+          'position_id' => 5,
+          'sort' => 6,
+          'params' => 
+          array (
+            'duration' => 2500,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        1 => 
+        array (
+          'id' => 11,
+          'widget_code' => 'goods',
+          'page_code' => 'mobile_home',
+          'position_id' => 6,
+          'sort' => 7,
+          'params' => 
+          array (
+            'title' => '推荐商品',
+            'lookMore' => 'true',
+            'type' => 'auto',
+            'classifyId' => '',
+            'brandId' => '',
+            'limit' => 10,
+            'display' => 'list',
+            'column' => 2,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'id' => 1,
+                'name' => '套餐一',
+                'bn' => 'G7692449305562',
+                'brief' => '',
+                'price' => '198.00',
+                'mktprice' => '0.00',
+                'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                'goods_cat_id' => 1,
+                'goods_type_id' => 3,
+                'brand_id' => 0,
+                'is_nomal_virtual' => 1,
+                'marketable' => 1,
+                'stock' => 9999,
+                'weight' => '0.00',
+                'unit' => '',
+                'spes_desc' => '',
+                'params' => 'a:0:{}',
+                'comments_count' => 0,
+                'view_count' => 0,
+                'buy_count' => 0,
+                'sort' => 100,
+                'is_recommend' => 2,
+                'is_hot' => 1,
+                'label_ids' => 
+                array (
+                ),
+                'cat_name' => '套餐',
+                'image_url' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                'product' => 
+                array (
+                  'id' => 1,
+                  'goods_id' => 1,
+                  'barcode' => NULL,
+                  'sn' => 'P7692449305663',
+                  'price' => '198.00',
+                  'mktprice' => '0.00',
+                  'marketable' => 1,
+                  'stock' => 9999,
+                  'spes_desc' => NULL,
+                  'is_defalut' => 1,
+                  'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                  'isdel' => NULL,
+                  'name' => '套餐一',
+                  'point' => 0,
+                  'open_point' => 3,
+                  'bn' => 'G7692449305562',
+                  'image_path' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  'total_stock' => 9999,
+                  'is_combo' => 2,
+                  'grade_price' => 
+                  array (
+                  ),
+                  'grade_info' => 
+                  array (
+                  ),
+                  'amount' => '198.00',
+                  'promotion_list' => 
+                  array (
+                  ),
+                  'promotion_amount' => 0,
+                ),
+                'album' => 
+                array (
+                  0 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  1 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png',
+                ),
+                'isfav' => 'false',
+              ),
+            ),
+          ),
+        ),
+        2 => 
+        array (
+          'id' => 12,
+          'widget_code' => 'imgSingle',
+          'page_code' => 'mobile_home',
+          'position_id' => 7,
+          'sort' => 8,
+          'params' => 
+          array (
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'total' => 8,
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'autoWriteTimestamp' => false,
+     'createTime' => 'create_time',
+     'updateTime' => 'update_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:12+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'mobile' => '18919660526',
+  'password' => 'qq123456',
+  'method' => 'user.login',
+)
+[ api ] array (
+  'status' => true,
+  'data' => '849b41050ad04c144ea9666283dbbc4f',
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:12+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'client' => '2',
+  'url' => '/pages/share/jump',
+  'type' => '1',
+  'page' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.share',
+)
+[ api ] array (
+  'status' => true,
+  'data' => '/pages/share/jump?scene=1-3705-',
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:12+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:12+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'page' => '1',
+  'limit' => '5',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'pages.gethomepageconfig',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  app\common\model\Pages::__set_state(array(
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'is_main',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'Pages',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+      'items' => 
+      array (
+        0 => 
+        array (
+          'id' => 5,
+          'widget_code' => 'search',
+          'page_code' => 'mobile_home',
+          'position_id' => 0,
+          'sort' => 1,
+          'params' => 
+          array (
+            'keywords' => '请输入关键字搜索',
+            'style' => 'round',
+          ),
+        ),
+        1 => 
+        array (
+          'id' => 6,
+          'widget_code' => 'imgSlide',
+          'page_code' => 'mobile_home',
+          'position_id' => 1,
+          'sort' => 2,
+          'params' => 
+          array (
+            'duration' => 2500,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        2 => 
+        array (
+          'id' => 7,
+          'widget_code' => 'notice',
+          'page_code' => 'mobile_home',
+          'position_id' => 2,
+          'sort' => 3,
+          'params' => 
+          array (
+            'type' => 'auto',
+            'list' => 
+            think\model\Collection::__set_state(array(
+               'items' => 
+              array (
+                0 => 
+                app\common\model\Notice::__set_state(array(
+                   'deleteTime' => 'isdel',
+                   'autoWriteTimestamp' => true,
+                   'createTime' => 'ctime',
+                   'rule' => 
+                  array (
+                    'title' => 'require',
+                    'content' => 'require',
+                    'sort' => 'number|max:5',
+                  ),
+                   'msg' => 
+                  array (
+                    'title.require' => '请输入标题名称',
+                    'content.require' => '请输入公告内容',
+                    'sort.number' => '排序只能是数字',
+                    'sort.max' => '排序长度超出限制',
+                  ),
+                   'exists' => true,
+                   'replace' => false,
+                   'force' => false,
+                   'updateWhere' => NULL,
+                   'connection' => 
+                  array (
+                  ),
+                   'query' => NULL,
+                   'name' => 'Notice',
+                   'table' => NULL,
+                   'auto' => 
+                  array (
+                  ),
+                   'insert' => 
+                  array (
+                  ),
+                   'update' => 
+                  array (
+                  ),
+                   'queryInstance' => NULL,
+                   'error' => NULL,
+                   'defaultSoftDelete' => NULL,
+                   'globalScope' => 
+                  array (
+                  ),
+                   'pk' => 'id',
+                   'field' => 
+                  array (
+                  ),
+                   'json' => 
+                  array (
+                  ),
+                   'jsonAssoc' => false,
+                   'jsonType' => 
+                  array (
+                  ),
+                   'disuse' => 
+                  array (
+                  ),
+                   'readonly' => 
+                  array (
+                  ),
+                   'type' => 
+                  array (
+                  ),
+                   'data' => 
+                  array (
+                    'id' => 1,
+                    'title' => '恭贺月亮姐姐-灵境集小程序上线',
+                    'ctime' => 1769242818,
+                  ),
+                   'set' => 
+                  array (
+                  ),
+                   'origin' => 
+                  array (
+                    'id' => 1,
+                    'title' => '恭贺月亮姐姐-灵境集小程序上线',
+                    'ctime' => 1769242818,
+                  ),
+                   'withAttr' => 
+                  array (
+                  ),
+                   'parent' => NULL,
+                   'relation' => 
+                  array (
+                  ),
+                   'together' => NULL,
+                   'relationWrite' => NULL,
+                   'observerClass' => NULL,
+                   'withEvent' => true,
+                   'updateTime' => 'update_time',
+                   'dateFormat' => false,
+                   'visible' => 
+                  array (
+                  ),
+                   'hidden' => 
+                  array (
+                  ),
+                   'append' => 
+                  array (
+                  ),
+                   'resultSetType' => 'collection',
+                   'withTrashed' => false,
+                )),
+              ),
+            )),
+          ),
+        ),
+        3 => 
+        array (
+          'id' => 8,
+          'widget_code' => 'navBar',
+          'page_code' => 'mobile_home',
+          'position_id' => 3,
+          'sort' => 4,
+          'params' => 
+          array (
+            'limit' => 4,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮1',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮2',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              2 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮3',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              3 => 
+              array (
+                'image' => '/static/images/empty.png',
+                'text' => '按钮4',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        4 => 
+        array (
+          'id' => 9,
+          'widget_code' => 'goods',
+          'page_code' => 'mobile_home',
+          'position_id' => 4,
+          'sort' => 5,
+          'params' => 
+          array (
+            'title' => '热门商品',
+            'lookMore' => 'true',
+            'type' => 'auto',
+            'classifyId' => '',
+            'brandId' => '',
+            'limit' => 10,
+            'display' => 'list',
+            'column' => 2,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'id' => 1,
+                'name' => '套餐一',
+                'bn' => 'G7692449305562',
+                'brief' => '',
+                'price' => '198.00',
+                'mktprice' => '0.00',
+                'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                'goods_cat_id' => 1,
+                'goods_type_id' => 3,
+                'brand_id' => 0,
+                'is_nomal_virtual' => 1,
+                'marketable' => 1,
+                'stock' => 9999,
+                'weight' => '0.00',
+                'unit' => '',
+                'spes_desc' => '',
+                'params' => 'a:0:{}',
+                'comments_count' => 0,
+                'view_count' => 0,
+                'buy_count' => 0,
+                'sort' => 100,
+                'is_recommend' => 2,
+                'is_hot' => 1,
+                'label_ids' => 
+                array (
+                ),
+                'cat_name' => '套餐',
+                'image_url' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                'product' => 
+                array (
+                  'id' => 1,
+                  'goods_id' => 1,
+                  'barcode' => NULL,
+                  'sn' => 'P7692449305663',
+                  'price' => '198.00',
+                  'mktprice' => '0.00',
+                  'marketable' => 1,
+                  'stock' => 9999,
+                  'spes_desc' => NULL,
+                  'is_defalut' => 1,
+                  'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                  'isdel' => NULL,
+                  'name' => '套餐一',
+                  'point' => 0,
+                  'open_point' => 3,
+                  'bn' => 'G7692449305562',
+                  'image_path' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  'total_stock' => 9999,
+                  'is_combo' => 2,
+                  'grade_price' => 
+                  array (
+                  ),
+                  'grade_info' => 
+                  array (
+                  ),
+                  'amount' => '198.00',
+                  'promotion_list' => 
+                  array (
+                  ),
+                  'promotion_amount' => 0,
+                ),
+                'album' => 
+                array (
+                  0 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  1 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png',
+                ),
+                'isfav' => 'false',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'total' => 8,
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'autoWriteTimestamp' => false,
+     'createTime' => 'create_time',
+     'updateTime' => 'update_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:13+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'page' => '2',
+  'limit' => '5',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'pages.gethomepageconfig',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  app\common\model\Pages::__set_state(array(
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'is_main',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'Pages',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+      'items' => 
+      array (
+        0 => 
+        array (
+          'id' => 10,
+          'widget_code' => 'imgSlide',
+          'page_code' => 'mobile_home',
+          'position_id' => 5,
+          'sort' => 6,
+          'params' => 
+          array (
+            'duration' => 2500,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+              1 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+        1 => 
+        array (
+          'id' => 11,
+          'widget_code' => 'goods',
+          'page_code' => 'mobile_home',
+          'position_id' => 6,
+          'sort' => 7,
+          'params' => 
+          array (
+            'title' => '推荐商品',
+            'lookMore' => 'true',
+            'type' => 'auto',
+            'classifyId' => '',
+            'brandId' => '',
+            'limit' => 10,
+            'display' => 'list',
+            'column' => 2,
+            'list' => 
+            array (
+              0 => 
+              array (
+                'id' => 1,
+                'name' => '套餐一',
+                'bn' => 'G7692449305562',
+                'brief' => '',
+                'price' => '198.00',
+                'mktprice' => '0.00',
+                'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                'goods_cat_id' => 1,
+                'goods_type_id' => 3,
+                'brand_id' => 0,
+                'is_nomal_virtual' => 1,
+                'marketable' => 1,
+                'stock' => 9999,
+                'weight' => '0.00',
+                'unit' => '',
+                'spes_desc' => '',
+                'params' => 'a:0:{}',
+                'comments_count' => 0,
+                'view_count' => 0,
+                'buy_count' => 0,
+                'sort' => 100,
+                'is_recommend' => 2,
+                'is_hot' => 1,
+                'label_ids' => 
+                array (
+                ),
+                'cat_name' => '套餐',
+                'image_url' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                'product' => 
+                array (
+                  'id' => 1,
+                  'goods_id' => 1,
+                  'barcode' => NULL,
+                  'sn' => 'P7692449305663',
+                  'price' => '198.00',
+                  'mktprice' => '0.00',
+                  'marketable' => 1,
+                  'stock' => 9999,
+                  'spes_desc' => NULL,
+                  'is_defalut' => 1,
+                  'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+                  'isdel' => NULL,
+                  'name' => '套餐一',
+                  'point' => 0,
+                  'open_point' => 3,
+                  'bn' => 'G7692449305562',
+                  'image_path' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  'total_stock' => 9999,
+                  'is_combo' => 2,
+                  'grade_price' => 
+                  array (
+                  ),
+                  'grade_info' => 
+                  array (
+                  ),
+                  'amount' => '198.00',
+                  'promotion_list' => 
+                  array (
+                  ),
+                  'promotion_amount' => 0,
+                ),
+                'album' => 
+                array (
+                  0 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+                  1 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png',
+                ),
+                'isfav' => 'false',
+              ),
+            ),
+          ),
+        ),
+        2 => 
+        array (
+          'id' => 12,
+          'widget_code' => 'imgSingle',
+          'page_code' => 'mobile_home',
+          'position_id' => 7,
+          'sort' => 8,
+          'params' => 
+          array (
+            'list' => 
+            array (
+              0 => 
+              array (
+                'image' => '/static/images/empty-banner.png',
+                'linkType' => '',
+                'linkValue' => '',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'total' => 8,
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'code' => 'mobile_home',
+      'name' => '移动端首页',
+      'desc' => '移动端首页相关操作，可视化移动端、小程序端首页布局',
+      'layout' => 1,
+      'type' => 1,
+      'is_main' => 1,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'autoWriteTimestamp' => false,
+     'createTime' => 'create_time',
+     'updateTime' => 'update_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:17+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'codes' => 'tpl1_class_banner1',
+  'method' => 'advert.getcarousellists',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    'list' => 
+    array (
+    ),
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:17+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'categories.gettopcat',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '',
+  'data' => 
+  think\model\Collection::__set_state(array(
+     'items' => 
+    array (
+      0 => 
+      app\common\model\GoodsCat::__set_state(array(
+         'autoWriteTimestamp' => true,
+         'createTime' => 'utime',
+         'updateTime' => 'utime',
+         'exists' => true,
+         'replace' => false,
+         'force' => false,
+         'updateWhere' => NULL,
+         'connection' => 
+        array (
+        ),
+         'query' => NULL,
+         'name' => 'GoodsCat',
+         'table' => NULL,
+         'auto' => 
+        array (
+        ),
+         'insert' => 
+        array (
+        ),
+         'update' => 
+        array (
+        ),
+         'queryInstance' => NULL,
+         'error' => NULL,
+         'defaultSoftDelete' => NULL,
+         'globalScope' => 
+        array (
+        ),
+         'pk' => 'id',
+         'field' => 
+        array (
+        ),
+         'json' => 
+        array (
+        ),
+         'jsonAssoc' => false,
+         'jsonType' => 
+        array (
+        ),
+         'disuse' => 
+        array (
+        ),
+         'readonly' => 
+        array (
+        ),
+         'type' => 
+        array (
+        ),
+         'data' => 
+        array (
+          'id' => 1,
+          'name' => '套餐',
+          'sort' => 100,
+          'image_id' => '',
+        ),
+         'set' => 
+        array (
+        ),
+         'origin' => 
+        array (
+          'id' => 1,
+          'name' => '套餐',
+          'sort' => 100,
+          'image_id' => '',
+        ),
+         'withAttr' => 
+        array (
+        ),
+         'parent' => NULL,
+         'relation' => 
+        array (
+        ),
+         'together' => NULL,
+         'relationWrite' => NULL,
+         'observerClass' => NULL,
+         'withEvent' => true,
+         'dateFormat' => false,
+         'visible' => 
+        array (
+        ),
+         'hidden' => 
+        array (
+        ),
+         'append' => 
+        array (
+        ),
+         'resultSetType' => 'collection',
+      )),
+      1 => 
+      app\common\model\GoodsCat::__set_state(array(
+         'autoWriteTimestamp' => true,
+         'createTime' => 'utime',
+         'updateTime' => 'utime',
+         'exists' => true,
+         'replace' => false,
+         'force' => false,
+         'updateWhere' => NULL,
+         'connection' => 
+        array (
+        ),
+         'query' => NULL,
+         'name' => 'GoodsCat',
+         'table' => NULL,
+         'auto' => 
+        array (
+        ),
+         'insert' => 
+        array (
+        ),
+         'update' => 
+        array (
+        ),
+         'queryInstance' => NULL,
+         'error' => NULL,
+         'defaultSoftDelete' => NULL,
+         'globalScope' => 
+        array (
+        ),
+         'pk' => 'id',
+         'field' => 
+        array (
+        ),
+         'json' => 
+        array (
+        ),
+         'jsonAssoc' => false,
+         'jsonType' => 
+        array (
+        ),
+         'disuse' => 
+        array (
+        ),
+         'readonly' => 
+        array (
+        ),
+         'type' => 
+        array (
+        ),
+         'data' => 
+        array (
+          'id' => 2,
+          'name' => '日化产品',
+          'sort' => 100,
+          'image_id' => '',
+        ),
+         'set' => 
+        array (
+        ),
+         'origin' => 
+        array (
+          'id' => 2,
+          'name' => '日化产品',
+          'sort' => 100,
+          'image_id' => '',
+        ),
+         'withAttr' => 
+        array (
+        ),
+         'parent' => NULL,
+         'relation' => 
+        array (
+        ),
+         'together' => NULL,
+         'relationWrite' => NULL,
+         'observerClass' => NULL,
+         'withEvent' => true,
+         'dateFormat' => false,
+         'visible' => 
+        array (
+        ),
+         'hidden' => 
+        array (
+        ),
+         'append' => 
+        array (
+        ),
+         'resultSetType' => 'collection',
+      )),
+      2 => 
+      app\common\model\GoodsCat::__set_state(array(
+         'autoWriteTimestamp' => true,
+         'createTime' => 'utime',
+         'updateTime' => 'utime',
+         'exists' => true,
+         'replace' => false,
+         'force' => false,
+         'updateWhere' => NULL,
+         'connection' => 
+        array (
+        ),
+         'query' => NULL,
+         'name' => 'GoodsCat',
+         'table' => NULL,
+         'auto' => 
+        array (
+        ),
+         'insert' => 
+        array (
+        ),
+         'update' => 
+        array (
+        ),
+         'queryInstance' => NULL,
+         'error' => NULL,
+         'defaultSoftDelete' => NULL,
+         'globalScope' => 
+        array (
+        ),
+         'pk' => 'id',
+         'field' => 
+        array (
+        ),
+         'json' => 
+        array (
+        ),
+         'jsonAssoc' => false,
+         'jsonType' => 
+        array (
+        ),
+         'disuse' => 
+        array (
+        ),
+         'readonly' => 
+        array (
+        ),
+         'type' => 
+        array (
+        ),
+         'data' => 
+        array (
+          'id' => 3,
+          'name' => '化妆品',
+          'sort' => 100,
+          'image_id' => '',
+        ),
+         'set' => 
+        array (
+        ),
+         'origin' => 
+        array (
+          'id' => 3,
+          'name' => '化妆品',
+          'sort' => 100,
+          'image_id' => '',
+        ),
+         'withAttr' => 
+        array (
+        ),
+         'parent' => NULL,
+         'relation' => 
+        array (
+        ),
+         'together' => NULL,
+         'relationWrite' => NULL,
+         'observerClass' => NULL,
+         'withEvent' => true,
+         'dateFormat' => false,
+         'visible' => 
+        array (
+        ),
+         'hidden' => 
+        array (
+        ),
+         'append' => 
+        array (
+        ),
+         'resultSetType' => 'collection',
+      )),
+    ),
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:17+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'cart.getnumber',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 0.0,
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:17+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'parent_id' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'categories.getchildcat',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '',
+  'data' => 
+  think\model\Collection::__set_state(array(
+     'items' => 
+    array (
+    ),
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:17+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'where' => '{"cat_id":1}',
+  'limit' => '10',
+  'page' => '1',
+  'order' => 'sort asc',
+  'method' => 'goods.getlist',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '查询成功',
+  'data' => 
+  array (
+    'list' => 
+    array (
+      0 => 
+      array (
+        'id' => 1,
+        'bn' => 'G7692449305562',
+        'name' => '套餐一',
+        'brief' => '',
+        'price' => '198.00',
+        'mktprice' => '0.00',
+        'thumb' => NULL,
+        'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+        'goods_cat_id' => 1,
+        'goods_type_id' => 3,
+        'brand_id' => 0,
+        'is_nomal_virtual' => 1,
+        'marketable' => 1,
+        'stock' => 9999,
+        'weight' => '0.00',
+        'unit' => '',
+        'intro' => '',
+        'spes_desc' => '',
+        'params' => 'a:0:{}',
+        'comments_count' => 0,
+        'view_count' => 0,
+        'buy_count' => 0,
+        'uptime' => NULL,
+        'downtime' => NULL,
+        'sort' => 100,
+        'is_recommend' => 2,
+        'is_hot' => 1,
+        'label_ids' => 
+        array (
+        ),
+        'new_spec' => '',
+        'open_point' => 3,
+        'point' => 0,
+        'ctime' => NULL,
+        'utime' => 1769245326,
+        'isdel' => NULL,
+        'is_combo' => 2,
+        'cat_name' => '套餐',
+        'image_url' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+        'product' => 
+        array (
+          'id' => 1,
+          'goods_id' => 1,
+          'barcode' => NULL,
+          'sn' => 'P7692449305663',
+          'price' => '198.00',
+          'mktprice' => '0.00',
+          'marketable' => 1,
+          'stock' => 9999,
+          'spes_desc' => NULL,
+          'is_defalut' => 1,
+          'image_id' => '03c7a4f333b2b1b347c7011df0f2adda',
+          'isdel' => NULL,
+          'name' => '套餐一',
+          'point' => 0,
+          'open_point' => 3,
+          'bn' => 'G7692449305562',
+          'image_path' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+          'total_stock' => 9999,
+          'is_combo' => 2,
+          'grade_price' => 
+          array (
+          ),
+          'grade_info' => 
+          array (
+          ),
+          'amount' => '198.00',
+          'promotion_list' => 
+          array (
+          ),
+          'promotion_amount' => 0,
+        ),
+        'album' => 
+        array (
+          0 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244869697488c54c928.png',
+          1 => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/24/1769244878697488ce2df6b.png',
+        ),
+        'isfav' => 'false',
+      ),
+    ),
+    'total_page' => 1.0,
+    'filter' => 
+    array (
+      'label_ids' => 
+      think\model\Collection::__set_state(array(
+         'items' => 
+        array (
+        ),
+      )),
+      'brand_ids' => 
+      think\model\Collection::__set_state(array(
+         'items' => 
+        array (
+        ),
+      )),
+      'goods_cat' => 
+      think\model\Collection::__set_state(array(
+         'items' => 
+        array (
+          0 => 
+          app\common\model\Goods::__set_state(array(
+             'autoWriteTimestamp' => true,
+             'createTime' => 'ctime',
+             'updateTime' => 'utime',
+             'goodsForbidFields' => 
+            array (
+              0 => 'costprice',
+              1 => 'freeze_stock',
+            ),
+             'productForbidFields' => 
+            array (
+              0 => 'costprice',
+              1 => 'freeze_stock',
+            ),
+             'exists' => true,
+             'replace' => false,
+             'force' => false,
+             'updateWhere' => NULL,
+             'connection' => 
+            array (
+            ),
+             'query' => NULL,
+             'name' => 'Goods',
+             'table' => NULL,
+             'auto' => 
+            array (
+            ),
+             'insert' => 
+            array (
+            ),
+             'update' => 
+            array (
+            ),
+             'queryInstance' => NULL,
+             'error' => NULL,
+             'defaultSoftDelete' => NULL,
+             'globalScope' => 
+            array (
+            ),
+             'pk' => 'id',
+             'field' => 
+            array (
+            ),
+             'json' => 
+            array (
+            ),
+             'jsonAssoc' => false,
+             'jsonType' => 
+            array (
+            ),
+             'disuse' => 
+            array (
+            ),
+             'readonly' => 
+            array (
+            ),
+             'type' => 
+            array (
+            ),
+             'data' => 
+            array (
+              'goods_cat_id' => 1,
+              'name' => '套餐',
+            ),
+             'set' => 
+            array (
+            ),
+             'origin' => 
+            array (
+              'goods_cat_id' => 1,
+              'name' => '套餐',
+            ),
+             'withAttr' => 
+            array (
+            ),
+             'parent' => NULL,
+             'relation' => 
+            array (
+            ),
+             'together' => NULL,
+             'relationWrite' => NULL,
+             'observerClass' => NULL,
+             'withEvent' => true,
+             'dateFormat' => false,
+             'visible' => 
+            array (
+            ),
+             'hidden' => 
+            array (
+            ),
+             'append' => 
+            array (
+            ),
+             'resultSetType' => 'collection',
+          )),
+        ),
+      )),
+    ),
+    'page' => 1,
+    'limit' => 10,
+    'where' => 
+    array (
+      'cat_id' => 1,
+    ),
+    'order' => 'sort asc',
+    'class_name' => '套餐',
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:18+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'ids' => '',
+  'display' => 'all',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'cart.getlist',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  array (
+    'user_id' => 1,
+    'type' => 1,
+    'list' => 
+    think\model\Collection::__set_state(array(
+       'items' => 
+      array (
+      ),
+    )),
+    'goods_amount' => 0,
+    'amount' => 0,
+    'order_pmt' => 0,
+    'goods_pmt' => 0,
+    'coupon_pmt' => 0,
+    'promotion_list' => 
+    array (
+    ),
+    'cost_freight' => 0,
+    'weight' => 0,
+    'coupon' => 
+    array (
+    ),
+    'point' => 0,
+    'point_money' => 0,
+    'params' => 
+    array (
+    ),
+  ),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:19+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:19+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'ids' => '1,2,3,4',
+  'isAfterSale' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'order.getorderstatusnum',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    1 => 0,
+    2 => 0,
+    3 => 0,
+    4 => 0,
+    'isAfterSale' => 0,
+    'coupon' => 0,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:31+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'grade' => 0,
+  'page' => '1',
+  'limit' => '10',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.recommend',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  think\model\Collection::__set_state(array(
+     'items' => 
+    array (
+    ),
+  )),
+  'total' => 0.0,
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:31+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.getProfit',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '查询成功',
+  'data' => 
+  array (
+    'commission' => '0.00',
+    'today' => 0.0,
+    'count' => 0,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:31+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:36+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:36+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'ids' => '1,2,3,4',
+  'isAfterSale' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'order.getorderstatusnum',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    1 => 0,
+    2 => 0,
+    3 => 0,
+    4 => 0,
+    'isAfterSale' => 0,
+    'coupon' => 0,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:37+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.getMyCenData',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '查询成功',
+  'data' => 
+  array (
+    0 => 0.0,
+    1 => '0.00',
+    2 => 0.0,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:37+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'month' => '2026-4',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.getMonthEarnings',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '查询成功',
+  'data' => 
+  array (
+    'sum' => 0,
+    'list' => NULL,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:38+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:38+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'ids' => '1,2,3,4',
+  'isAfterSale' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'order.getorderstatusnum',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    1 => 0,
+    2 => 0,
+    3 => 0,
+    4 => 0,
+    'isAfterSale' => 0,
+    'coupon' => 0,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:39+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:40+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:40+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'ids' => '1,2,3,4',
+  'isAfterSale' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'order.getorderstatusnum',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    1 => 0,
+    2 => 0,
+    3 => 0,
+    4 => 0,
+    'isAfterSale' => 0,
+    'coupon' => 0,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:41+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.getusership',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取用户收货地址成功',
+  'data' => 
+  think\model\Collection::__set_state(array(
+     'items' => 
+    array (
+      0 => 
+      app\common\model\UserShip::__set_state(array(
+         'autoWriteTimestamp' => true,
+         'createTime' => false,
+         'updateTime' => 'utime',
+         'exists' => true,
+         'replace' => false,
+         'force' => false,
+         'updateWhere' => NULL,
+         'connection' => 
+        array (
+        ),
+         'query' => NULL,
+         'name' => 'UserShip',
+         'table' => NULL,
+         'auto' => 
+        array (
+        ),
+         'insert' => 
+        array (
+        ),
+         'update' => 
+        array (
+        ),
+         'queryInstance' => NULL,
+         'error' => NULL,
+         'defaultSoftDelete' => NULL,
+         'globalScope' => 
+        array (
+        ),
+         'pk' => 'id',
+         'field' => 
+        array (
+        ),
+         'json' => 
+        array (
+        ),
+         'jsonAssoc' => false,
+         'jsonType' => 
+        array (
+        ),
+         'disuse' => 
+        array (
+        ),
+         'readonly' => 
+        array (
+        ),
+         'type' => 
+        array (
+        ),
+         'data' => 
+        array (
+          'id' => 1,
+          'user_id' => 1,
+          'area_id' => 150525,
+          'address' => '撒防守打法撒旦法',
+          'name' => '夏赟浩',
+          'mobile' => '18919660526',
+          'utime' => 1763109291,
+          'is_def' => 1,
+          'area_name' => '内蒙古自治区 通辽市 奈曼旗 ',
+        ),
+         'set' => 
+        array (
+        ),
+         'origin' => 
+        array (
+          'id' => 1,
+          'user_id' => 1,
+          'area_id' => 150525,
+          'address' => '撒防守打法撒旦法',
+          'name' => '夏赟浩',
+          'mobile' => '18919660526',
+          'utime' => 1763109291,
+          'is_def' => 1,
+        ),
+         'withAttr' => 
+        array (
+        ),
+         'parent' => NULL,
+         'relation' => 
+        array (
+        ),
+         'together' => NULL,
+         'relationWrite' => NULL,
+         'observerClass' => NULL,
+         'withEvent' => true,
+         'dateFormat' => false,
+         'visible' => 
+        array (
+        ),
+         'hidden' => 
+        array (
+        ),
+         'append' => 
+        array (
+        ),
+         'resultSetType' => 'collection',
+      )),
+    ),
+  )),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:42+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:42+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'ids' => '1,2,3,4',
+  'isAfterSale' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'order.getorderstatusnum',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    1 => 0,
+    2 => 0,
+    3 => 0,
+    4 => 0,
+    'isAfterSale' => 0,
+    'coupon' => 0,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:43+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'page' => '1',
+  'limit' => '10',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.goodsbrowsing',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:49+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T11:35:49+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'ids' => '1,2,3,4',
+  'isAfterSale' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'order.getorderstatusnum',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    1 => 0,
+    2 => 0,
+    3 => 0,
+    4 => 0,
+    'isAfterSale' => 0,
+    'coupon' => 0,
+  ),
+)
+---------------------------------------------------------------
+[2026-04-17T12:06:37+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'user.info',
+)
+[ api ] array (
+  'status' => true,
+  'data' => 
+  app\common\model\User::__set_state(array(
+     'deleteTime' => 'isdel',
+     'autoWriteTimestamp' => true,
+     'updateTime' => 'utime',
+     'rule' => 
+    array (
+      'mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+      'sex' => 'in:1,2,3',
+      'nickname' => 'length:2,50',
+      'password' => 'length:6,20',
+      'p_mobile' => 
+      array (
+        'regex' => '^1[3|4|5|6|7|8|9][0-9]\\d{4,8}$',
+      ),
+    ),
+     'msg' => 
+    array (
+      'mobile' => '请输入一个合法的手机号码',
+      'sex' => '请选择合法的性别',
+      'nickname' => '昵称长度为2-50个字符',
+      'password' => '密码长度6-20位',
+      'p_mobile' => '邀请人栏请输入一个合法的手机号码',
+    ),
+     'exists' => true,
+     'replace' => false,
+     'force' => false,
+     'updateWhere' => 
+    array (
+      0 => 
+      array (
+        0 => 'id',
+        1 => '=',
+        2 => 1,
+      ),
+    ),
+     'connection' => 
+    array (
+    ),
+     'query' => NULL,
+     'name' => 'User',
+     'table' => NULL,
+     'auto' => 
+    array (
+    ),
+     'insert' => 
+    array (
+    ),
+     'update' => 
+    array (
+    ),
+     'queryInstance' => NULL,
+     'error' => NULL,
+     'defaultSoftDelete' => NULL,
+     'globalScope' => 
+    array (
+    ),
+     'pk' => 'id',
+     'field' => 
+    array (
+    ),
+     'json' => 
+    array (
+    ),
+     'jsonAssoc' => false,
+     'jsonType' => 
+    array (
+    ),
+     'disuse' => 
+    array (
+    ),
+     'readonly' => 
+    array (
+    ),
+     'type' => 
+    array (
+    ),
+     'data' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => true,
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+      'grade_name' => '普通等级',
+    ),
+     'set' => 
+    array (
+    ),
+     'origin' => 
+    array (
+      'id' => 1,
+      'username' => 'xyh66306',
+      'mobile' => '18919660526',
+      'sex' => 1,
+      'birthday' => NULL,
+      'avatar' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/176905393169719eeb126ba.png',
+      'nickname' => 'xyh66306',
+      'balance' => '0.00',
+      'point' => 8,
+      'grade' => 1,
+      'status' => 1,
+      'pid' => 0,
+      'password' => '6bcc1e483dd5756fa3e710792fd64bd9',
+      'ctime' => 1763106543,
+      'remarks' => '',
+      'area_id' => 340203,
+    ),
+     'withAttr' => 
+    array (
+    ),
+     'parent' => NULL,
+     'relation' => 
+    array (
+    ),
+     'together' => NULL,
+     'relationWrite' => NULL,
+     'observerClass' => NULL,
+     'withEvent' => true,
+     'createTime' => 'create_time',
+     'dateFormat' => false,
+     'visible' => 
+    array (
+    ),
+     'hidden' => 
+    array (
+    ),
+     'append' => 
+    array (
+    ),
+     'resultSetType' => 'collection',
+     'withTrashed' => false,
+  )),
+  'msg' => '',
+)
+---------------------------------------------------------------
+[2026-04-17T12:06:37+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[ api ] array (
+  'ids' => '1,2,3,4',
+  'isAfterSale' => '1',
+  'token' => '849b41050ad04c144ea9666283dbbc4f',
+  'method' => 'order.getorderstatusnum',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    1 => 0,
+    2 => 0,
+    3 => 0,
+    4 => 0,
+    'isAfterSale' => 0,
+    'coupon' => 0,
+  ),
+)

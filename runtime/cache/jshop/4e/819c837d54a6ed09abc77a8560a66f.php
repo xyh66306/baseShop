@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+think_serialize:a:12:{s:8:"app_init";a:1:{i:0;s:29:"app\common\behavior\InitHooks";}s:9:"app_begin";a:0:{}s:11:"module_init";a:0:{}s:12:"action_begin";a:0:{}s:11:"view_filter";a:0:{}s:9:"log_write";a:0:{}s:7:"app_end";a:0:{}s:10:"orderpayed";a:2:{i:0;s:31:"\addons\Userupgrade\Userupgrade";i:1;s:29:"\addons\UserInvite\UserInvite";}s:4:"menu";a:1:{i:0;s:29:"\addons\Wxdelivery\Wxdelivery";}s:16:"addUserInviteLog";a:1:{i:0;s:29:"\addons\UserInvite\UserInvite";}s:5:"queue";a:1:{i:0;s:31:"\addons\QueueCreate\QueueCreate";}s:13:"deliveryOrder";a:1:{i:0;s:29:"\addons\Wxdelivery\Wxdelivery";}}

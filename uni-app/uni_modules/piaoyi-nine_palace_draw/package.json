@@ -1,0 +1,15 @@
+{
+    "id": "piaoyi-nine_palace_draw",
+    "name": "piaoyi-nine_palace_draw 九宫格抽奖",
+    "displayName": "piaoyi-nine_palace_draw 九宫格抽奖",
+    "version": "1.0.4",
+    "description": "九宫格抽奖插件是一个用于在网页或移动应用中实现九宫格抽奖游戏的工具。该插件可以帮助开发者轻松地创建一个具有吸引力和互动性的抽奖游戏，增加用户参与度和用户体验。",
+    "keywords": [
+        "九宫格",
+        "抽奖",
+        "游戏"
+    ],
+    "dcloudext": {
+        "type": "component-vue"
+    }
+}

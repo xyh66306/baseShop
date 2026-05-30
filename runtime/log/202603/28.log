@@ -1,0 +1,4 @@
+---------------------------------------------------------------
+[2026-03-28T03:40:04+00:00] 127.0.0.1 GET www.jiwankang.com/install/
+[运行时间：0.015208s] [吞吐率：65.75req/s] [内存消耗：595.10kb] [文件加载：24]
+[ error ] [8192]Array and string offset access syntax with curly braces is deprecated[E:\wwwroot\2026\04\jiwankang\application\common.php:1477]

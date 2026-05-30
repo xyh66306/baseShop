@@ -6,17 +6,16 @@
 				// #ifdef H5
 				"titleNView": false,
 				// #endif
-				"enablePullDownRefresh": true
+				"navigationStyle": "custom"
 			}
 		},
 		{
 			"path": "pages/index/custom",
 			"style": {
-				"navigationBarTitleText": "页面",
 				// #ifdef H5
 				"titleNView": false,
-				// #endif
-				"enablePullDownRefresh": true
+				// #endif				
+				"navigationBarTitleText": "页面"
 			}
 		},
 		{
@@ -28,7 +27,7 @@
 		{
 			"path": "pages/classify/classify",
 			"style": {
-				"navigationBarTitleText": "分类"
+				"navigationBarTitleText": "福利区"
 			}
 		},
 		{
@@ -47,147 +46,6 @@
 			"path": "pages/cart/index/free",
 			"style": {
 				"navigationBarTitleText": "购物车"
-			}
-		},
-		{
-			"path": "pages/member/index/index",
-			"style": {
-				// #ifdef H5
-				"titleNView": false,
-				// #endif
-				"navigationBarTitleText": "个人中心"
-			}
-		},
-		{
-			"path": "pages/member/coupon/index",
-			"style": {
-				"navigationBarTitleText": "我的优惠券"
-			}
-		},
-		{
-			"path": "pages/member/balance/index",
-			"style": {
-				"navigationBarTitleText": "我的余额"
-			}
-		},
-		{
-			"path": "pages/member/balance/recharge",
-			"style": {
-				"navigationBarTitleText": "充值"
-			}
-		},
-		{
-			"path": "pages/member/balance/withdraw_cash",
-			"style": {
-				"navigationBarTitleText": "提现"
-			}
-		},
-		{
-			"path": "pages/member/balance/details",
-			"style": {
-				"navigationBarTitleText": "余额明细"
-			}
-		},
-		{
-			"path": "pages/member/balance/cashlist",
-			"style": {
-				"navigationBarTitleText": "提现记录"
-			}
-		},
-		{
-			"path": "pages/member/balance/bankcard",
-			"style": {
-				"navigationBarTitleText": "我的银行卡"
-			}
-		},
-		{
-			"path": "pages/member/balance/add_bankcard",
-			"style": {
-				"navigationBarTitleText": "添加银行卡"
-			}
-		},
-		{
-			"path": "pages/member/collection/index",
-			"style": {
-				"navigationBarTitleText": "我的收藏"
-			}
-		},
-		{
-			"path": "pages/member/history/index",
-			"style": {
-				"navigationBarTitleText": "我的足迹"
-			}
-		},
-		{
-			"path": "pages/member/address/list",
-			"style": {
-				"navigationBarTitleText": "地址管理"
-			}
-		},
-		{
-			"path": "pages/member/address/index",
-			"style": {
-				"navigationBarTitleText": "修改地址"
-			}
-		},
-		{
-			"path": "pages/member/setting/index",
-			"style": {
-				"navigationBarTitleText": "设置"
-			}
-		},
-		{
-			"path": "pages/member/setting/user_info/index",
-			"style": {
-				"navigationBarTitleText": "个人信息"
-			}
-		},
-		{
-			"path": "pages/member/setting/user_info/password",
-			"style": {
-				"navigationBarTitleText": "修改密码"
-			}
-		},
-		{
-			"path": "pages/member/setting/user_info/resetpassword",
-			"style": {
-				"navigationBarTitleText": "重置密码"
-			}
-		},
-		{
-			"path": "pages/member/integral/index",
-			"style": {
-				"navigationBarTitleText": "我的积分"
-			}
-		},
-		{
-			"path": "pages/member/invite/index",
-			"style": {
-				"navigationBarTitleText": "邀请好友"
-			}
-		},
-		{
-			"path": "pages/member/invite/list",
-			"style": {
-				"navigationBarTitleText": "邀请列表"
-			}
-		},
-		{
-			"path": "pages/member/invoice/index",
-			"style": {
-				"navigationBarTitleText": "我的发票"
-			}
-		},
-		{
-			"path": "pages/member/take_delivery/index",
-			"style": {
-				"navigationBarTitleText": "提货单核销"
-			}
-		},
-		{
-			"path": "pages/member/take_delivery/list",
-			"style": {
-				"navigationBarTitleText": "提货单列表"
 			}
 		},
 		{
@@ -241,54 +99,6 @@
 			"path": "pages/goods/payment/result",
 			"style": {
 				"navigationBarTitleText": "支付结果"
-			}
-		},
-		{
-			"path": "pages/member/order/orderlist",
-			"style": {
-				"navigationBarTitleText": "订单列表"
-			}
-		},
-		{
-			"path": "pages/member/order/orderdetail",
-			"style": {
-				"navigationBarTitleText": "订单详情"
-			}
-		},
-		{
-			"path": "pages/member/order/invitation_group",
-			"style": {
-				"navigationBarTitleText": "邀请拼单"
-			}
-		},
-		{
-			"path": "pages/member/after_sale/index",
-			"style": {
-				"navigationBarTitleText": "申请售后"
-			}
-		},
-		{
-			"path": "pages/member/after_sale/list",
-			"style": {
-				"navigationBarTitleText": "售后列表"
-			}
-		},
-		{
-			"path": "pages/member/after_sale/detail",
-			"style": {
-				"navigationBarTitleText": "售后详情"
-			}
-		},
-		{
-			"path": "pages/member/order/evaluate",
-			"style": {
-				"navigationBarTitleText": "订单评价"
-			}
-		},
-		{
-			"path": "pages/member/order/express_delivery",
-			"style": {
-				"navigationBarTitleText": "物流信息"
 			}
 		},
 		{
@@ -349,25 +159,6 @@
 			}
 		},
 		{
-			"path": "pages/classify/pintuan_list",
-			"style": {
-				"navigationBarTitleText": "拼团列表"
-			}
-		},
-		{
-			"path": "pages/goods/index/pintuan",
-			"style": {
-				"navigationBarTitleText": "拼团详情",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/form/detail/form",
-			"style": {
-				"navigationBarTitleText": "万能表单"
-			}
-		},
-		{
 			"path": "pages/share/jump",
 			"style": {
 				// #ifdef H5
@@ -389,55 +180,241 @@
 			}
 		},
 		{
-			"path": "pages/member/commission/profit",
-			"style": {
-				"navigationBarTitleText": "我的收益"
-			}
-		},		
-		{
 			"path": "pages/login/login/mobile",
 			"style": {
 				"navigationBarTitleText": "绑定手机号"
 			}
-		}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				// #ifdef H5
+				"titleNView": false,
+				// #endif
+				"navigationBarTitleText": "个人中心",
+				"navigationStyle": "custom" 
+			}		
+		}		
 	],
+	"subPackages": [ 
+		{
+			"root": "pages/member",
+			"name": "member",
+			"pages": [
+				{
+					"path": "share/index",
+					"style": {
+						"navigationBarTitleText": "我的二维码"
+					}
+				},				
+				{
+					"path": "coupon/index",
+					"style": {
+						"navigationBarTitleText": "我的优惠券"
+					}
+				},			
+				{
+					"path": "balance/index",
+					"style": {
+						"navigationBarTitleText": "我的余额"
+					}
+				},
+				{
+					"path": "balance/recharge",
+					"style": {
+						"navigationBarTitleText": "充值"
+					}
+				}	,
+				{
+					"path": "balance/withdraw_cash",
+					"style": {
+						"navigationBarTitleText": "提现"
+					}
+				},
+				{
+					"path": "balance/gift",
+					"style": {
+						"navigationBarTitleText": "红包"
+					}
+				},
+				{
+					"path": "balance/details",
+					"style": {
+						"navigationBarTitleText": "余额明细"
+					}
+				},
+				{
+					"path": "balance/cashlist",
+					"style": {
+						"navigationBarTitleText": "提现记录"
+					}
+				}	,
+				{
+					"path": "balance/bankcard",
+					"style": {
+						"navigationBarTitleText": "我的银行卡"
+					}
+				},
+				{
+					"path": "balance/add_bankcard",
+					"style": {
+						"navigationBarTitleText": "添加银行卡"
+					}
+				}	,
+				{
+					"path": "collection/index",
+					"style": {
+						"navigationBarTitleText": "我的收藏"
+					}
+				},
+				{
+					"path": "history/index",
+					"style": {
+						"navigationBarTitleText": "我的足迹"
+					}
+				},
+				{
+					"path": "address/list",
+					"style": {
+						"navigationBarTitleText": "地址管理"
+					}
+				}	,
+				{
+					"path": "address/index",
+					"style": {
+						"navigationBarTitleText": "修改地址"
+					}
+				}	,
+				{
+					"path": "setting/index",
+					"style": {
+						"navigationBarTitleText": "设置"
+					}
+				}	,
+				{
+					"path": "setting/user_info/index",
+					"style": {
+						"navigationBarTitleText": "个人信息"
+					}
+				},
+				{
+					"path": "setting/user_info/password",
+					"style": {
+						"navigationBarTitleText": "修改密码"
+					}
+				}	,
+				{
+					"path": "setting/user_info/resetpassword",
+					"style": {
+						"navigationBarTitleText": "修改密码"
+					}
+				},
+				{
+					"path": "commission/profit",
+					"style": {
+						"navigationBarTitleText": "团队收益"
+					}
+				}	,
+				{
+					"path": "integral/index",
+					"style": {
+						"navigationBarTitleText": "我的积分"
+					}
+				}	,
+				{
+					"path": "invite/index",
+					"style": {
+						"navigationBarTitleText": "邀请好友"
+					}
+				},
+				{
+					"path": "invite/list",
+					"style": {
+						"navigationBarTitleText": "邀请列表"
+					}
+				},						
+				{
+					"path": "invoice/index",
+					"style": {
+						"navigationBarTitleText": "我的发票"
+					}
+				}	,
+				{
+					"path": "order/orderlist",
+					"style": {
+						"navigationBarTitleText": "订单列表"
+					}
+				},
+				{
+					"path": "order/orderdetail",
+					"style": {
+						"navigationBarTitleText": "订单详情"
+					}
+				},
+				{
+					"path": "after_sale/index",
+					"style": {
+						"navigationBarTitleText": "申请售后"
+					}
+				}	,
+				{
+					"path": "after_sale/list",
+					"style": {
+						"navigationBarTitleText": "售后详情"
+					}
+				},
+				{
+					"path": "order/evaluate",
+					"style": {
+						"navigationBarTitleText": "订单评价"
+					}
+				}	,
+				{
+					"path": "order/express_delivery",
+					"style": {
+						"navigationBarTitleText": "物流信息"
+					}
+				}				
+			]
+		}	
+	],		
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "万森健康生活馆",
+		"navigationBarTitleText": "济丸康",
 		"navigationBarBackgroundColor": "#fff",
 		"backgroundColor": "#F8F8F8"
 	},
-  "tabBar": {
-	"color": "#999",
-	"selectedColor": "#05502C",
-	"backgroundColor": "#fff",
-	"list": [
-	  {
-		"pagePath": "pages/index/index",
-		"text": "首页",
-		"iconPath": "static/img/index_gray.png",
-		"selectedIconPath": "static/img/index_black.png"
-	  },
-	  {
-		"pagePath": "pages/classify/classify",
-		"text": "商品",
-		"iconPath": "static/img/classify_gray.png",
-		"selectedIconPath": "static/img/classify_black.png"
-	  },	  	  
-	  {
-		"pagePath": "pages/cart/index/index",
-		"text": "购物车",
-		"iconPath": "static/img/cart_gray.png",
-		"selectedIconPath": "static/img/cart_black.png"
-	  },
-	  {
-		"pagePath": "pages/member/index/index",
-		"text": "我的",
-		"iconPath": "static/img/user_gray.png",
-		"selectedIconPath": "static/img/user_black.png"
-	  }
-	]
-  },	
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#f89a32",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/images/index_gray.png",
+				"selectedIconPath": "static/images/index_black.png"
+			},
+			{
+				"pagePath": "pages/classify/classify",
+				"text": "分类",
+				"iconPath": "static/images/classify_gray.png",
+				"selectedIconPath": "static/images/classify_black.png"
+			},			
+			{
+				"pagePath": "pages/cart/index/index",
+				"text": "购物车",
+				"iconPath": "static/images/cart_gray.png",
+				"selectedIconPath": "static/images/cart_black.png"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"text": "我的",
+				"iconPath": "static/images/user_gray.png",
+				"selectedIconPath": "static/images/user_black.png"
+			}
+		]
+	},
 	"condition": {
 		//模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)

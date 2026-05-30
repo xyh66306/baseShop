@@ -1,0 +1,36 @@
+
+----------------Start-------------------
+
+2026-04-02 16:37:50
+E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php：250行,调用方法：addReward
+Error：'N;'
+
+----------------End---------------------
+
+
+----------------Start-------------------
+
+2026-04-02 16:39:20
+E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php：250行,调用方法：addReward
+Error：'i:1;'
+
+----------------End---------------------
+
+
+----------------Start-------------------
+
+2026-04-02 16:39:20
+E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php：251行,调用方法：addReward
+Error：'d:49.900000000000006;'
+
+----------------End---------------------
+
+
+----------------Start-------------------
+
+2026-04-02 16:39:20
+E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php：252行,调用方法：addReward
+Error：'T998'
+
+----------------End---------------------
+

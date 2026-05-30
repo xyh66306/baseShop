@@ -1,0 +1,219 @@
+---------------------------------------------------------------
+[2026-04-02T14:09:17+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.074592s] [吞吐率：13.41req/s] [内存消耗：5,735.96kb] [文件加载：125]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T15:59:30+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.066730s] [吞吐率：14.99req/s] [内存消耗：5,778.43kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T15:59:42+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.060491s] [吞吐率：16.53req/s] [内存消耗：5,779.68kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T15:59:57+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.069027s] [吞吐率：14.49req/s] [内存消耗：5,778.43kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:00:12+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.057580s] [吞吐率：17.37req/s] [内存消耗：5,778.43kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:00:22+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.067778s] [吞吐率：14.75req/s] [内存消耗：5,780.02kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:00:44+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.058625s] [吞吐率：17.06req/s] [内存消耗：5,778.43kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:00:54+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.068717s] [吞吐率：14.55req/s] [内存消耗：5,778.43kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:01:00+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.084465s] [吞吐率：11.84req/s] [内存消耗：5,786.80kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:08:01+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.070495s] [吞吐率：14.19req/s] [内存消耗：5,778.07kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:08:15+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.060283s] [吞吐率：16.59req/s] [内存消耗：5,778.07kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:08:24+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.060351s] [吞吐率：16.57req/s] [内存消耗：5,778.07kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:08:35+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.066931s] [吞吐率：14.94req/s] [内存消耗：5,779.38kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:08:51+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.060318s] [吞吐率：16.58req/s] [内存消耗：5,778.41kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:09:02+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.060978s] [吞吐率：16.40req/s] [内存消耗：5,778.41kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:09:15+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.063489s] [吞吐率：15.75req/s] [内存消耗：5,779.70kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:09:42+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.058418s] [吞吐率：17.12req/s] [内存消耗：5,778.41kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:09:53+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.062297s] [吞吐率：16.05req/s] [内存消耗：5,778.41kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:10:01+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.065403s] [吞吐率：15.29req/s] [内存消耗：5,780.01kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:10:18+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.058979s] [吞吐率：16.96req/s] [内存消耗：5,778.41kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:10:28+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.060371s] [吞吐率：16.56req/s] [内存消耗：5,778.41kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:10:34+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.064171s] [吞吐率：15.58req/s] [内存消耗：5,786.79kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义变量: price[E:\wwwroot\2026\04\jiwankang\application\common\model\UserSanrentuan.php:71]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:37:39+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.063491s] [吞吐率：15.75req/s] [内存消耗：5,778.18kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:37:44+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.059799s] [吞吐率：16.72req/s] [内存消耗：5,778.18kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:37:50+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.101767s] [吞吐率：9.83req/s] [内存消耗：5,785.90kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:37:55+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.077325s] [吞吐率：12.93req/s] [内存消耗：5,778.18kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:39:16+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.059613s] [吞吐率：16.77req/s] [内存消耗：5,778.05kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:39:20+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.065613s] [吞吐率：15.24req/s] [内存消耗：5,786.09kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:39:25+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.057897s] [吞吐率：17.27req/s] [内存消耗：5,778.05kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:59:40+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.077599s] [吞吐率：12.89req/s] [内存消耗：5,788.23kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:59:45+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.066789s] [吞吐率：14.97req/s] [内存消耗：5,801.55kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T16:59:50+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.063927s] [吞吐率：15.64req/s] [内存消耗：5,788.23kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]
+---------------------------------------------------------------
+[2026-04-02T18:40:57+08:00] 127.0.0.1 POST www.jiwankang.com/api.html
+[运行时间：0.065588s] [吞吐率：15.25req/s] [内存消耗：5,790.75kb] [文件加载：126]
+[ error ] [8]未定义数组索引: memo[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]未定义数组索引: id[E:\wwwroot\2026\04\jiwankang\extend\org\payments\balancepay.php:38]
+[ error ] [8]Object of class app\common\model\User could not be converted to int[E:\wwwroot\2026\04\jiwankang\addons\Userupgrade\Userupgrade.php:97]

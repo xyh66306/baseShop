@@ -41,6 +41,15 @@ export const orders = {
 	}
 }
 
+export const common = {
+	mounted() {},
+	methods: {
+		goToPage(url){
+			this.$common.navigateTo(url)
+		}
+	}
+}
+
 /**
  *  商品接口信息
  *
@@ -511,14 +520,5 @@ export const subscription = {
 			typeof func == 'function' && func()
 			// #endif
 		},
-	}
-}
-
-export const common = {
-	mounted() {},
-	methods: {
-		goToPage(url){
-			this.$common.navigateTo(url)
-		}
 	}
 }

@@ -108,6 +108,8 @@ $fz16: 32rpx;
 $fz18: 36rpx;
 $fz20: 40rpx;
 
+@import '@/uni_modules/uview-ui/theme.scss';
+
 // 主色调
 $color-main: #FF4444;
 @mixin ellNum($num: 2) {

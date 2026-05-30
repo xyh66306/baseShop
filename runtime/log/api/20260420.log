@@ -1,0 +1,533 @@
+---------------------------------------------------------------
+[2026-04-20T16:58:32+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopConf
+[运行时间：0.074699s] [吞吐率：13.39req/s] [内存消耗：4,356.23kb] [文件加载：101]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001771s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_addons` [ RunTime:0.004309s ]
+[ sql ] [ SQL ] SELECT `status` FROM `wb_addons` WHERE  `name` = 'DistributionCenter' LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001675s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_default_image' LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_pages_menu` [ RunTime:0.003668s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_pages_menu` WHERE  `pid` = 0 ORDER BY `menu_id` ASC [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_pages_menu` WHERE  `pid` = 2 ORDER BY `menu_id` DESC [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_pages_menu` WHERE  `pid` = 3 ORDER BY `menu_id` DESC [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_pages_menu` WHERE  `pid` = 4 ORDER BY `menu_id` DESC [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_pages_menu` WHERE  `pid` = 5 ORDER BY `menu_id` DESC [ RunTime:0.000887s ]
+---------------------------------------------------------------
+[2026-04-20T16:58:32+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopconf
+[运行时间：0.041184s] [吞吐率：24.28req/s] [内存消耗：3,084.63kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:32+08:00] 127.0.0.1 OPTIONS www.baseshop.com/api.html
+[运行时间：0.040694s] [吞吐率：24.57req/s] [内存消耗：3,002.90kb] [文件加载：89]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:32+08:00] 127.0.0.1 OPTIONS www.baseshop.com/api.html
+[运行时间：0.031926s] [吞吐率：31.32req/s] [内存消耗：3,002.90kb] [文件加载：89]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:32+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopconf
+[运行时间：0.031204s] [吞吐率：32.05req/s] [内存消耗：3,084.63kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:32+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[运行时间：0.049025s] [吞吐率：20.40req/s] [内存消耗：3,625.02kb] [文件加载：99]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'content-length' => '78',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'client' => '2',
+  'url' => '/pages/share/jump',
+  'type' => '1',
+  'page' => '1',
+  'method' => 'user.share',
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:32+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[运行时间：0.142814s] [吞吐率：7.00req/s] [内存消耗：5,089.78kb] [文件加载：115]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'content-length' => '55',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '5',
+  'method' => 'pages.gethomepageconfig',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000989s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_pages` [ RunTime:0.006219s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_pages` WHERE  `is_main` = 1 LIMIT 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_pages_items` [ RunTime:0.004331s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_pages_items` WHERE  `page_code` = 'mobile_home' ORDER BY `sort` ASC LIMIT 0,5 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_pages_items` WHERE  `page_code` = 'mobile_home' LIMIT 1 [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_notice` [ RunTime:0.004874s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`ctime` FROM `wb_notice` WHERE (  `type` = 1 ) AND `wb_notice`.`isdel` IS NULL ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.004952s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`bn`,`brief`,`price`,`mktprice`,`image_id`,`goods_cat_id`,`goods_type_id`,`brand_id`,`is_nomal_virtual`,`marketable`,`stock`,`weight`,`unit`,`spes_desc`,`params`,`comments_count`,`view_count`,`buy_count`,`sort`,`is_recommend`,`is_hot`,`label_ids` FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) ORDER BY `sort` ASC,`id` DESC LIMIT 0,10 [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `label_ids` FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) GROUP BY `label_ids` [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_label` [ RunTime:0.004289s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_label` WHERE  `id` IN (0) [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT `g`.`brand_id`,`b`.`name` FROM `wb_goods` `g` LEFT JOIN `wb_brand` `b` ON `b`.`id`=`g`.`brand_id` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  )  AND `g`.`brand_id` <> '0' GROUP BY `g`.`brand_id` [ RunTime:0.003993s ]
+[ sql ] [ SQL ] SELECT `g`.`goods_cat_id`,`gc`.`name` FROM `wb_goods` `g` LEFT JOIN `wb_goods_cat` `gc` ON `g`.`goods_cat_id`=`gc`.`id` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  )  AND `g`.`goods_cat_id` <> '0' GROUP BY `goods_cat_id` [ RunTime:0.003563s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`bn`,`brief`,`price`,`mktprice`,`image_id`,`goods_cat_id`,`goods_type_id`,`brand_id`,`is_nomal_virtual`,`marketable`,`stock`,`weight`,`unit`,`spes_desc`,`params`,`comments_count`,`view_count`,`buy_count`,`sort`,`is_recommend`,`is_hot`,`label_ids` FROM `wb_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_cat` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wb_goods_cat` WHERE  `id` = 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.004014s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_products` WHERE  `goods_id` = 1  AND `is_defalut` = 1 LIMIT 1 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_products` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT `name`,`image_id`,`bn`,`marketable`,`spes_desc`,`is_combo`,`point`,`open_point` FROM `wb_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_promotion` [ RunTime:0.003731s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_promotion` WHERE (  `status` = 1  AND `stime` < 1776675512  AND `etime` > 1776675512  AND `type` = 1 ) AND `wb_promotion`.`isdel` IS NULL ORDER BY `sort` ASC [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_images` [ RunTime:0.002724s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_goods_images` WHERE  `goods_id` = 1 ORDER BY `sort` ASC [ RunTime:0.001573s ]
+---------------------------------------------------------------
+[2026-04-20T16:58:33+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[运行时间：0.071345s] [吞吐率：14.02req/s] [内存消耗：5,043.20kb] [文件加载：114]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'content-length' => '55',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'limit' => '5',
+  'method' => 'pages.gethomepageconfig',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000898s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_pages_items` [ RunTime:0.001719s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_pages_items` WHERE  `page_code` = 'mobile_home' ORDER BY `sort` ASC LIMIT 5,5 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.001757s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`bn`,`brief`,`price`,`mktprice`,`image_id`,`goods_cat_id`,`goods_type_id`,`brand_id`,`is_nomal_virtual`,`marketable`,`stock`,`weight`,`unit`,`spes_desc`,`params`,`comments_count`,`view_count`,`buy_count`,`sort`,`is_recommend`,`is_hot`,`label_ids` FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) ORDER BY `sort` ASC,`id` DESC LIMIT 0,10 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT `label_ids` FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) GROUP BY `label_ids` [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_label` [ RunTime:0.001649s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_label` WHERE  `id` IN (0) [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT `g`.`brand_id`,`b`.`name` FROM `wb_goods` `g` LEFT JOIN `wb_brand` `b` ON `b`.`id`=`g`.`brand_id` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  )  AND `g`.`brand_id` <> '0' GROUP BY `g`.`brand_id` [ RunTime:0.001488s ]
+[ sql ] [ SQL ] SELECT `g`.`goods_cat_id`,`gc`.`name` FROM `wb_goods` `g` LEFT JOIN `wb_goods_cat` `gc` ON `g`.`goods_cat_id`=`gc`.`id` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  )  AND `g`.`goods_cat_id` <> '0' GROUP BY `goods_cat_id` [ RunTime:0.001923s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`bn`,`brief`,`price`,`mktprice`,`image_id`,`goods_cat_id`,`goods_type_id`,`brand_id`,`is_nomal_virtual`,`marketable`,`stock`,`weight`,`unit`,`spes_desc`,`params`,`comments_count`,`view_count`,`buy_count`,`sort`,`is_recommend`,`is_hot`,`label_ids` FROM `wb_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_cat` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wb_goods_cat` WHERE  `id` = 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.001524s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_products` WHERE  `goods_id` = 1  AND `is_defalut` = 1 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_products` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT `name`,`image_id`,`bn`,`marketable`,`spes_desc`,`is_combo`,`point`,`open_point` FROM `wb_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_promotion` [ RunTime:0.002022s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_promotion` WHERE (  `status` = 1  AND `stime` < 1776675513  AND `etime` > 1776675513  AND `type` = 1 ) AND `wb_promotion`.`isdel` IS NULL ORDER BY `sort` ASC [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_images` [ RunTime:0.001560s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_goods_images` WHERE  `goods_id` = 1 ORDER BY `sort` ASC [ RunTime:0.000203s ]
+---------------------------------------------------------------
+[2026-04-20T16:58:36+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopConf
+[运行时间：0.038668s] [吞吐率：25.86req/s] [内存消耗：3,084.52kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:36+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopconf
+[运行时间：0.041471s] [吞吐率：24.11req/s] [内存消耗：3,084.63kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:36+08:00] 127.0.0.1 OPTIONS www.baseshop.com/api.html
+[运行时间：0.040625s] [吞吐率：24.62req/s] [内存消耗：3,002.90kb] [文件加载：89]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:36+08:00] 127.0.0.1 OPTIONS www.baseshop.com/api.html
+[运行时间：0.032058s] [吞吐率：31.19req/s] [内存消耗：3,002.90kb] [文件加载：89]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:36+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopconf
+[运行时间：0.033767s] [吞吐率：29.61req/s] [内存消耗：3,084.63kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:36+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[运行时间：0.049381s] [吞吐率：20.25req/s] [内存消耗：4,251.59kb] [文件加载：98]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'content-length' => '65',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'b105ed477d63e7f3325b74b4b366391c',
+  'method' => 'user.info',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001044s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_token` [ RunTime:0.003704s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_token` WHERE  `token` = 'b105ed477d63e7f3325b74b4b366391c' LIMIT 1 [ RunTime:0.002074s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001867s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000109s ]
+---------------------------------------------------------------
+[2026-04-20T16:58:36+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[运行时间：0.065873s] [吞吐率：15.18req/s] [内存消耗：4,751.27kb] [文件加载：106]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'content-length' => '121',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'client' => '2',
+  'url' => '/pages/share/jump',
+  'type' => '1',
+  'page' => '1',
+  'token' => 'b105ed477d63e7f3325b74b4b366391c',
+  'method' => 'user.share',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018393s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_token` [ RunTime:0.001692s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_token` WHERE  `token` = 'b105ed477d63e7f3325b74b4b366391c' LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001645s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000141s ]
+count`,`view_count`,`buy_count`,`sort`,`is_recommend`,`is_hot`,`label_ids` FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) ORDER BY `sort` ASC,`id` DESC LIMIT 0,10 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT `label_ids` FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) GROUP BY `label_ids` [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_label` [ RunTime:0.001503s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_label` WHERE  `id` IN (0) [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `g`.`brand_id`,`b`.`name` FROM `wb_goods` `g` LEFT JOIN `wb_brand` `b` ON `b`.`id`=`g`.`brand_id` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  )  AND `g`.`brand_id` <> '0' GROUP BY `g`.`brand_id` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT `g`.`goods_cat_id`,`gc`.`name` FROM `wb_goods` `g` LEFT JOIN `wb_goods_cat` `gc` ON `g`.`goods_cat_id`=`gc`.`id` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  )  AND `g`.`goods_cat_id` <> '0' GROUP BY `goods_cat_id` [ RunTime:0.001379s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`bn`,`brief`,`price`,`mktprice`,`image_id`,`goods_cat_id`,`goods_type_id`,`brand_id`,`is_nomal_virtual`,`marketable`,`stock`,`weight`,`unit`,`spes_desc`,`params`,`comments_count`,`view_count`,`buy_count`,`sort`,`is_recommend`,`is_hot`,`label_ids` FROM `wb_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_cat` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wb_goods_cat` WHERE  `id` = 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.001735s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_products` WHERE  `goods_id` = 1  AND `is_defalut` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_products` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `name`,`image_id`,`bn`,`marketable`,`spes_desc`,`is_combo`,`point`,`open_point` FROM `wb_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_promotion` [ RunTime:0.001686s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_promotion` WHERE (  `status` = 1  AND `stime` < 1776675516  AND `etime` > 1776675516  AND `type` = 1 ) AND `wb_promotion`.`isdel` IS NULL ORDER BY `sort` ASC [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_images` [ RunTime:0.001573s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_goods_images` WHERE  `goods_id` = 1 ORDER BY `sort` ASC [ RunTime:0.000203s ]
+---------------------------------------------------------------
+[2026-04-20T16:58:37+08:00] 127.0.0.1 POST www.baseshop.com/api.html
+[运行时间：0.079946s] [吞吐率：12.51req/s] [内存消耗：5,040.49kb] [文件加载：114]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'content-length' => '55',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'limit' => '5',
+  'method' => 'pages.gethomepageconfig',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001399s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.001979s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`bn`,`brief`,`price`,`mktprice`,`image_id`,`goods_cat_id`,`goods_type_id`,`brand_id`,`is_nomal_virtual`,`marketable`,`stock`,`weight`,`unit`,`spes_desc`,`params`,`comments_count`,`view_count`,`buy_count`,`sort`,`is_recommend`,`is_hot`,`label_ids` FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) ORDER BY `sort` ASC,`id` DESC LIMIT 0,10 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `label_ids` FROM `wb_goods` `g` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  ) GROUP BY `label_ids` [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_label` [ RunTime:0.002017s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_label` WHERE  `id` IN (0) [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT `g`.`brand_id`,`b`.`name` FROM `wb_goods` `g` LEFT JOIN `wb_brand` `b` ON `b`.`id`=`g`.`brand_id` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  )  AND `g`.`brand_id` <> '0' GROUP BY `g`.`brand_id` [ RunTime:0.001700s ]
+[ sql ] [ SQL ] SELECT `g`.`goods_cat_id`,`gc`.`name` FROM `wb_goods` `g` LEFT JOIN `wb_goods_cat` `gc` ON `g`.`goods_cat_id`=`gc`.`id` WHERE  `g`.`marketable` = '1'  AND `g`.`open_point` = '3'  AND (  1=1  )  AND `g`.`goods_cat_id` <> '0' GROUP BY `goods_cat_id` [ RunTime:0.001681s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`bn`,`brief`,`price`,`mktprice`,`image_id`,`goods_cat_id`,`goods_type_id`,`brand_id`,`is_nomal_virtual`,`marketable`,`stock`,`weight`,`unit`,`spes_desc`,`params`,`comments_count`,`view_count`,`buy_count`,`sort`,`is_recommend`,`is_hot`,`label_ids` FROM `wb_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_cat` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wb_goods_cat` WHERE  `id` = 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.003592s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_products` WHERE  `goods_id` = 1  AND `is_defalut` = 1 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_products` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT `name`,`image_id`,`bn`,`marketable`,`spes_desc`,`is_combo`,`point`,`open_point` FROM `wb_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_promotion` [ RunTime:0.003799s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_promotion` WHERE (  `status` = 1  AND `stime` < 1776675517  AND `etime` > 1776675517  AND `type` = 1 ) AND `wb_promotion`.`isdel` IS NULL ORDER BY `sort` ASC [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_images` [ RunTime:0.003874s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_goods_images` WHERE  `goods_id` = 1 ORDER BY `sort` ASC [ RunTime:0.000722s ]
+---------------------------------------------------------------
+[2026-04-20T16:58:42+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopConf
+[运行时间：0.047686s] [吞吐率：20.97req/s] [内存消耗：3,084.59kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:42+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopconf
+[运行时间：0.040400s] [吞吐率：24.75req/s] [内存消耗：3,084.88kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:44+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopConf
+[运行时间：0.036009s] [吞吐率：27.77req/s] [内存消耗：3,084.59kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-20T16:58:44+08:00] 127.0.0.1 GET www.baseshop.com/api/common/jshopconf
+[运行时间：0.038245s] [吞吐率：26.15req/s] [内存消耗：3,084.88kb] [文件加载：93]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)

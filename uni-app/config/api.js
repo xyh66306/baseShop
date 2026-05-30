@@ -109,9 +109,6 @@ const methodsToken = [
 ];
 
 const post = (method, data, callback,complete) => {
-	uni.showLoading({
-		title: '加载中'
-	});
 
 	// 判断token是否存在
 	if (methodsToken.indexOf(method) >= 0) {
@@ -166,7 +163,7 @@ const post = (method, data, callback,complete) => {
 									animationType: 'pop-in',
 									animationDuration: 200,
 									complete() {
-										uni.hideLoading()
+										// uni.hideLoading()
 									}
 								});
 								// #endif
@@ -179,9 +176,7 @@ const post = (method, data, callback,complete) => {
 		},
 		
 		complete: (response) => {
-			setTimeout(function() {
-				uni.hideLoading();
-			}, 1000)
+
 			complete?complete(): "";
 		},
 		fail: (error) => {

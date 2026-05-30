@@ -10,6 +10,10 @@ import * as Db from './config/db.js'
 import * as Config from './config/config.js'
 import store from './store'
 import './common/uni-H5Api'
+
+import uView from '@/uni_modules/uview-ui'
+Vue.use(uView)
+uni.$u.config.unit = 'rpx'
 // #ifdef H5
 import * as wx from './static/js/wx.js'
 // #endif

@@ -1,0 +1,2378 @@
+---------------------------------------------------------------
+[2026-04-17T10:58:43+08:00] 127.0.0.1 GET www.baseshop.com/install/
+[运行时间：0.048065s] [吞吐率：20.81req/s] [内存消耗：2,502.54kb] [文件加载：78]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2026-04-17T10:58:46+08:00] 127.0.0.1 GET www.baseshop.com/
+[运行时间：0.024311s] [吞吐率：41.13req/s] [内存消耗：2,934.69kb] [文件加载：89]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-17T11:00:46+08:00] 127.0.0.1 GET www.baseshop.com/manage
+[运行时间：0.025477s] [吞吐率：39.25req/s] [内存消耗：2,999.13kb] [文件加载：97]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_aihecong_chat_visibility=true',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-17T11:00:46+08:00] 127.0.0.1 GET www.baseshop.com/manage/common/login.html
+[运行时间：0.033512s] [吞吐率：29.84req/s] [内存消耗：4,434.44kb] [文件加载：106]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_aihecong_chat_visibility=true; PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; jshop_redirect_url=%2Fmanage',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\common\login.html [ array (
+  0 => 'params',
+  1 => 'shop_name',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000921s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001665s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[2026-04-17T11:00:47+08:00] 127.0.0.1 GET www.baseshop.com/captcha.html
+[运行时间：0.025273s] [吞吐率：39.57req/s] [内存消耗：2,490.49kb] [文件加载：77]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; jshop_redirect_url=%2Fmanage; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/common/login.html',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2026-04-17T11:01:04+08:00] 127.0.0.1 POST www.baseshop.com/manage/common/login.html
+[运行时间：0.034451s] [吞吐率：29.03req/s] [内存消耗：4,350.23kb] [文件加载：108]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; jshop_redirect_url=%2Fmanage; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/common/login.html',
+  'origin' => 'http://www.baseshop.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '120',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'ljmaoyi',
+  'password' => 'ljmaoyi520',
+  'captcha' => '',
+  'validate_form' => 'login',
+  '__Jshop_Token__' => '4f991e98396127b2ff8b4878f53c67fee8e4408e',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] {"status":false,"data":11088,"msg":"\u6ca1\u6709\u627e\u5230\u63a7\u5236\u5668\uff0c\u8bf7\u8054\u7cfb\u5e73\u53f0\u7ba1\u7406\u5458"}
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000723s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation` [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` WHERE  `type` = 'c'  AND `code` = 'common'  AND `parent_id` = 2 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `username` = 'ljmaoyi' OR `mobile` = 'ljmaoyi' LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  ( `username` = 'ljmaoyi' OR `mobile` = 'ljmaoyi' )  AND `password` = '3cc07ed743881489cbca652b97fc1f44' LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_log` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] INSERT INTO `wb_user_log` (`user_id` , `state` , `ctime` , `params` , `ip` , `type`) VALUES (13 , 1 , 1776394864 , '[]' , '127.0.0.1' , 2) [ RunTime:0.000135s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:06+08:00] 127.0.0.1 GET www.baseshop.com/manage
+[运行时间：0.041730s] [吞吐率：23.96req/s] [内存消耗：5,169.78kb] [文件加载：117]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/common/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\index\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'menu',
+  4 => 'kefu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` WHERE  `perm_type` <= 1 ORDER BY `sort` ASC [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'ent_id' LIMIT 1 [ RunTime:0.000182s ]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+---------------------------------------------------------------
+[2026-04-17T11:01:06+08:00] 127.0.0.1 GET www.baseshop.com/manage/index/welcome.html
+[运行时间：0.046703s] [吞吐率：21.41req/s] [内存消耗：5,546.66kb] [文件加载：116]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\index\welcome.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'unpaid_count',
+  4 => 'unship_count',
+  5 => 'after_sales_count',
+  6 => 'goods_statics',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 1  AND `ship_status` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 2  AND `ship_status` IN (1,2) ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_aftersales` [ RunTime:0.001593s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_bill_aftersales` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 1 LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 2 LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'goods_stocks_warn' LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(id) AS think_count FROM `wb_products` WHERE  ( IF(stock < freeze_stock, 0, stock - freeze_stock)<10 ) GROUP BY `goods_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:06+08:00] 127.0.0.1 GET www.baseshop.com/manage/administrator/userloglist/state/1.html
+[运行时间：0.041147s] [吞吐率：24.30req/s] [内存消耗：4,567.63kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'state' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001123s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001184s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_log` [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_user_log` WHERE  `state` = 1  AND `type` = 2 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_log` WHERE  `state` = 1  AND `type` = 2 ORDER BY `ctime` DESC LIMIT 0,10 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000216s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:06+08:00] 127.0.0.1 GET www.baseshop.com/manage/operation_log/getlastlog.html
+[运行时间：0.044190s] [吞吐率：22.63req/s] [内存消耗：4,521.70kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001091s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001898s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation_log` [ RunTime:0.002476s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_operation_log` LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation_log` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.001190s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000075s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000075s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000075s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:06+08:00] 127.0.0.1 GET www.baseshop.com/manage/user/statistics.html
+[运行时间：0.055525s] [吞吐率：18.01req/s] [内存消耗：4,998.26kb] [文件加载：111]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000860s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.002004s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user` [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT DATE_FORMAT(from_unixtime(ctime),"%Y-%m-%d") as day, count(*) as nums FROM `wb_user` WHERE (  `ctime` > 1775790066  AND ( TIMESTAMPDIFF(DAY,from_unixtime(ctime),now()) <7 ) ) AND `wb_user`.`isdel` IS NULL GROUP BY DATE_FORMAT(from_unixtime(ctime),"%Y-%m-%d") [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776394866  AND `ctime` >= 1776355200 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776355199  AND `ctime` >= 1776268800 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776268799  AND `ctime` >= 1776182400 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776182399  AND `ctime` >= 1776096000 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776095999  AND `ctime` >= 1776009600 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776009599  AND `ctime` >= 1775923200 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1775923199  AND `ctime` >= 1775836800 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000093s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:06+08:00] 127.0.0.1 GET www.baseshop.com/manage/order/statistics.html
+[运行时间：0.033700s] [吞吐率：29.67req/s] [内存消耗：4,689.63kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001402s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001168s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_payments` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT count(1) AS `nums`,DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") AS `day` FROM `wb_bill_payments` WHERE  `status` = 2  AND `type` = 1  AND ( FROM_UNIXTIME(ctime) >= 2026-04-10 ) GROUP BY DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_delivery` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT count(1) AS `nums`,DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") AS `day` FROM `wb_bill_delivery` WHERE  ( FROM_UNIXTIME(ctime) >= 2026-04-10 ) GROUP BY DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:09+08:00] 127.0.0.1 GET www.baseshop.com/manage/index/clearcache.html
+[运行时间：0.056351s] [吞吐率：17.75req/s] [内存消耗：5,321.06kb] [文件加载：146]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\config/tpl/dispatch_jump.tpl [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012921s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.002251s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000239s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:09+08:00] 127.0.0.1 GET www.baseshop.com/manage/index/clearcache.html
+[运行时间：0.161476s] [吞吐率：6.19req/s] [内存消耗：5,321.06kb] [文件加载：146]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\config/tpl/dispatch_jump.tpl [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000996s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000348s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:10+08:00] 127.0.0.1 GET www.baseshop.com/manage
+[运行时间：0.054863s] [吞吐率：18.23req/s] [内存消耗：5,231.37kb] [文件加载：120]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/common/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\index\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'menu',
+  4 => 'kefu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_hooks` [ RunTime:0.001072s ]
+[ sql ] [ SQL ] SELECT `name`,`addons` FROM `wb_hooks` [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_addons` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Userupgrade','UserInvite') [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Wxdelivery') [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('UserInvite') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('QueueCreate') [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Wxdelivery') [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation` [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` WHERE  `perm_type` <= 1 ORDER BY `sort` ASC [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_addons` WHERE  `name` = 'Wxdelivery' LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'ent_id' LIMIT 1 [ RunTime:0.000176s ]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+---------------------------------------------------------------
+[2026-04-17T11:01:10+08:00] 127.0.0.1 GET www.baseshop.com/manage/index/welcome.html
+[运行时间：0.047198s] [吞吐率：21.19req/s] [内存消耗：5,546.60kb] [文件加载：116]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\index\welcome.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'unpaid_count',
+  4 => 'unship_count',
+  5 => 'after_sales_count',
+  6 => 'goods_statics',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000939s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 1  AND `ship_status` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 2  AND `ship_status` IN (1,2) ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_aftersales` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_bill_aftersales` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 1 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 2 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'goods_stocks_warn' LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(id) AS think_count FROM `wb_products` WHERE  ( IF(stock < freeze_stock, 0, stock - freeze_stock)<10 ) GROUP BY `goods_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000165s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:10+08:00] 127.0.0.1 GET www.baseshop.com/manage/administrator/userloglist/state/1.html
+[运行时间：0.039403s] [吞吐率：25.38req/s] [内存消耗：4,567.57kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'state' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000970s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_log` [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_user_log` WHERE  `state` = 1  AND `type` = 2 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_log` WHERE  `state` = 1  AND `type` = 2 ORDER BY `ctime` DESC LIMIT 0,10 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000075s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000206s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:10+08:00] 127.0.0.1 GET www.baseshop.com/manage/operation_log/getlastlog.html
+[运行时间：0.057948s] [吞吐率：17.26req/s] [内存消耗：4,521.63kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation_log` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_operation_log` LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation_log` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000172s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:10+08:00] 127.0.0.1 GET www.baseshop.com/manage/user/statistics.html
+[运行时间：0.037265s] [吞吐率：26.83req/s] [内存消耗：4,998.20kb] [文件加载：111]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user` [ RunTime:0.001432s ]
+[ sql ] [ SQL ] SELECT DATE_FORMAT(from_unixtime(ctime),"%Y-%m-%d") as day, count(*) as nums FROM `wb_user` WHERE (  `ctime` > 1775790070  AND ( TIMESTAMPDIFF(DAY,from_unixtime(ctime),now()) <7 ) ) AND `wb_user`.`isdel` IS NULL GROUP BY DATE_FORMAT(from_unixtime(ctime),"%Y-%m-%d") [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776394870  AND `ctime` >= 1776355200 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776355199  AND `ctime` >= 1776268800 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776268799  AND `ctime` >= 1776182400 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776182399  AND `ctime` >= 1776096000 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776095999  AND `ctime` >= 1776009600 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776009599  AND `ctime` >= 1775923200 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1775923199  AND `ctime` >= 1775836800 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000091s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:10+08:00] 127.0.0.1 GET www.baseshop.com/manage/order/statistics.html
+[运行时间：0.043885s] [吞吐率：22.79req/s] [内存消耗：4,689.57kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001721s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001663s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_payments` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT count(1) AS `nums`,DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") AS `day` FROM `wb_bill_payments` WHERE  `status` = 2  AND `type` = 1  AND ( FROM_UNIXTIME(ctime) >= 2026-04-10 ) GROUP BY DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_delivery` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT count(1) AS `nums`,DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") AS `day` FROM `wb_bill_delivery` WHERE  ( FROM_UNIXTIME(ctime) >= 2026-04-10 ) GROUP BY DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:11+08:00] 127.0.0.1 GET www.baseshop.com/manage/setting/index.html
+[运行时间：0.041991s] [吞吐率：23.81req/s] [内存消耗：5,063.09kb] [文件加载：113]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\setting\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000614s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_images` [ RunTime:0.001267s ]
+[ sql ] [ SQL ] SELECT `url` FROM `wb_images` WHERE  `id` = '439f3439b1cb6e81c2c17d26619eb663' LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_default_image' LIMIT 1 [ RunTime:0.000134s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:11+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394871863
+[运行时间：0.042876s] [吞吐率：23.32req/s] [内存消耗：4,336.48kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394871863',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001384s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001285s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000981s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:11+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394871862
+[运行时间：0.056085s] [吞吐率：17.83req/s] [内存消耗：4,336.48kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394871862',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000747s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000287s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:11+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394871863
+[运行时间：0.033754s] [吞吐率：29.63req/s] [内存消耗：4,336.48kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394871863',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000880s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:42+08:00] 127.0.0.1 GET www.baseshop.com/install/style/layui/css/layui.css
+[运行时间：0.019624s] [吞吐率：50.96req/s] [内存消耗：2,502.54kb] [文件加载：78]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2026-04-17T11:01:42+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/groupList.html
+[运行时间：0.035703s] [吞吐率：28.01req/s] [内存消耗：4,431.41kb] [文件加载：108]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/static/js/ue/dialogs/image/image.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000922s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_images_group` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_images_group` WHERE  `show` = 1 [ RunTime:0.000135s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:45+08:00] 127.0.0.1 POST www.baseshop.com/manage/images/manage.html?action=uploadimage&encode=utf-8&group_id=0
+[运行时间：0.037275s] [吞吐率：26.83req/s] [内存消耗：4,439.16kb] [文件加载：106]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/static/js/ue/dialogs/image/image.html',
+  'origin' => 'http://www.baseshop.com',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryidqUD3Loxdx1fUpG',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'content-length' => '117256',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'uploadimage',
+  'encode' => 'utf-8',
+  'group_id' => '0',
+  'id' => 'WU_FILE_0',
+  'name' => 'logo.png',
+  'type' => 'image/png',
+  'lastModifiedDate' => 'Mon Apr 13 2026 18:25:49 GMT+0800 (GMT+08:00)',
+  'size' => '116531',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] {"status":false,"data":11089,"msg":"\u6ca1\u6709\u627e\u5230\u6b64\u65b9\u6cd5\uff0c\u8bf7\u8054\u7cfb\u5e73\u53f0\u7ba1\u7406\u5458"}
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000723s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` WHERE  `type` = 'c'  AND `code` = 'images'  AND `parent_id` = 2 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` WHERE  `type` = 'a'  AND `code` = 'manage'  AND `parent_id` = 390 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'image_storage_params' LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'image_storage_params' LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_images` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] INSERT INTO `wb_images` (`id` , `group_id` , `type` , `name` , `url` , `ctime` , `path`) VALUES ('3cf1567d9c933a339a82d6fadf12b61a' , 0 , 'Local' , 'logo.png' , 'http://www.baseshop.com/static/uploads/images/2026/04/17/177639490569e1a299af053.png' , 1776394905 , 'E:\\wwwroot\\2025\\git\\baseShop\\public/static/uploads/images/2026/04/17/177639490569e1a299af053.png') [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:47+08:00] 127.0.0.1 GET www.baseshop.com/install/style/layui/css/layui.css
+[运行时间：0.018033s] [吞吐率：55.45req/s] [内存消耗：2,502.54kb] [文件加载：78]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2026-04-17T11:01:47+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/groupList.html
+[运行时间：0.035342s] [吞吐率：28.29req/s] [内存消耗：4,431.41kb] [文件加载：108]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/static/js/ue/dialogs/image/image.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_images_group` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_images_group` WHERE  `show` = 1 [ RunTime:0.000251s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:48+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=listimage&group_id=0&start=0&size=20&noCache=1776394908496
+[运行时间：0.056374s] [吞吐率：17.74req/s] [内存消耗：4,633.20kb] [文件加载：108]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'listimage',
+  'group_id' => '0',
+  'start' => '0',
+  'size' => '20',
+  'noCache' => '1776394908496',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019259s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_images` [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_images` WHERE  `group_id` = 0 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_images` WHERE  `group_id` = 0 ORDER BY `ctime` DESC LIMIT 0,20 [ RunTime:0.000157s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:53+08:00] 127.0.0.1 POST www.baseshop.com/manage/setting/index.html
+[运行时间：0.043897s] [吞吐率：22.78req/s] [内存消耗：5,005.12kb] [文件加载：140]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'origin' => 'http://www.baseshop.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '815',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'shop_name' => '月亮姐姐-灵境集',
+  'shop_desc' => '月亮姐姐-灵境集',
+  'shop_beian' => '网站备案信息',
+  'about_article' => '',
+  'about_article_id' => '1',
+  'user_agreement' => '',
+  'user_agreement_id' => '2',
+  'privacy_policy' => '',
+  'privacy_policy_id' => '3',
+  'point_rule' => '',
+  'point_rule_id' => '3',
+  'shop_logo' => '3cf1567d9c933a339a82d6fadf12b61a',
+  'editorValue' => '',
+  'shop_default_image' => '3cf1567d9c933a339a82d6fadf12b61a',
+  'store_switch' => '2',
+  'invoice_switch' => '2',
+  'recommend_keys' => '洗洁精',
+  'cate_style' => '1',
+  '__Jshop_Token__' => '57fef401e779042139e4d02f91203afb603bf8cb',
+  'validate_form' => 'setting_save',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000765s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_desc' LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_beian' LIMIT 1 [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'about_article' LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'about_article_id' LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'user_agreement' LIMIT 1 [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'user_agreement_id' LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'privacy_policy' LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'privacy_policy_id' LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'point_rule' LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'point_rule_id' LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_logo' LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] UPDATE `wb_setting`  SET `value` = '3cf1567d9c933a339a82d6fadf12b61a'  WHERE  `skey` = 'shop_logo' [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_default_image' LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] UPDATE `wb_setting`  SET `value` = '3cf1567d9c933a339a82d6fadf12b61a'  WHERE  `skey` = 'shop_default_image' [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'store_switch' LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'invoice_switch' LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'recommend_keys' LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'cate_style' LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000070s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000068s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000068s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:54+08:00] 127.0.0.1 GET www.baseshop.com/manage/setting/index.html
+[运行时间：0.046358s] [吞吐率：21.57req/s] [内存消耗：5,167.97kb] [文件加载：118]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\setting\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_hooks` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `name`,`addons` FROM `wb_hooks` [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_addons` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Userupgrade','UserInvite') [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Wxdelivery') [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('UserInvite') [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('QueueCreate') [ RunTime:0.000083s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Wxdelivery') [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_images` [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `url` FROM `wb_images` WHERE  `id` = '3cf1567d9c933a339a82d6fadf12b61a' LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_default_image' LIMIT 1 [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:54+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394914925
+[运行时间：0.055380s] [吞吐率：18.06req/s] [内存消耗：4,336.48kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394914925',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017572s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000185s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:55+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394914927
+[运行时间：0.085565s] [吞吐率：11.69req/s] [内存消耗：4,336.48kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394914927',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017704s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001518s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[2026-04-17T11:01:55+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394914925
+[运行时间：0.037641s] [吞吐率：26.57req/s] [内存消耗：4,336.48kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394914925',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000877s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:13+08:00] 127.0.0.1 POST www.baseshop.com/manage/setting/index.html
+[运行时间：0.045749s] [吞吐率：21.86req/s] [内存消耗：5,004.27kb] [文件加载：140]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'origin' => 'http://www.baseshop.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '560',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'shop_name' => '中星汇能',
+  'shop_desc' => '中星汇能',
+  'shop_beian' => '网站备案信息',
+  'about_article' => '',
+  'about_article_id' => '1',
+  'user_agreement' => '',
+  'user_agreement_id' => '2',
+  'privacy_policy' => '',
+  'privacy_policy_id' => '3',
+  'point_rule' => '',
+  'point_rule_id' => '3',
+  'shop_logo' => '3cf1567d9c933a339a82d6fadf12b61a',
+  'shop_default_image' => '3cf1567d9c933a339a82d6fadf12b61a',
+  'store_switch' => '2',
+  'invoice_switch' => '2',
+  'recommend_keys' => '洗洁精',
+  'cate_style' => '1',
+  '__Jshop_Token__' => '6c42f46cdded218b431a151e6982e62db9d7922c',
+  'validate_form' => 'setting_save',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001113s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] UPDATE `wb_setting`  SET `value` = '中星汇能'  WHERE  `skey` = 'shop_name' [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_desc' LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] UPDATE `wb_setting`  SET `value` = '中星汇能'  WHERE  `skey` = 'shop_desc' [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_beian' LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'about_article' LIMIT 1 [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'about_article_id' LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'user_agreement' LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'user_agreement_id' LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'privacy_policy' LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'privacy_policy_id' LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'point_rule' LIMIT 1 [ RunTime:0.000075s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'point_rule_id' LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_logo' LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_default_image' LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'store_switch' LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'invoice_switch' LIMIT 1 [ RunTime:0.000070s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'recommend_keys' LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'cate_style' LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000070s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000068s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000067s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:14+08:00] 127.0.0.1 GET www.baseshop.com/manage/setting/index.html
+[运行时间：0.066410s] [吞吐率：15.06req/s] [内存消耗：5,167.95kb] [文件加载：118]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\setting\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019765s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_hooks` [ RunTime:0.001461s ]
+[ sql ] [ SQL ] SELECT `name`,`addons` FROM `wb_hooks` [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_addons` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Userupgrade','UserInvite') [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Wxdelivery') [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('') [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('UserInvite') [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('QueueCreate') [ RunTime:0.000082s ]
+[ sql ] [ SQL ] SELECT `name` FROM `wb_addons` WHERE  `status` = 1  AND `name` IN ('Wxdelivery') [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_images` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `url` FROM `wb_images` WHERE  `id` = '3cf1567d9c933a339a82d6fadf12b61a' LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_default_image' LIMIT 1 [ RunTime:0.000189s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:14+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394934647
+[运行时间：0.055193s] [吞吐率：18.12req/s] [内存消耗：4,336.47kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394934647',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017467s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:14+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394934646
+[运行时间：0.065552s] [吞吐率：15.26req/s] [内存消耗：4,336.47kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394934646',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:14+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776394934646
+[运行时间：0.031070s] [吞吐率：32.19req/s] [内存消耗：4,336.47kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776394934646',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001354s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:15+08:00] 127.0.0.1 GET www.baseshop.com/manage
+[运行时间：0.046334s] [吞吐率：21.58req/s] [内存消耗：5,174.13kb] [文件加载：117]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/common/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\index\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'menu',
+  4 => 'kefu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000698s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation` [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` WHERE  `perm_type` <= 1 ORDER BY `sort` ASC [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_addons` [ RunTime:0.001548s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_addons` WHERE  `name` = 'Wxdelivery' LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'ent_id' LIMIT 1 [ RunTime:0.000442s ]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+---------------------------------------------------------------
+[2026-04-17T11:02:15+08:00] 127.0.0.1 GET www.baseshop.com/manage/index/welcome.html
+[运行时间：0.045301s] [吞吐率：22.07req/s] [内存消耗：5,546.59kb] [文件加载：116]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\index\welcome.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'unpaid_count',
+  4 => 'unship_count',
+  5 => 'after_sales_count',
+  6 => 'goods_statics',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000792s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 1  AND `ship_status` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 2  AND `ship_status` IN (1,2) ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_aftersales` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_bill_aftersales` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 1 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 2 LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'goods_stocks_warn' LIMIT 1 [ RunTime:0.000085s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(id) AS think_count FROM `wb_products` WHERE  ( IF(stock < freeze_stock, 0, stock - freeze_stock)<10 ) GROUP BY `goods_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000174s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:15+08:00] 127.0.0.1 GET www.baseshop.com/manage/administrator/userloglist/state/1.html
+[运行时间：0.039356s] [吞吐率：25.41req/s] [内存消耗：4,567.56kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'state' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000690s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_log` [ RunTime:0.001529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_user_log` WHERE  `state` = 1  AND `type` = 2 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_log` WHERE  `state` = 1  AND `type` = 2 ORDER BY `ctime` DESC LIMIT 0,10 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000118s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:15+08:00] 127.0.0.1 GET www.baseshop.com/manage/user/statistics.html
+[运行时间：0.058717s] [吞吐率：17.03req/s] [内存消耗：4,998.19kb] [文件加载：111]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000591s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT DATE_FORMAT(from_unixtime(ctime),"%Y-%m-%d") as day, count(*) as nums FROM `wb_user` WHERE (  `ctime` > 1775790135  AND ( TIMESTAMPDIFF(DAY,from_unixtime(ctime),now()) <7 ) ) AND `wb_user`.`isdel` IS NULL GROUP BY DATE_FORMAT(from_unixtime(ctime),"%Y-%m-%d") [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776394935  AND `ctime` >= 1776355200 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776355199  AND `ctime` >= 1776268800 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776268799  AND `ctime` >= 1776182400 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776182399  AND `ctime` >= 1776096000 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776095999  AND `ctime` >= 1776009600 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776009599  AND `ctime` >= 1775923200 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1775923199  AND `ctime` >= 1775836800 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:15+08:00] 127.0.0.1 GET www.baseshop.com/manage/order/statistics.html
+[运行时间：0.072821s] [吞吐率：13.73req/s] [内存消耗：4,689.56kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000638s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_payments` [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SELECT count(1) AS `nums`,DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") AS `day` FROM `wb_bill_payments` WHERE  `status` = 2  AND `type` = 1  AND ( FROM_UNIXTIME(ctime) >= 2026-04-10 ) GROUP BY DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_delivery` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT count(1) AS `nums`,DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") AS `day` FROM `wb_bill_delivery` WHERE  ( FROM_UNIXTIME(ctime) >= 2026-04-10 ) GROUP BY DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:15+08:00] 127.0.0.1 GET www.baseshop.com/manage/operation_log/getlastlog.html
+[运行时间：0.044076s] [吞吐率：22.69req/s] [内存消耗：4,521.63kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation_log` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_operation_log` LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation_log` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.001388s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000096s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:21+08:00] 127.0.0.1 GET www.baseshop.com/manage/goods/index.html
+[运行时间：0.036474s] [吞吐率：27.42req/s] [内存消耗：5,257.04kb] [文件加载：113]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\goods\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'statics',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000667s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 1 LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 2 LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'goods_stocks_warn' LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(id) AS think_count FROM `wb_products` WHERE  ( IF(stock < freeze_stock, 0, stock - freeze_stock)<10 ) GROUP BY `goods_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_addons` [ RunTime:0.001245s ]
+[ sql ] [ SQL ] SELECT `status` FROM `wb_addons` WHERE  `name` = 'StockControl' LIMIT 1 [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:21+08:00] 127.0.0.1 GET www.baseshop.com/manage/goods/index.html
+[运行时间：0.065156s] [吞吐率：15.35req/s] [内存消耗：4,943.37kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\goods\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'statics',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001314s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001194s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.001460s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 2 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'goods_stocks_warn' LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(id) AS think_count FROM `wb_products` WHERE  ( IF(stock < freeze_stock, 0, stock - freeze_stock)<10 ) GROUP BY `goods_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_addons` [ RunTime:0.001454s ]
+[ sql ] [ SQL ] SELECT `status` FROM `wb_addons` WHERE  `name` = 'StockControl' LIMIT 1 [ RunTime:0.000232s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:21+08:00] 127.0.0.1 GET www.baseshop.com/manage/goods/index.html?_ajax=1&page=1&limit=20
+[运行时间：0.040079s] [吞吐率：24.95req/s] [内存消耗：5,189.32kb] [文件加载：118]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/goods/index.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '_ajax' => '1',
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 1 LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 2 LIMIT 1 [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'goods_stocks_warn' LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(id) AS think_count FROM `wb_products` WHERE  ( IF(stock < freeze_stock, 0, stock - freeze_stock)<10 ) GROUP BY `goods_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_goods` LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_goods` ORDER BY `sort` ASC,`id` DESC LIMIT 0,20 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_images` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT `id`,`url` FROM `wb_images` WHERE  `id` IN ('03c7a4f333b2b1b347c7011df0f2adda') [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_cat` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wb_goods_cat` WHERE  `id` IN (1) [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods_type` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wb_goods_type` WHERE  `id` IN (3) [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `url` FROM `wb_images` WHERE  `id` = '03c7a4f333b2b1b347c7011df0f2adda' LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT `spes_desc`,`stock`,`freeze_stock` FROM `wb_products` WHERE  `goods_id` = 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_products` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000094s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:29+08:00] 127.0.0.1 GET www.baseshop.com/manage/user/index.html
+[运行时间：0.031257s] [吞吐率：31.99req/s] [内存消耗：4,886.34kb] [文件加载：113]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\user\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'grade',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_grade` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_grade` [ RunTime:0.000109s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:29+08:00] 127.0.0.1 GET www.baseshop.com/manage/user/index.html
+[运行时间：0.050680s] [吞吐率：19.73req/s] [内存消耗：4,582.52kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\user\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'grade',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011846s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_grade` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_grade` [ RunTime:0.000113s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:29+08:00] 127.0.0.1 GET www.baseshop.com/manage/user/index.html?_ajax=1&page=1&limit=20
+[运行时间：0.048521s] [吞吐率：20.61req/s] [内存消耗：4,960.97kb] [文件加载：118]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/user/index.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '_ajax' => '1',
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009691s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_user` WHERE `wb_user`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user` WHERE `wb_user`.`isdel` IS NULL ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_grade` [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_grade` WHERE  `id` IN (1) [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_wx` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_wx` WHERE  `user_id` IN (1) [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_area` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id`,`postal_code` FROM `wb_area` WHERE  `id` = 340203 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id`,`postal_code` FROM `wb_area` WHERE  `parent_id` = 340200 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id`,`postal_code` FROM `wb_area` WHERE  `id` = 340200 LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id`,`postal_code` FROM `wb_area` WHERE  `parent_id` = 340000 [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id`,`postal_code` FROM `wb_area` WHERE  `id` = 340000 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id`,`postal_code` FROM `wb_area` WHERE  `parent_id` = 0 [ RunTime:0.000767s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:31+08:00] 127.0.0.1 GET www.baseshop.com/manage/order/index.html
+[运行时间：0.037878s] [吞吐率：26.40req/s] [内存消耗：5,353.66kb] [文件加载：115]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\order\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'count',
+  4 => 'storelist',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000722s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` <> 1  AND `ship_status` IN (1,2) ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `ship_status` IN (3,2)  AND `confirm` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` <> 1  AND `ship_status` <> 1  AND `confirm` = 2  AND `is_comment` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` <> 1  AND `ship_status` <> 1  AND `confirm` = 2  AND `is_comment` = 2 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 2 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 3 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000071s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_store` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_store` [ RunTime:0.000109s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:31+08:00] 127.0.0.1 GET www.baseshop.com/manage/order/index.html
+[运行时间：0.050381s] [吞吐率：19.85req/s] [内存消耗：5,021.57kb] [文件加载：112]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\order\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'count',
+  4 => 'storelist',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` <> 1  AND `ship_status` IN (1,2) ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `ship_status` IN (3,2)  AND `confirm` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` <> 1  AND `ship_status` <> 1  AND `confirm` = 2  AND `is_comment` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` <> 1  AND `ship_status` <> 1  AND `confirm` = 2  AND `is_comment` = 2 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 2 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 3 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_store` [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_store` [ RunTime:0.000139s ]
+---------------------------------------------------------------
+[2026-04-17T11:02:32+08:00] 127.0.0.1 POST www.baseshop.com/manage/order/index.html
+[运行时间：0.030713s] [吞吐率：32.56req/s] [内存消耗：5,040.84kb] [文件加载：112]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/order/index.html',
+  'origin' => 'http://www.baseshop.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000629s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT `o`.`order_id`,`o`.`point`,`o`.`user_id`,`o`.`ctime`,`o`.`ship_mobile`,`o`.`ship_address`,`o`.`status`,`o`.`pay_status`,`o`.`ship_status`,`o`.`confirm`,`o`.`is_comment`,`o`.`order_amount`,`o`.`source`,`o`.`ship_area_id`,`o`.`ship_name`,`o`.`mark`,`o`.`order_type`,`o`.`store_id` FROM `wb_order` `o` LEFT JOIN `wb_user` `u` ON `o`.`user_id`=`u`.`id` WHERE `o`.`isdel` IS NULL ORDER BY `ctime` DESC LIMIT 0,20 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` `o` LEFT JOIN `wb_user` `u` ON `o`.`user_id`=`u`.`id` WHERE `o`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'language' LIMIT 1 [ RunTime:0.000074s ]
+---------------------------------------------------------------
+[2026-04-17T11:35:19+08:00] 127.0.0.1 GET www.baseshop.com//static/images/user/svip_user.png
+[运行时间：0.026973s] [吞吐率：37.07req/s] [内存消耗：2,502.47kb] [文件加载：78]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2026-04-17T12:25:00+08:00] 127.0.0.1 GET www.baseshop.com/manage
+[运行时间：0.045299s] [吞吐率：22.08req/s] [内存消耗：4,879.88kb] [文件加载：114]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/common/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\index\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'menu',
+  4 => 'kefu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001327s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.001488s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation` [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` WHERE  `perm_type` <= 1 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation` [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'ent_id' LIMIT 1 [ RunTime:0.000127s ]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+[ error ] [8]未定义数组索引: selected[E:\wwwroot\2025\git\baseShop\runtime\temp\e52cc7ca3449303da58cf7e818ce1862.php:118]
+---------------------------------------------------------------
+[2026-04-17T12:25:00+08:00] 127.0.0.1 GET www.baseshop.com/manage/index/welcome.html
+[运行时间：0.046700s] [吞吐率：21.41req/s] [内存消耗：5,258.77kb] [文件加载：113]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\index\welcome.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'unpaid_count',
+  4 => 'unship_count',
+  5 => 'after_sales_count',
+  6 => 'goods_statics',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000743s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.001238s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 1  AND `ship_status` = 1 ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_order` WHERE (  `status` = 1  AND `pay_status` = 2  AND `ship_status` IN (1,2) ) AND `wb_order`.`isdel` IS NULL LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_aftersales` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_bill_aftersales` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_goods` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 1 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `wb_goods` WHERE  `marketable` = 2 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'goods_stocks_warn' LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_products` [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(id) AS think_count FROM `wb_products` WHERE  ( IF(stock < freeze_stock, 0, stock - freeze_stock)<10 ) GROUP BY `goods_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000186s ]
+---------------------------------------------------------------
+[2026-04-17T12:25:00+08:00] 127.0.0.1 GET www.baseshop.com/manage/administrator/userloglist/state/1.html
+[运行时间：0.044402s] [吞吐率：22.52req/s] [内存消耗：4,567.56kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'state' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000898s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user_log` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_user_log` WHERE  `state` = 1  AND `type` = 2 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_user_log` WHERE  `state` = 1  AND `type` = 2 ORDER BY `ctime` DESC LIMIT 0,10 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.001346s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`nickname`,`mobile` FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000124s ]
+---------------------------------------------------------------
+[2026-04-17T12:25:00+08:00] 127.0.0.1 GET www.baseshop.com/manage/operation_log/getlastlog.html
+[运行时间：0.058333s] [吞吐率：17.14req/s] [内存消耗：4,521.63kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000682s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_operation_log` [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wb_operation_log` LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_operation_log` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_manage` [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_manage` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000251s ]
+---------------------------------------------------------------
+[2026-04-17T12:25:00+08:00] 127.0.0.1 GET www.baseshop.com/manage/order/statistics.html
+[运行时间：0.072565s] [吞吐率：13.78req/s] [内存消耗：4,689.56kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_payments` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT count(1) AS `nums`,DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") AS `day` FROM `wb_bill_payments` WHERE  `status` = 2  AND `type` = 1  AND ( FROM_UNIXTIME(ctime) >= 2026-04-10 ) GROUP BY DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_bill_delivery` [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT count(1) AS `nums`,DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") AS `day` FROM `wb_bill_delivery` WHERE  ( FROM_UNIXTIME(ctime) >= 2026-04-10 ) GROUP BY DATE_FORMAT(FROM_UNIXTIME(ctime),"%Y-%m-%d") [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[2026-04-17T12:25:00+08:00] 127.0.0.1 GET www.baseshop.com/manage/user/statistics.html
+[运行时间：0.090405s] [吞吐率：11.06req/s] [内存消耗：4,998.19kb] [文件加载：111]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/index/welcome.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_user` [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT DATE_FORMAT(from_unixtime(ctime),"%Y-%m-%d") as day, count(*) as nums FROM `wb_user` WHERE (  `ctime` > 1775795100  AND ( TIMESTAMPDIFF(DAY,from_unixtime(ctime),now()) <7 ) ) AND `wb_user`.`isdel` IS NULL GROUP BY DATE_FORMAT(from_unixtime(ctime),"%Y-%m-%d") [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_order` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776399900  AND `ctime` >= 1776355200 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776355199  AND `ctime` >= 1776268800 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776268799  AND `ctime` >= 1776182400 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776182399  AND `ctime` >= 1776096000 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776095999  AND `ctime` >= 1776009600 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1776009599  AND `ctime` >= 1775923200 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT count(*) AS think_count FROM `wb_order` WHERE (  `ctime` < 1775923199  AND `ctime` >= 1775836800 ) AND `wb_order`.`isdel` IS NULL GROUP BY `user_id` ) `_group_count_` LIMIT 1 [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[2026-04-17T12:25:01+08:00] 127.0.0.1 GET www.baseshop.com/manage/setting/index.html
+[运行时间：0.032714s] [吞吐率：30.57req/s] [内存消耗：4,672.77kb] [文件加载：110]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wwwroot\2025\git\baseShop\application\manage\view\setting\index.html [ array (
+  0 => 'params',
+  1 => 'jshopHost',
+  2 => 'shop_name',
+  3 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000643s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_default_image' LIMIT 1 [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[2026-04-17T12:25:01+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776399901328
+[运行时间：0.046363s] [吞吐率：21.57req/s] [内存消耗：4,336.47kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776399901328',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012757s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[2026-04-17T12:25:01+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776399901327
+[运行时间：0.059670s] [吞吐率：16.76req/s] [内存消耗：4,336.47kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776399901327',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001010s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000516s ]
+---------------------------------------------------------------
+[2026-04-17T12:25:01+08:00] 127.0.0.1 GET www.baseshop.com/manage/images/manage.html?action=config&&noCache=1776399901327
+[运行时间：0.034880s] [吞吐率：28.67req/s] [内存消耗：4,336.47kb] [文件加载：104]
+[ info ] [ LANG ] E:\wwwroot\2025\git\baseShop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tnv6fqreck9p6igi2jkr6oi4u0; _aihecong_chat_visibility=false',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.baseshop.com/manage/setting/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.baseshop.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'config',
+  'noCache' => '1776399901327',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:host=127.0.0.1;port=3306;dbname=baseshop;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wb_setting` [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `wb_setting` WHERE  `skey` = 'shop_name' LIMIT 1 [ RunTime:0.000212s ]

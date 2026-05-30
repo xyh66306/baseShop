@@ -1,20 +1,23 @@
 <template>
 	<view class="content">
-		<hx-navbar :fixed="true" :title="barTitle" barPlaceholder="hidden" transparent="auto" color="#000000"
-		 :background-color="[[255, 255, 255],[255, 255, 255]]" :pageScroll.sync="scrollData">
-		</hx-navbar>
-		<!-- <view class="nav-back">
+
+		<view class="nav-back">
 			<view class="back-btn" @click="backBtn()">
 				<image class="icon" src="/static/image/back-black.png" mode=""></image>
 			</view>
-		</view> -->
+		</view>
 
+<!-- 		<view class="nav-right">
+			<view class="back-btn">
+				<image class='cell-ft-next icon' @click="changeAuth()" src='/static/image/share.png'></image>
+			</view>
+		</view> -->
 
 		<view class="content-top">
 
 			<!-- 轮播图 -->
 			<view class='swiper'>
-				<swiper class="swiper-c" :indicator-dots="swiper.indicatorDots" :autoplay="swiper.autoplay" :interval="swiper.interval"
+				<swiper class="swiper-c" :indicator-dots="swiper.indicatorDots" indicator-color='#fff' indicator-active-color='#e02e24' :autoplay="swiper.autoplay" :interval="swiper.interval"
 				 :duration="swiper.duration">
 					<swiper-item class="have-none" v-for="(item, index) in goodsInfo.album" :key="index" @click="clickImg(item)">
 						<image class='' :src='item' mode="aspectFill"></image>
@@ -22,12 +25,12 @@
 				</swiper>
 			</view>
 			<!-- 轮播图end -->
-
-			<view class='cell-group'>
-				<view class='cell-item goods-top'>
+			<view class='cell-group cell-groupArea'>
+				<view class='cell-item goods-top' style="padding-bottom: 0;">
 					<view class='cell-item-hd'>
-						<view class='cell-hd-title goods-price red-price'>￥{{ product.price || '0.00' }}</view>
-						<view class='cell-hd-title goods-price cost-price' v-if="parseFloat(product.mktprice)>0">￥{{ product.mktprice  || '0.00'}}</view>
+						<view class='cell-hd-title goods-price red-price font-goods-price flex'>
+							<em class='em'>￥</em>{{ goodsInfo.price || '0.00' }}</view>
+						<view class='cell-hd-title goods-price cost-price' v-if="parseFloat(product.mktprice)>0 && parseFloat(product.mktprice)>parseFloat(product.price)">￥{{ product.mktprice  || '0.00'}}</view>
 					</view>
 					<view class='cell-item-ft'>
 						<text>{{ goodsInfo.buy_count || '0' }} 人已购买</text>
@@ -35,74 +38,101 @@
 				</view>
 
 				<view class='cell-item goods-details'>
-					<view class='cell-item-hd'>
-						<view class='cell-hd-title'>
-							
-							<view class="color-3 fsz28 cell-hd-title-view">
-							<view class='lable' v-if="label_ids.length" v-for="(name,index) in label_ids" :key="index" >
-								<text :style="{backgroundColor:name.style}" class='tag'>{{name.name}}</text>
-								</view>	{{ product.name || '' }}
-							</view>
-							<text v-if="goodsInfo.brief" class="color-9 fsz24 ">
-								{{ goodsInfo.brief || '' }}
+					<view class='cell-item-hd' style="width: 750rpx;">
+						<view class='cell-hd-title' style="width: 702rpx;margin: 0 auto;font-family: 'font';">
+							<text v-if="goodsInfo.share>0 && userInfo && userInfo.grade>=2" class="bg_exp">
+								分享赚:{{ goodsInfo.share}}
 							</text>
+							<view v-if="userInfo && userInfo.grade==1 " class="openvip flex" @click="topageurl('/pages/member_vip/index')">
+								<view class="vip1">vip365</view>
+								<view class="desc" v-if="province">购买此商品立省{{province}}</view>
+								<view class="open">
+									<text>立即开通</text>
+									<text class="cuIcon-right"></text>
+								</view>
+							</view>
+<!-- 							<text v-if="goodsInfo.exp_offset>0" class="bg_exp">
+								抵扣{{ goodsInfo.exp_offset}}消费券
+							</text>	 -->						
+							<view class="color-3 fsz32 productName cell-hd-title-view" style="color: #051B28 !important;">
+								{{ product.name || '' }}
+							</view>
 						</view>
 					</view>
-					<view class='cell-item-ft'>
-						<image class='cell-ft-next icon' @click="goShare()" src='/static/image/share.png'></image>
+				</view>
+			</view>
+			
+			<view class="cell-group" style="margin-top: 20rpx;">
+				<view class='cell-item goods-title-item cell-item-mid'>
+					<view class='cell-item-hd'>
+						<view class='cell-hd-title'>保障</view>
+					</view>
+					<view class='cell-item-bd'>
+						<text class='cell-bd-text color-6 fsz24'>正品保障 · 官方补贴</text>
 					</view>
 				</view>
-
-				<!-- 促销 -->
 				<view class='cell-item goods-title-item cell-item-mid' v-if="promotion.length">
 					<view class='cell-item-hd'>
-						<view class='cell-hd-title'>促销</view>
+						<view class='cell-hd-title'>优惠</view>
 					</view>
 					<view class='cell-item-bd'>
 						<view class="romotion-tip">
-							<!-- <view class="romotion-tip-item" :class="item.type !== 2 ? 'bg-gray' : ''" v-for="(item, index) in promotion"
-							 :key="index">
-								{{ item.name || ''}}
-							</view> -->
 							<view class="romotion-tip-item" v-for="(item, index) in promotion" :key="index">
 								{{ item || ''}}
 							</view>
 						</view>
 					</view>
 				</view>
-				<!-- 促销end -->
-
-				<!-- 规格 -->
 				<view class='cell-item goods-title-item cell-item-mid' v-if="isSpes">
 					<view class='cell-item-hd'>
 						<view class='cell-hd-title'>规格</view>
 					</view>
-					<view class='cell-item-bd' @click="toshow()">
-						<text class='cell-bd-text'>{{ product.spes_desc || ''}}</text>
+					<view class='cell-item-bd'>
+						<text class='cell-bd-text color-6 fsz24'>{{ product.spes_desc || ''}}</text>
 					</view>
 				</view>
-				<!-- 规格end -->
-
-				<view class='cell-item goods-title-item cell-item-mid' v-if="goodsShowWord && goodsShowWord != ''">
+			</view>			
+			
+			<view class="cell-group" style="margin-top: 20rpx;">
+				<view class='cell-item goods-title-item cell-item-mid'  v-if="goodsInfo.brief">
 					<view class='cell-item-hd'>
-						<view class='cell-hd-title'>说明</view>
+						<view class='cell-hd-title'>备注</view>
 					</view>
 					<view class='cell-item-bd'>
-						<view class="cell-bd-view" v-for="(item,index) in goodsShowWord" :key="index">
-							<image class="goods-title-item-ic" src="/static/image/ic-dui.png" mode=""></image>
-							<view class="cell-bd-text">{{item}}</view>
-						</view>
+						<text class='cell-bd-text color-6 fsz24'>{{ goodsInfo.brief || '' }}</text>
+					</view>
+				</view>
+				<view class='cell-item goods-title-item cell-item-mid' v-if="goodsInfo.goods_cat_id !=4">
+					<view class='cell-item-hd'>
+						<view class='cell-hd-title'>配送</view>
+					</view>
+					<view class='cell-item-bd'>
+						<text class='cell-bd-text color-6 fsz24'>
+							快递(48小时内发货)
+						</text>
 					</view>
 				</view>
 			</view>
-
-			<view class="goods-content">
-				<uni-segmented-control :current="current" :values="items" @clickItem="onClickItem" style-type="text" active-color="#333"></uni-segmented-control>
+			<!-- 促销 -->
+<!-- 			<view class='goods-brief flex' v-if="goodsInfo.brief" >
+				<view class='cell-item-hd'>
+					<view class='cell-hd-title fsz24 color-9'>备注</view>
+				</view>
+				<view class='cell-item-bd'>
+					<text class='cell-bd-text color-6 fsz24'>{{ goodsInfo.brief || '' }}</text>
+				</view>
+			</view> -->
+			<!-- 促销end -->
+					
+			<view class="goods-content">				
+				<view class="goods_shen">
+					<image src="/static/img/shopTitle.jpg"></image>
+				</view>
 				<view class="goods-content-c">
 					<view class="goods-detail" v-show="current === 0">
 						<jshopContent :content="goodsInfo.intro" v-if="goodsInfo.intro"></jshopContent>
 						<view class="comment-none" v-else>
-							<image class="comment-none-img" src="/static/image/order.png" mode=""></image>
+							<image class="comment-none-img" src="/static/img/empty.png" mode=""></image>
 						</view>
 					</view>
 					<view class="goods-parameter" v-show="current === 1">
@@ -117,86 +147,17 @@
 							</view>
 						</view>
 						<view class="comment-none" v-else>
-							<image class="comment-none-img" src="/static/image/order.png" mode=""></image>
-						</view>
-					</view>
-					<view class="goods-assess" v-show="current === 2">
-						<view v-if="goodsComments.list.length">
-							<view class="goods-assess-item" v-for="(item, index) in goodsComments.list" :key="index">
-								<view class='cell-group'>
-									<view class='cell-item goods-title-item cell-item-mid'>
-										<view class='cell-item-hd'>
-											<image class='user-head-img' :src='item.user.avatar' mode="aspectFill"></image>
-										</view>
-										<view class='cell-item-bd'>
-											<view class="cell-bd-view">
-												<text class="cell-bd-text">{{ (item.user.nickname && item.user.nickname != '')?item.user.nickname:item.user.mobile }}</text>
-												<view class="cell-bd-text-right">
-													<uni-rate size="16" disabled="true" :value="item.score"></uni-rate>
-												</view>
-											</view>
-											<view class="cell-bd-view">
-												<text class="cell-bd-text color-9" style="margin-right: 16rpx;">{{ item.ctime || ''}}</text>
-												<text class="cell-bd-text color-9">{{ item.addon || ''}}</text>
-											</view>
-										</view>
-									</view>
-								</view>
-								<view class="gai-body">
-									<view class="gai-body-text">
-										{{ item.content || ''}}
-									</view>
-									<view class="gai-body-img" v-if="item.images_url.length">
-										<image :src="img" mode="aspectFill" v-for="(img, key) in item.images_url" :key="key" @click="clickImg(img)"></image>
-									</view>
-									<view class="seller-content" v-if="item.seller_content">
-										<view class="seller-content-top">
-											<image class="seller-content-img" src="/static/image/seller-content.png"></image>掌柜回复
-										</view>
-										{{item.seller_content || ''}}
-									</view>
-								</view>
-							</view>
-							<uni-load-more :status="goodsComments.loadStatus"></uni-load-more>
-						</view>
-						<view class="comment-none" v-else>
-							<image class="comment-none-img" src="/static/image/order.png" mode=""></image>
+							<image class="comment-none-img" src="/static/img/empty.png" mode=""></image>
 						</view>
 					</view>
 				</view>
 			</view>
 		</view>
 
-		<lvv-popup position="bottom" ref="share" v-if="goodsId">
-			<!-- #ifdef H5 -->
-			<shareByH5 :ifwx="ifwx" :goodsId="goodsId" :shareImg="goodsInfo.image_url" :shareTitle="goodsInfo.name"
-			 :shareContent="goodsInfo.brief" :shareHref="shareHref" :shareType="2" @close="closeShare()"></shareByH5>
-			<!-- #endif -->
-
-			<!-- #ifdef MP-WEIXIN -->
-			<shareByWx :goodsId="goodsId" :shareImg="goodsInfo.image_url" :shareTitle="goodsInfo.name" :shareContent="goodsInfo.brief"
-			 :shareHref="shareHref" :shareType="2" @close="closeShare()"></shareByWx>
-			<!-- #endif -->
-
-			<!-- #ifdef MP-ALIPAY -->
-			<shareByAli :goodsId="goodsId" :shareImg="goodsInfo.image_url" :shareTitle="goodsInfo.name" :shareContent="goodsInfo.brief"
-			 :shareHref="shareHref" :shareType="2" @close="closeShare()"></shareByAli>
-			<!-- #endif -->
-
-			<!-- #ifdef MP-TOUTIAO -->
-			<shareByTt :goodsId="goodsId" :shareImg="goodsInfo.image_url" :shareTitle="goodsInfo.name" :shareContent="goodsInfo.brief"
-			 :shareHref="shareHref" :shareType="2" @close="closeShare()"></shareByTt>
-			<!-- #endif -->
-
-			<!-- #ifdef APP-PLUS || APP-PLUS-NVUE -->
-			<shareByApp :goodsId="goodsId" :shareImg="goodsInfo.image_url" :shareTitle="goodsInfo.name" :shareContent="goodsInfo.brief"
-			 :shareHref="shareHref" :shareType="2" @close="closeShare()"></shareByApp>
-			<!-- #endif -->
-		</lvv-popup>
 
 		<!-- 弹出层 -->
 		<lvv-popup position="bottom" ref="lvvpopref">
-			<view style="width: 100%;max-height: 804rpx;background: #FFFFFF;position: absolute;left:0;bottom: 0;">
+			<view style="width: 100%;max-height: 804rpx;background: #FFFFFF;position: absolute;left:0;bottom: 0;padding-bottom:constant(safe-area-inset-bottom); padding-bottom: env(safe-area-inset-bottom);">
 				<view class="pop-c">
 					<view class="pop-t" style="padding: 26rpx;">
 						<view class='goods-img'>
@@ -205,7 +166,7 @@
 						<view class='goods-information'>
 							<view class='pop-goods-name' style="margin-bottom: 6rpx;">{{ product.name || ''}}</view>
 							<view class='pop-goods-price red-price' style="margin-bottom: 6rpx;">￥ {{ product.price || ''}}</view>
-							<view class="fsz24 color-9">
+							<view class="fsz24 color-9" v-if="product.stock>20">
 								库存{{ product.stock || ''}}{{goodsInfo.unit || ''}}
 							</view>
 						</view>
@@ -218,7 +179,7 @@
 						<view class="goods-number">
 							<text class="pop-m-title">数量</text>
 							<view class="pop-m-bd-in">
-								<uni-number-box :min="minNums" :max="product.stock" 
+								<uni-number-box :min="minNums" :max="maxBuyNum" 
 								:value="buyNum" @change="bindChange"></uni-number-box>
 							</view>
 						</view>
@@ -237,37 +198,10 @@
 		<!-- 底部按钮 -->
 		<view class="goods-bottom">
 			<!-- 客服按钮 -->
-			<!-- #ifdef H5 || APP-PLUS-NVUE || APP-PLUS -->
-			<view class="goods-bottom-ic" @click="showChat()">
+			<view class="goods-bottom-ic" @click="chooseKf()">
 				<image class="icon" src="/static/image/customerservice.png" mode=""></image>
 				<view>客服</view>
 			</view>
-			<!-- #endif -->
-			<!-- #ifdef MP-WEIXIN -->
-			
-			<button class="goods-bottom-ic weiContact" hover-class="none" @click="showQwChat"
-			 :session-from="kefupara" v-if="openQiyeWeixin">
-				<image class="icon" src="/static/image/customerservice.png" mode=""></image>
-				<view>客服</view>
-			</button>
-			
-			
-			<button class="goods-bottom-ic weiContact" hover-class="none" open-type="contact" bindcontact="showChat"
-			 :session-from="kefupara" v-else>
-				<image class="icon" src="/static/image/customerservice.png" mode=""></image>
-				<view>客服</view>
-			</button>
-			<!-- #endif -->
-			<!-- #ifdef MP-ALIPAY -->
-			<contact-button class="goods-bottom-ic icon" icon="/static/image/customerservice.png" size="80rpx*80rpx" tnt-inst-id="WKPKUZXG"
-			 scene="SCE00040186" hover-class="none" />
-			<!-- #endif -->
-			<!-- #ifdef MP-TOUTIAO -->
-			<view class="goods-bottom-ic" @click="showChat()">
-				<image class="icon" src="/static/image/customerservice.png" mode=""></image>
-				<view>客服</view>
-			</view>
-			<!-- #endif -->
 
 			<view class="goods-bottom-ic" @click="redirectCart">
 				<view class="badge color-f" v-if="cartNums">{{ cartNums || ''}}</view>
@@ -280,48 +214,35 @@
 				<view v-if="!isfav">收藏</view>
 				<view v-if="isfav">已收藏</view>
 			</view>
-
 			<button class='btn btn-square btn-g' @click="toshow(1)" hover-class="btn-hover2" style="width: 30%;">加入购物车</button>
-			<button class='btn btn-square btn-b' @click="toshow(2)" hover-class="btn-hover2" style="width: 28%;">立即购买</button>
+			<button class='btn btn-square btn-b' @click="toshow(2)" hover-class="btn-hover2" style="width: 28%;">立即购买</button>	
 		</view>
 		<!-- 底部按钮end -->
 
-		<!-- 右边浮动球 -->
-		<uni-fab :pattern="pattern" :content="content" :horizontal="horizontal" :vertical="vertical" :direction="direction"
-		 @trigger="trigger"></uni-fab>
-
+		<!-- #ifdef MP -->
+		<editUserModal :isShow="editModal" @closeEdit="closeEdit" @editSuccess="editSuccess"></editUserModal>
+		<!-- #endif -->
+		 
 	</view>
 </template>
 
 <script>
+	
+	// #ifdef MP
+	import editUserModal from '@/components/editUserModal/index.vue';
+	// #endif	
 	import uniSegmentedControl from "@/components/uni-segmented-control/uni-segmented-control.vue";
 	import lvvPopup from '@/components/lvv-popup/lvv-popup.vue';
 	import uniNumberBox from "@/components/uni-number-box/uni-number-box.vue";
 	import uniRate from "@/components/uni-rate/uni-rate.vue";
 	import uniLoadMore from '@/components/uni-load-more/uni-load-more.vue';
-	import uniFab from '@/components/uni-fab/uni-fab.vue';
 	import {
 		get
 	} from '@/config/db.js';
 	import {
-		apiBaseUrl,corpId,openQiyeWeixin,extInfoUrl
+		apiBaseUrl
 	} from '@/config/config.js'
 	import spec from '@/components/spec/spec.vue'
-	// #ifdef H5
-	import shareByH5 from '@/components/share/shareByh5.vue'
-	// #endif
-	// #ifdef MP-WEIXIN
-	import shareByWx from '@/components/share/shareByWx.vue'
-	// #endif
-	// #ifdef MP-TOUTIAO
-	import shareByTt from '@/components/share/shareByTt.vue'
-	// #endif
-	// #ifdef MP-ALIPAY
-	import shareByAli from '@/components/share/shareByAli.vue'
-	// #endif
-	// #ifdef APP-PLUS || APP-PLUS-NVUE
-	import shareByApp from '@/components/share/shareByApp.vue'
-	// #endif
 	import jshopContent from '@/components/jshop/jshop-content.vue' //视频和文本解析组件
 	import {
 		h5Url
@@ -329,32 +250,20 @@
 
 	export default {
 		components: {
+			// #ifdef MP
+			editUserModal,
+			// #endif	
 			uniSegmentedControl,
 			lvvPopup,
 			uniNumberBox,
 			uniRate,
 			uniLoadMore,
-			uniFab,
 			spec,
 			jshopContent,
-			// #ifdef H5
-			shareByH5,
-			// #endif
-			// #ifdef MP-WEIXIN
-			shareByWx,
-			// #endif
-			// #ifdef MP-TOUTIAO
-			shareByTt,
-			// #endif
-			// #ifdef MP-ALIPAY
-			shareByAli,
-			// #endif
-			// #ifdef APP-PLUS || APP-PLUS-NVUE
-			shareByApp,
-			// #endif
 		},
 		data() {
 			return {
+				editModal:false,
 				scrollData: {},
 				barTitle: '',
 				swiper: {
@@ -378,12 +287,14 @@
 				}, // 商品评论信息
 				buyNum: 1, // 选定的购买数量
 				minBuyNum: 1, // 最小可购买数量
+				maxBuyNum:99,				
 				type: 2, // 1加入购物车 2购买
 				isfav: false, // 商品是否收藏
 				favLogo: [
 					'/static/image/ic-me-collect.png',
 					'/static/image/ic-me-collect2.png'
 				],
+				iszero:false,
 				horizontal: 'right', //右下角弹出按钮
 				vertical: 'bottom',
 				direction: 'vertical',
@@ -391,7 +302,7 @@
 					color: '#7A7E83',
 					backgroundColor: '#fff',
 					selectedColor: '#007AFF',
-					buttonColor: "#FF7159"
+					buttonColor: "#f94048"
 				},
 				content: [{
 						iconPath: '/static/image/tab-ic-hom-selected.png',
@@ -405,7 +316,7 @@
 						selectedIconPath: '/static/image/tab-ic-me-unselected.png',
 						// text: '个人中心',
 						active: false,
-						url: '/pages/member/index/index'
+						url: '/pages/user/index'
 					}
 				],
 				submitStatus: false,
@@ -414,22 +325,29 @@
 				shareUrl: '/pages/share/jump',
 				userInfo: {}, // 用户信息
 				kefupara: '', //客服传递资料
-				corpId:corpId,
-				openQiyeWeixin:openQiyeWeixin,
-				extInfoUrl:extInfoUrl,
-				label_ids:[],//商品标签列表
+				isbuy:true,
+				authBuy:true,
+				isLogin:false
 			}
 		},
 		onLoad(options) {
-			//获取商品ID
+			//获取商品ID 
 			if (options.id != '') {
 				this.goodsId = options.id - 0;
 			}
-
+			var _this = this
+			if (this.$db.get('userToken')) {
+				this.$api.userInfo({}, res => {
+					if (res.status) {
+						_this.userInfo = res.data
+						_this.isLogin = true
+					}
+				})
+			};
 			if (this.goodsId) {
 				this.getGoodsDetail();
 				this.getGoodsParams();
-				this.getGoodsComments();
+				// this.getGoodsComments();
 			} else {
 				this.$common.errorToShow('获取失败', () => {
 					uni.navigateBack({
@@ -437,36 +355,21 @@
 					});
 				});
 			}
-			// 获取购物车数量
-			this.getCartNums();
-			this.$api.shopConfig(res => {
-				this.config = res;
-				// console.log(res)
-				this.goodsShowWord = res.goods_show_word;
-			});
-			var _this = this
-			if (this.$db.get('userToken')) {
-				this.$api.userInfo({}, res => {
-					if (res.status) {
-						_this.userInfo = res.data
-						// #ifdef MP-WEIXIN
-						//微信小程序打开客服时，传递用户信息
-						var kefupara = {}
-						kefupara.nickName = res.data.nickname
-						kefupara.tel = res.data.mobile
-						_this.kefupara = JSON.stringify(kefupara)
-						// #endif
-					}
-				})
-			};
-			this.ifwxl();
-
-
+			// this.loadFontFaceFromWeb();
 		},
 		onShow() {
-			this.submitStatus = false;
+			var _this = this
+			_this.getUserInfo();		
+			_this.submitStatus = false;
 		},
 		computed: {
+			province(){
+				if(this.product.price == 0 || this.product.costprice==0) {
+					return 0;
+				} else {
+					return this.$common.formatMoney((this.product.price - this.product.costprice)*0.2)
+				}
+			},
 			// 规格切换计算规格商品的 可购买数量
 			minNums() {
 				if(this.product.stock == 0) {
@@ -475,7 +378,7 @@
 				} else {
 					return this.product.stock > this.minBuyNum ? this.minBuyNum : this.product.stock;
 				}
-			},
+			},		
 			// 判断商品是否是多规格商品  (为了兼容小程序 只能写在计算属性里面了)
 			isSpes() {
 				if (this.product.hasOwnProperty('default_spes_desc') && Object.keys(this.product.default_spes_desc).length) {
@@ -519,6 +422,45 @@
 			}
 		},
 		methods: {
+			getUserInfo(){
+				var _this = this
+				if (_this.$db.get('userToken')) {
+					_this.$api.userInfo({}, res => {
+						if (res.status) {
+							_this.userInfo = res.data
+						}
+					})
+				};		
+			},
+			editSuccess(data) {
+				var _this = this
+				_this.editModal = false;
+				_this.$api.editInfo(data,res=>{
+					_this.closeEdit();
+					_this.getUserInfo();
+				})
+			},	
+			closeEdit() {
+				this.submitStatus = false;
+				this.editModal = false;
+			},			
+			loadFontFaceFromWeb() {
+				//需要注意的是每个页面都要调用，我是写在mixin里面
+				uni.loadFontFace({
+				  family: 'font',
+				  source: 'url("/static/fonts/OPPOSans-B.ttf")',
+				})
+			},
+			//这个是自己的方法名
+			openAuth(){
+				this.$refs['authphone'].open() //调起自定义权限目的弹框,具体可看示例里面很详细
+			},
+			//用户授权权限后的回调
+			changeAuth(){
+				//这里是权限通过后执行自己的代码逻辑
+				console.log('权限已授权，可执行自己的代码逻辑了');
+				this.goShare();				
+			},			
 			// 判断是不是微信浏览器
 			ifwxl() {
 				this.ifwx = this.$common.isWeiXinBrowser()
@@ -531,7 +473,7 @@
 						delta: 1
 					});
 				} else {
-					uni.navigateTo({
+					uni.switchTab({
 						url: '/pages/index/index'
 					});
 				}
@@ -548,30 +490,35 @@
 				if (userToken) {
 					data['token'] = userToken;
 				}
-
 				this.$api.goodsDetail(data, res => {
 					if (res.status == true) {
 						let info = res.data;
 						let products = res.data.product;
+
 						//var htmlString = info.intro; //replace(/\\/g, "").replace(/<img/g, "<img style=\"display:none;\"")
 						//info.intro = htmlParser(htmlString);
 						this.goodsInfo = info;
+						
 						this.isfav = this.goodsInfo.isfav === 'true' ? true : false;
 						this.product = this.spesClassHandle(products);
-						this.label_ids=res.data.label_ids;
+						
 
-						// 分享朋友和朋友圈
-						// #ifdef H5
-						if (this.$common.isWeiXinBrowser()) {
-							this.shareAll()
-						}
-						// #endif
+						// this.minBuyNum = info.minnum;
+						// this.maxBuyNum = info.maxnum==0? this.product.stock :info.maxnum;
+						
+						
+						this.buyNum    = info.maxnum==0? info.maxnum :1;
+																	
 
-
+						// this.$api.shopConfig(res => {
+						// 	this.config = res;
+						// 	// console.log(res)
+						// 	this.goodsShowWord = res.goods_show_word;
+						// });
 						// 判断如果登录用户添加商品浏览足迹
-						if (userToken) {
-							this.goodsBrowsing();
-						}
+						// if (userToken) {
+						// 	this.goodsBrowsing();
+						// }
 					} else {
 						this.$common.errorToShow(res.msg, () => {
 							uni.navigateBack({
@@ -617,7 +564,11 @@
 					}, res => {
 						if (res.status == true) {
 							// 切换规格判断可购买数量
-							this.buyNum = res.data.stock > this.minBuyNum ? this.minBuyNum : res.data.stock;
+							let maxnum = res.data.stock
+							if(res.data.maxnum>0 && res.data.maxnum<res.data.stock){
+								maxnum = res.data.maxnum
+							}
+							this.buyNum = maxnum > this.minBuyNum ? this.minBuyNum : maxnum;
 							this.product = this.spesClassHandle(res.data);
 						}
 					});
@@ -634,7 +585,6 @@
 				// 判断是否是多规格 (是否有默认规格)
 				if (products.hasOwnProperty('default_spes_desc')) {
 					let spes = products.default_spes_desc;
-					console.log(spes)
 					for (let key in spes) {
 						for (let i in spes[key]) {
 							if (spes[key][i].hasOwnProperty('is_default') && spes[key][i].is_default === true) {
@@ -642,7 +592,6 @@
 							} else if (spes[key][i].hasOwnProperty('product_id') && spes[key][i].product_id) {
 								this.$set(spes[key][i], 'cla', 'pop-m-item not-selected');
 							} else {
-								
 								this.$set(spes[key][i], 'cla', 'pop-m-item none');
 							}
 						}
@@ -733,10 +682,15 @@
 			},
 			// 加入购物车
 			addToCart() {
-				if (this.buyNum > 0) {
+				
+				let buyNum = this.buyNum;
+				
+				 buyNum = buyNum ? buyNum :1;
+				
+				if (buyNum > 0) {
 					let data = {
 						product_id: this.product.id,
-						nums: this.buyNum
+						nums: buyNum
 					}
 					this.$api.addCart(data, res => {
 						if (res.status) {
@@ -753,18 +707,41 @@
 			},
 			// 立即购买
 			buyNow() {
-				if (this.buyNum > 0) {
+				let that =this
+				if(!that.$db.get("userToken")){
+					return;
+				}
+				// #ifdef MP
+				if(!that.userInfo.open_id){
+					that.editModal = true;
+					return;
+				}
+				
+				// #endif
+				
+				let buyNum = this.buyNum;
+				
+				 buyNum = buyNum ? buyNum :1;
+								
+				if (buyNum > 0) {
 					let data = {
 						product_id: this.product.id,
-						nums: this.buyNum,
+						nums: buyNum,
 						type: 2 // 区分加入购物车和购买
 					}
 
 					this.$api.addCart(data, res => {
+						
 						if (res.status) {
 							this.toclose();
 							let cartIds = res.data;
-							this.$common.navigateTo('/pages/goods/place-order/index?cart_ids=' + JSON.stringify(cartIds));
+							if(this.type>=3){
+								let url = ''
+								url = '/pages/goods/place-order/index?exp=2&cart_ids=' + JSON.stringify(cartIds);								
+								this.$common.navigateTo(url);	
+							} else {
+								this.$common.navigateTo('/pages/goods/place-order/index?exp=1&cart_ids=' + JSON.stringify(cartIds));
+							}							
 						} else {
 							this.$common.errorToShow(res.msg);
 						}
@@ -772,30 +749,34 @@
 						this.submitStatus = false;
 					})
 				}
-			},
+			},		
 			// 购物车页面跳转
 			redirectCart() {
-				uni.navigateTo({
+				uni.switchTab({
 					url: '/pages/cart/index/index'
 				});
+				// this.$common.navigateTo('/pages/cart/index/index');
 			},
 			// 点击弹出框确定按钮事件处理
 			clickHandle() {
 				this.submitStatus = true;
-				this.type === 1 ? this.addToCart() : this.buyNow();
+				if(this.type == 1){
+					this.addToCart()
+				} else if(this.type == 2){
+					this.buyNow()
+				} else if(this.type >=3){
+					this.buyNow()
+				}
+				//this.type === 1 ? this.addToCart() : this.buyNow();
 			},
 			trigger(e) {
 				this.content[e.index].active = !e.item.active;
-				uni.navigateTo({
+				uni.switchTab({
 					url: e.item.url
 				})
 			},
-			// 跳转到h5分享页面
-			goShare() {
-				this.$refs.share.show();
-			},
-			closeShare() {
-				this.$refs.share.close();
+			topageurl(url){
+				this.$common.navigateTo(url)
 			},
 			// 图片点击放大
 			clickImg(imgs) {
@@ -803,16 +784,6 @@
 				uni.previewImage({
 					urls: imgs.split()
 				});
-			},
-			//打开企业微信
-			showQwChat(){
-				uni.openCustomerServiceChat({
-				  extInfo: {url: this.extInfoUrl},
-				  corpId: this.corpId,
-				  success(res) {
-					  console.log(res);
-				  }
-				})
 			},
 			//在线客服,只有手机号的，请自己替换为手机号
 			showChat() {
@@ -858,103 +829,6 @@
 				}
 				// #endif
 			},
-			// #ifdef MP-WEIXIN
-			//获取分享URL
-			getShareUrl() {
-				let data = {
-					client: 2,
-					url: "/pages/share/jump",
-					type: 1,
-					page: 2,
-					params: {
-						goods_id: this.goodsInfo.id,
-					}
-				};
-				let userToken = this.$db.get('userToken');
-				if (userToken && userToken != '') {
-					data['token'] = userToken;
-				}
-				this.$api.share(data, res => {
-					this.shareUrl = res.data
-				});
-			},
-			// #endif
-			// 分享到朋友或朋友圈
-			shareAll() {
-				// 微信浏览器里面
-				// console.log(window.location.href);
-				let data = {
-					client: 1,
-					url: h5Url + 'pages/share/jump',
-					type: 1,
-					page: 2,
-					params: {
-						goods_id: this.goodsId,
-					}
-				};
-				let userToken = this.$db.get('userToken');
-				if (userToken && userToken != '') {
-					data['token'] = userToken;
-				}
-				this.$api.share(data, res => {
-					if (res.status) {
-						let data1 = {
-							url: window.location.href
-						}
-						let link = res.data;
-						// console.log(link);
-						let _this = this;
-						_this.$api.getShareInfo(data1, res => {
-
-							if (res.status) {
-								_this.$wx.config({
-									debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。  
-									appId: res.data.appId, // 必填，公众号的唯一标识  
-									timestamp: res.data.timestamp, // 必填，生成签名的时间戳  
-									nonceStr: res.data.nonceStr, // 必填，生成签名的随机串  
-									signature: res.data.signature, // 必填，签名，见附录1  
-									jsApiList: ["updateAppMessageShareData", "updateTimelineShareData"]
-								});
-								_this.$wx.ready(function() {
-									let shareInfo = {
-										title: _this.product.name,
-										desc: _this.goodsInfo.brief,
-										imgUrl: _this.goodsInfo.album[0],
-										link: link
-									}
-									// 分享朋友
-									_this.$wx.updateAppMessageShareData(shareInfo);
-									// 分享朋友圈
-									_this.$wx.updateTimelineShareData(shareInfo);
-								})
-							}
-						});
-					}
-				});
-
-
-			}
-		},
-		watch: {
-			goodsInfo: {
-				handler() {
-					// #ifdef MP-WEIXIN
-					this.getShareUrl();
-					// #endif
-				},
-				deep: true
-			}
-		},
-		//分享
-		onShareAppMessage() {
-			return {
-				title: this.goodsInfo.name,
-				// #ifdef MP-ALIPAY
-				desc: this.goodsInfo.brief,
-				// #endif
-				imageUrl: this.goodsInfo.album[0],
-				path: this.shareUrl
-			}
 		},
 		onHide() {
 			uni.hideLoading()
@@ -967,6 +841,21 @@
 </script>
 
 <style>
+	
+	.goods-brief {
+		width: 750rpx;
+		background-color: #fff;
+		padding: 20rpx;
+		margin:20rpx auto 0rpx;
+		border-radius:10rpx;
+		overflow: hidden;
+	}
+	
+	.iosfoot{
+		bottom:constant(safe-area-inset-bottom);
+		bottom:env(safe-area-inset-bottom);
+		box-sizing:content-box;
+	}
 	.content-top {
 		padding-bottom: 40rpx;
 	}
@@ -981,13 +870,24 @@
 
 	.goods-top .goods-price {
 		font-size: 38rpx;
+		font-family: "font";
 	}
 
 	.cost-price {
 		font-size: 28rpx !important;
-		bottom: -10rpx;
+		bottom: -5rpx;
 		color: #999;
 		text-decoration: line-through;
+	}
+
+	.red-price {
+		color: rgb(255, 80, 0) !important;
+		font-size:48rpx !important;
+	}
+	
+	.red-price .em {
+		font-size: 36rpx;
+		font-style: normal;
 	}
 
 	.goods-top .cell-item-ft {
@@ -999,9 +899,9 @@
 		padding-top: 0;
 	}
 
-	.goods-details .cell-hd-title {
+/* 	.goods-details .cell-hd-title {
 		width: 620rpx;
-	}
+	} */
 
 	.goods-details .cell-hd-title .cell-hd-title-view {
 		width: 100%;
@@ -1012,7 +912,7 @@
 	}
 
 	.goods-details .cell-hd-title .cell-hd-title-view:last-child {
-		margin-top: 10rpx;
+		margin-top: 20rpx;
 	}
 
 	.goods-details .cell-item-ft {
@@ -1061,21 +961,35 @@
 	}
 
 	.goods-content {
-		margin-top: 26rpx;
+		width: 750rpx;
+		margin: 20rpx auto 0;
 		background-color: #fff;
-		padding: 26rpx 0;
+		padding: 0rpx;
+		border-radius: 10rpx;
+		overflow: hidden;
+		text-align: center;
 	}
 
 	.goods-content-c {
-		margin-top: 20rpx;
+		padding: 0rpx 10rpx 20rpx 10rpx;
 	}
 
 	.goods-parameter {
 		padding: 10rpx 26rpx;
 		min-height: 600rpx;
 	}
-
-	.goods-bottom,
+	.goods-bottom{
+		background-color: #fff;
+		position: fixed;
+		bottom: 0;
+		height: 90rpx;
+		width: 100%;
+		overflow: hidden;
+		box-shadow: 0 0 20rpx #ccc;
+		box-sizing:content-box;
+		padding-bottom:constant(safe-area-inset-bottom); 
+		padding-bottom: env(safe-area-inset-bottom);		
+	}
 	.pop-b {
 		background-color: #fff;
 		position: fixed;
@@ -1084,7 +998,9 @@
 		width: 100%;
 		overflow: hidden;
 		box-shadow: 0 0 20rpx #ccc;
-
+		padding-bottom:constant(safe-area-inset-bottom); 
+		padding-bottom: env(safe-area-inset-bottom);	
+		box-sizing:content-box;
 	}
 
 	.goods-bottom .btn {
@@ -1231,8 +1147,8 @@
 	}
 
 	.selected {
-		border: 2rpx solid #333;
-		background-color: #333;
+		border: 2rpx solid #C32017;
+		background-color: #C32017;
 		color: #fff;
 	}
 
@@ -1338,8 +1254,8 @@
 	}
 
 	.comment-none-img {
-		width: 274rpx;
-		height: 274rpx;
+		width: 300rpx;
+		height: 300rpx;
 	}
 
 
@@ -1432,8 +1348,14 @@
 		padding: 26px 12px 0;
 		/* #endif */
 
-		position: fixed;
+
+		/* #ifndef APP */
 		top: 0;
+		/* #endif */
+		/* #ifdef APP */
+		top: 70rpx;
+		/* #endif */
+		position: fixed;		
 		background-color: rgba(255, 255, 255, 0);
 		z-index: 98;
 	}
@@ -1453,6 +1375,43 @@
 		left: 46%;
 		transform: translate(-50%, -50%);
 	}
+	
+	
+	.nav-right {
+		width: 88rpx;
+		height: 88rpx;
+		/* #ifdef H5 */
+		padding: 12px 12px 0;
+		top: 0;
+		/* #endif */
+		
+		/* #ifdef APP */
+		padding: 12px 12px 0;
+		top: 70rpx;
+		/* #endif */
+		
+		/* #ifdef MP-WEIXIN */
+		padding: 26px 12px 0;
+		top: 80rpx;
+		/* #endif */
+
+		position: fixed;		
+		right:40rpx;
+		background-color: rgba(255, 255, 255, 0);
+		z-index: 98;
+	}
+
+/* 	.back-btn {
+		height: 32px;
+		width: 32px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.8);
+	} */
+
+	.nav-right .back-btn .icon {
+		left: 21%;
+	}	
+	
 
 	.seller-content {
 		background-color: #f8f8f8;
@@ -1511,8 +1470,76 @@
 		transform: translateX(-50%);
 
 	}
-	
 
 	/* #endif */
+	
+	.btn-red {
+		background-color: #D52C32;
+		flex: 1;
+		color: #fff;		
+	}
+	
+	.btn-yellow {
+		background-color: #ffaa00;
+		color: #fff;
+	}
+	.bg_exp {
+		background: rgba(249, 64, 72, 0.1);
+		color: rgba(249, 64, 72, 0.75);
+		font-size: 22rpx;
+		padding:6rpx 20rpx;
+		border-radius: 5rpx;
+		overflow: hidden;
+		margin-top: 20rpx;
+		margin-right: 20rpx;
+	}
+	.openvip {
+		border: #141414 2rpx solid;
+		background: linear-gradient(to right,#2f2f2f,#363636,#3d3d3d,#424242);
+		height: 65rpx;
+		line-height: 65rpx;
+		border-radius: 6rpx;
+		overflow: hidden;
+		padding: 0 20rpx;
+		color: #f3bf91;
+		margin: 20rpx 0 30rpx;
+		justify-content: space-between;
+	}
+	.openvip .vip1{
+		font-family: "font_m"
+	}
+	.openvip .desc {
+		font-family: "font_m"
+	}
+	.goods-details {
+		margin-top: 10rpx;
+	}
+	.goods-brief-tip {
+		line-height: 46rpx;
+	}
+	
+.cell-groupArea {
+	width: 750rpx;
+	margin: 20rpx auto 0;
+	padding-bottom: 20rpx;
+	overflow: hidden;
+}	
 
+.cell-item {
+	width: auto;
+}
+
+.font-goods-price {
+	align-items: flex-end;
+	margin-right: 20rpx;
+}
+
+.goods_shen image {
+	width: 750rpx;
+	height:108rpx;	
+}
+
+.productName {
+	font-family: "font";	
+}
 </style>

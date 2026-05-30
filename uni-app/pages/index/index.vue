@@ -1,14 +1,9 @@
 <template>
 	<view class="content" style="padding-top: 0rpx" id="jshop-content">
-		<jshop :jdata="pageData"></jshop>
 	</view>
 </template>
 <script>
-import jshop from '@/components/jshop/jshop.vue';
 export default {
-	components: {
-		jshop,
-	},
 	data() {
 		return {
 			page: 1,
@@ -28,17 +23,6 @@ export default {
 			},
 			shareUrl: '/pages/share/jump',
 		};
-	},
-	onReachBottom() {
-		if (this.loadStatus === 'more') {
-			this.getPageContent();
-		}
-	},
-	computed: {
-		// 获取店铺联系人手机号
-		shopMobile() {
-			return this.$store.state.config.shop_mobile || 0;
-		}
 	},
 	created() {
 		//获取窗口高度信息
@@ -65,58 +49,8 @@ export default {
 	},
 	onShow() {},
 	methods: {
-		//获取布局区域高度
-		getViewHeight(callback) {
-			var _this = this;
-			const query = uni.createSelectorQuery().in(this);
-			query
-				.select('#jshop-content')
-				.boundingClientRect((data) => {
-					_this.viewHeight = data.height;
-					callback();
-				})
-				.exec();
-		},
-		getPageContent() {
-			let _this = this;
-			//获取首页配置
-			let data = {
-				page: this.page,
-				limit: this.limit
-			};
-			if (this.$db.get('userToken')) {
-				data.token = this.$db.get('userToken');
-			}
-			this.loadStatus = 'loading';
-			this.$api.getHomePageConfig(data, (res) => {
-				if (res.status == true) {
-					if (this.limit > res.data.items.length) {
-						// 没有数据了
-						this.loadStatus = 'noMore';
-					} else {
-						// 未加载完毕
-						this.loadStatus = 'more';
-						this.page++;
-					}
-					this.pageData = [...this.pageData, ...res.data.items];
-
-					//判断页面高度是否能自动加载下一页
-					if (this.loadStatus == 'more') {
-						this.getViewHeight(function () {
-							if (_this.windowHeight - _this.viewHeight > _this.viewHeight) {
-								setTimeout(() => {
-									_this.getPageContent();
-								}, 500);
-							}
-						});
-					}
-				}
-			});
-		},
 		// 首页初始化获取数据
 		initData() {
-			this.getPageContent();
-			//判断是开启分销还是原始推广
 			this.$api.shopConfig((res) => {
 				this.config = res;
 			});
@@ -179,12 +113,6 @@ export default {
 				}
 			});
 		}
-	},
-	onPullDownRefresh() {
-		this.page = 1;
-		this.pageData = [];
-		this.getPageContent();
-		uni.stopPullDownRefresh();
 	},
 	//分享
 	onShareAppMessage() {

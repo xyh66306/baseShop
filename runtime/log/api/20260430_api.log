@@ -1,0 +1,580 @@
+---------------------------------------------------------------
+[2026-04-30T18:07:40+08:00] 127.0.0.1 POST localhost/api.html
+[ api ] array (
+  'codes' => 'tpl1_slider',
+  'method' => 'advert.getcarousellists',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    'list' => 
+    array (
+      'tpl1_slider' => 
+      array (
+        0 => 
+        app\common\model\Carousel::__set_state(array(
+           'name' => 'advertisement',
+           'autoWriteTimestamp' => true,
+           'createTime' => 'ctime',
+           'updateTime' => 'utime',
+           'rule' => 
+          array (
+            'name' => 'require|max:50',
+            'img' => 'require|alphaNum',
+            'type' => 'number|require',
+            'url' => 'requireIf:type,1|url',
+            'goods_id' => 'requireIf:type,2|number',
+            'article_id' => 'requireIf:type,3|number',
+            'article_type_id' => 'requireIf:type,4|number',
+            'position_id' => 'require',
+            'sort' => 'number',
+          ),
+           'msg' => 
+          array (
+            'name.require' => '请输入广告名称',
+            'name.max' => '广告名最多不能超过50个字符',
+            'type.number' => '广告类型非法',
+            'type.require' => '请选择要添加的广告类型',
+            'img.require' => '请选择要上传的广告图片',
+            'img.alphaNum' => '广告图片非法',
+            'url.url' => 'url链接不是有效的地址',
+            'url.requireIf' => '请输入广告URL链接',
+            'goods_id.requireIf' => '请选择广告商品',
+            'article_id.requireIf' => '请选择广告文章',
+            'article_type_id.requireIf' => '请选择文章分类',
+            'position_id.require' => '请选择要添加的广告位',
+            'sort' => '排序必须是数字',
+          ),
+           'exists' => true,
+           'replace' => false,
+           'force' => false,
+           'updateWhere' => NULL,
+           'connection' => 
+          array (
+          ),
+           'query' => NULL,
+           'table' => NULL,
+           'auto' => 
+          array (
+          ),
+           'insert' => 
+          array (
+          ),
+           'update' => 
+          array (
+          ),
+           'queryInstance' => NULL,
+           'error' => NULL,
+           'defaultSoftDelete' => NULL,
+           'globalScope' => 
+          array (
+          ),
+           'pk' => 'id',
+           'field' => 
+          array (
+          ),
+           'json' => 
+          array (
+          ),
+           'jsonAssoc' => false,
+           'jsonType' => 
+          array (
+          ),
+           'disuse' => 
+          array (
+          ),
+           'readonly' => 
+          array (
+          ),
+           'type' => 
+          array (
+          ),
+           'data' => 
+          array (
+            'id' => 1,
+            'position_id' => 1,
+            'code' => 'tpl1_slider',
+            'name' => 'banner1',
+            'img' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/17690703196971deefea7cc.png',
+            'type' => 5,
+            'val' => '',
+            'sort' => 100,
+          ),
+           'set' => 
+          array (
+          ),
+           'origin' => 
+          array (
+            'id' => 1,
+            'position_id' => 1,
+            'code' => 'tpl1_slider',
+            'name' => 'banner1',
+            'img' => '4a35bb6e7c678cbfec0bc1b8e0c8cb46',
+            'type' => 5,
+            'val' => '',
+            'sort' => 100,
+          ),
+           'withAttr' => 
+          array (
+          ),
+           'parent' => NULL,
+           'relation' => 
+          array (
+          ),
+           'together' => NULL,
+           'relationWrite' => NULL,
+           'observerClass' => NULL,
+           'withEvent' => true,
+           'dateFormat' => false,
+           'visible' => 
+          array (
+          ),
+           'hidden' => 
+          array (
+          ),
+           'append' => 
+          array (
+          ),
+           'resultSetType' => 'collection',
+        )),
+      ),
+    ),
+  ),
+)
+---------------------------------------------------------------
+[2026-04-30T18:07:45+08:00] 127.0.0.1 POST localhost/api.html
+[ api ] array (
+  'codes' => 'tpl1_slider',
+  'method' => 'advert.getcarousellists',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    'list' => 
+    array (
+      'tpl1_slider' => 
+      array (
+        0 => 
+        app\common\model\Carousel::__set_state(array(
+           'name' => 'advertisement',
+           'autoWriteTimestamp' => true,
+           'createTime' => 'ctime',
+           'updateTime' => 'utime',
+           'rule' => 
+          array (
+            'name' => 'require|max:50',
+            'img' => 'require|alphaNum',
+            'type' => 'number|require',
+            'url' => 'requireIf:type,1|url',
+            'goods_id' => 'requireIf:type,2|number',
+            'article_id' => 'requireIf:type,3|number',
+            'article_type_id' => 'requireIf:type,4|number',
+            'position_id' => 'require',
+            'sort' => 'number',
+          ),
+           'msg' => 
+          array (
+            'name.require' => '请输入广告名称',
+            'name.max' => '广告名最多不能超过50个字符',
+            'type.number' => '广告类型非法',
+            'type.require' => '请选择要添加的广告类型',
+            'img.require' => '请选择要上传的广告图片',
+            'img.alphaNum' => '广告图片非法',
+            'url.url' => 'url链接不是有效的地址',
+            'url.requireIf' => '请输入广告URL链接',
+            'goods_id.requireIf' => '请选择广告商品',
+            'article_id.requireIf' => '请选择广告文章',
+            'article_type_id.requireIf' => '请选择文章分类',
+            'position_id.require' => '请选择要添加的广告位',
+            'sort' => '排序必须是数字',
+          ),
+           'exists' => true,
+           'replace' => false,
+           'force' => false,
+           'updateWhere' => NULL,
+           'connection' => 
+          array (
+          ),
+           'query' => NULL,
+           'table' => NULL,
+           'auto' => 
+          array (
+          ),
+           'insert' => 
+          array (
+          ),
+           'update' => 
+          array (
+          ),
+           'queryInstance' => NULL,
+           'error' => NULL,
+           'defaultSoftDelete' => NULL,
+           'globalScope' => 
+          array (
+          ),
+           'pk' => 'id',
+           'field' => 
+          array (
+          ),
+           'json' => 
+          array (
+          ),
+           'jsonAssoc' => false,
+           'jsonType' => 
+          array (
+          ),
+           'disuse' => 
+          array (
+          ),
+           'readonly' => 
+          array (
+          ),
+           'type' => 
+          array (
+          ),
+           'data' => 
+          array (
+            'id' => 1,
+            'position_id' => 1,
+            'code' => 'tpl1_slider',
+            'name' => 'banner1',
+            'img' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/17690703196971deefea7cc.png',
+            'type' => 5,
+            'val' => '',
+            'sort' => 100,
+          ),
+           'set' => 
+          array (
+          ),
+           'origin' => 
+          array (
+            'id' => 1,
+            'position_id' => 1,
+            'code' => 'tpl1_slider',
+            'name' => 'banner1',
+            'img' => '4a35bb6e7c678cbfec0bc1b8e0c8cb46',
+            'type' => 5,
+            'val' => '',
+            'sort' => 100,
+          ),
+           'withAttr' => 
+          array (
+          ),
+           'parent' => NULL,
+           'relation' => 
+          array (
+          ),
+           'together' => NULL,
+           'relationWrite' => NULL,
+           'observerClass' => NULL,
+           'withEvent' => true,
+           'dateFormat' => false,
+           'visible' => 
+          array (
+          ),
+           'hidden' => 
+          array (
+          ),
+           'append' => 
+          array (
+          ),
+           'resultSetType' => 'collection',
+        )),
+      ),
+    ),
+  ),
+)
+---------------------------------------------------------------
+[2026-04-30T18:07:46+08:00] 127.0.0.1 POST localhost/api.html
+[ api ] array (
+  'codes' => 'tpl1_slider',
+  'method' => 'advert.getcarousellists',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    'list' => 
+    array (
+      'tpl1_slider' => 
+      array (
+        0 => 
+        app\common\model\Carousel::__set_state(array(
+           'name' => 'advertisement',
+           'autoWriteTimestamp' => true,
+           'createTime' => 'ctime',
+           'updateTime' => 'utime',
+           'rule' => 
+          array (
+            'name' => 'require|max:50',
+            'img' => 'require|alphaNum',
+            'type' => 'number|require',
+            'url' => 'requireIf:type,1|url',
+            'goods_id' => 'requireIf:type,2|number',
+            'article_id' => 'requireIf:type,3|number',
+            'article_type_id' => 'requireIf:type,4|number',
+            'position_id' => 'require',
+            'sort' => 'number',
+          ),
+           'msg' => 
+          array (
+            'name.require' => '请输入广告名称',
+            'name.max' => '广告名最多不能超过50个字符',
+            'type.number' => '广告类型非法',
+            'type.require' => '请选择要添加的广告类型',
+            'img.require' => '请选择要上传的广告图片',
+            'img.alphaNum' => '广告图片非法',
+            'url.url' => 'url链接不是有效的地址',
+            'url.requireIf' => '请输入广告URL链接',
+            'goods_id.requireIf' => '请选择广告商品',
+            'article_id.requireIf' => '请选择广告文章',
+            'article_type_id.requireIf' => '请选择文章分类',
+            'position_id.require' => '请选择要添加的广告位',
+            'sort' => '排序必须是数字',
+          ),
+           'exists' => true,
+           'replace' => false,
+           'force' => false,
+           'updateWhere' => NULL,
+           'connection' => 
+          array (
+          ),
+           'query' => NULL,
+           'table' => NULL,
+           'auto' => 
+          array (
+          ),
+           'insert' => 
+          array (
+          ),
+           'update' => 
+          array (
+          ),
+           'queryInstance' => NULL,
+           'error' => NULL,
+           'defaultSoftDelete' => NULL,
+           'globalScope' => 
+          array (
+          ),
+           'pk' => 'id',
+           'field' => 
+          array (
+          ),
+           'json' => 
+          array (
+          ),
+           'jsonAssoc' => false,
+           'jsonType' => 
+          array (
+          ),
+           'disuse' => 
+          array (
+          ),
+           'readonly' => 
+          array (
+          ),
+           'type' => 
+          array (
+          ),
+           'data' => 
+          array (
+            'id' => 1,
+            'position_id' => 1,
+            'code' => 'tpl1_slider',
+            'name' => 'banner1',
+            'img' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/17690703196971deefea7cc.png',
+            'type' => 5,
+            'val' => '',
+            'sort' => 100,
+          ),
+           'set' => 
+          array (
+          ),
+           'origin' => 
+          array (
+            'id' => 1,
+            'position_id' => 1,
+            'code' => 'tpl1_slider',
+            'name' => 'banner1',
+            'img' => '4a35bb6e7c678cbfec0bc1b8e0c8cb46',
+            'type' => 5,
+            'val' => '',
+            'sort' => 100,
+          ),
+           'withAttr' => 
+          array (
+          ),
+           'parent' => NULL,
+           'relation' => 
+          array (
+          ),
+           'together' => NULL,
+           'relationWrite' => NULL,
+           'observerClass' => NULL,
+           'withEvent' => true,
+           'dateFormat' => false,
+           'visible' => 
+          array (
+          ),
+           'hidden' => 
+          array (
+          ),
+           'append' => 
+          array (
+          ),
+           'resultSetType' => 'collection',
+        )),
+      ),
+    ),
+  ),
+)
+---------------------------------------------------------------
+[2026-04-30T18:07:48+08:00] 127.0.0.1 POST localhost/api.html
+[ api ] array (
+  'codes' => 'tpl1_slider',
+  'method' => 'advert.getcarousellists',
+)
+[ api ] array (
+  'status' => true,
+  'msg' => '获取成功',
+  'data' => 
+  array (
+    'list' => 
+    array (
+      'tpl1_slider' => 
+      array (
+        0 => 
+        app\common\model\Carousel::__set_state(array(
+           'name' => 'advertisement',
+           'autoWriteTimestamp' => true,
+           'createTime' => 'ctime',
+           'updateTime' => 'utime',
+           'rule' => 
+          array (
+            'name' => 'require|max:50',
+            'img' => 'require|alphaNum',
+            'type' => 'number|require',
+            'url' => 'requireIf:type,1|url',
+            'goods_id' => 'requireIf:type,2|number',
+            'article_id' => 'requireIf:type,3|number',
+            'article_type_id' => 'requireIf:type,4|number',
+            'position_id' => 'require',
+            'sort' => 'number',
+          ),
+           'msg' => 
+          array (
+            'name.require' => '请输入广告名称',
+            'name.max' => '广告名最多不能超过50个字符',
+            'type.number' => '广告类型非法',
+            'type.require' => '请选择要添加的广告类型',
+            'img.require' => '请选择要上传的广告图片',
+            'img.alphaNum' => '广告图片非法',
+            'url.url' => 'url链接不是有效的地址',
+            'url.requireIf' => '请输入广告URL链接',
+            'goods_id.requireIf' => '请选择广告商品',
+            'article_id.requireIf' => '请选择广告文章',
+            'article_type_id.requireIf' => '请选择文章分类',
+            'position_id.require' => '请选择要添加的广告位',
+            'sort' => '排序必须是数字',
+          ),
+           'exists' => true,
+           'replace' => false,
+           'force' => false,
+           'updateWhere' => NULL,
+           'connection' => 
+          array (
+          ),
+           'query' => NULL,
+           'table' => NULL,
+           'auto' => 
+          array (
+          ),
+           'insert' => 
+          array (
+          ),
+           'update' => 
+          array (
+          ),
+           'queryInstance' => NULL,
+           'error' => NULL,
+           'defaultSoftDelete' => NULL,
+           'globalScope' => 
+          array (
+          ),
+           'pk' => 'id',
+           'field' => 
+          array (
+          ),
+           'json' => 
+          array (
+          ),
+           'jsonAssoc' => false,
+           'jsonType' => 
+          array (
+          ),
+           'disuse' => 
+          array (
+          ),
+           'readonly' => 
+          array (
+          ),
+           'type' => 
+          array (
+          ),
+           'data' => 
+          array (
+            'id' => 1,
+            'position_id' => 1,
+            'code' => 'tpl1_slider',
+            'name' => 'banner1',
+            'img' => 'https://ljmaoyi.wobeis.com/static/uploads/images/2026/01/22/17690703196971deefea7cc.png',
+            'type' => 5,
+            'val' => '',
+            'sort' => 100,
+          ),
+           'set' => 
+          array (
+          ),
+           'origin' => 
+          array (
+            'id' => 1,
+            'position_id' => 1,
+            'code' => 'tpl1_slider',
+            'name' => 'banner1',
+            'img' => '4a35bb6e7c678cbfec0bc1b8e0c8cb46',
+            'type' => 5,
+            'val' => '',
+            'sort' => 100,
+          ),
+           'withAttr' => 
+          array (
+          ),
+           'parent' => NULL,
+           'relation' => 
+          array (
+          ),
+           'together' => NULL,
+           'relationWrite' => NULL,
+           'observerClass' => NULL,
+           'withEvent' => true,
+           'dateFormat' => false,
+           'visible' => 
+          array (
+          ),
+           'hidden' => 
+          array (
+          ),
+           'append' => 
+          array (
+          ),
+           'resultSetType' => 'collection',
+        )),
+      ),
+    ),
+  ),
+)

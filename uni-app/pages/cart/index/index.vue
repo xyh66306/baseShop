@@ -88,7 +88,7 @@
 	</view>
 	<!-- 购物车为空 -->
 	<view class="cart-none" v-else>
-		<image class="cart-none-img" src="/static/img/shop/cart-empty.png" mode=""></image>
+		<image class="cart-none-img" src="/static/img/cart-empty.png" mode=""></image>
 		<view class="cart-none-t">购物车快饿瘪了 T.T</view>
 		<view class="cart-none-m">快给我挑点宝贝吧</view>
 		<navigator class="cart-none-b" url="/pages/index/index" hover-class="btn-hover" open-type="navigateTo">去逛逛</navigator>
