@@ -847,5 +847,34 @@ return [
                 'is_login' => false
             ],
         ]
-    ]
+    ],
+    'shopindex' => [
+        'code' => 'shopIndex',
+        'method' => [
+            'index'       => [
+                'code'     => 'index',
+                'is_login' => false
+            ],
+            'notice'=>[
+                'code'     => 'notice',
+                'is_login' => false
+            ],
+            'version'=>[
+                'code'     => 'version',
+                'is_login' => false
+            ],   
+            'tixiangz'=>[
+                'code'     => 'tixiangz',
+                'is_login' => false
+            ], 
+            'getproductid'=>[
+                'code'     => 'getproductid',
+                'is_login' => false
+            ],
+            'getLst'=>[
+                'code'     => 'getLst',
+                'is_login' => false
+            ]                                           
+        ]
+    ],     
 ];
